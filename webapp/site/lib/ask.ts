@@ -262,7 +262,9 @@ export function check(paragraphs: string[], ev: Story[], st: Stats) {
     if ((text.match(/"/g) ?? []).length % 2) { const i = text.lastIndexOf('"'); text = text.slice(0, i) + text.slice(i + 1); }
     const sentences = text.match(SENTENCE) ?? [text];
     const keep = sentences.filter((sen) => {
-      if (/^[\s*]*[,;:)\]\[]/.test(sen)) { removed++; return false; } // a fragment left over from a broken split
+      if (/^[\s*]*[,;:)\]\[a-z]/.test(sen)) { removed++; return false; } // a fragment left over from a broken split
+      // first person outside quotes = an investor's words copied without quote marks (often split into fragments)
+      if (/\b(i|i'm|i've|i'd|my|me|mine)\b/i.test(sen.replace(/"[^"]*"/g, ""))) { removed++; return false; }
       const nums = [...sen.matchAll(/\[(\d+(?:\s*,\s*\d+)*)\]/g)].flatMap((m) => m[1].split(/\s*,\s*/).map(Number));
       const valid = nums.filter((n) => n >= 1 && n <= ev.length);
       const pcts = [...sen.matchAll(/(\d{1,3})\s?%/g)].map((m) => Number(m[1]));
@@ -296,7 +298,7 @@ Rules:
 - Start the first sentence with the subject (who), not "These" or "They".
 - Numbers: lead with the biggest patterns in COUNTS and give their percentage exactly as written there (e.g. "portfolio clean-up (26%)"). Never compute or invent other numbers.
 - Cite at most 3 stories per sentence: pick the clearest ones.
-- If you quote, copy words exactly from a story's quote, inside double quotes.
+- If you quote, copy words exactly from a story's quote, inside double quotes. Never copy an investor's words without double quotes; otherwise describe them in the third person.
 - Give NO advice of any kind: no investment advice, no fund names to pick, no suggestions for what anyone should do, and no product or feature suggestions for any app. Describe; do not prescribe.
 - Do not say what would prevent, fix or reduce drop-off; only report what people said.
 - If the stories do not answer the question, set enough_evidence to false.

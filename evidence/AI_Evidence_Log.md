@@ -6,7 +6,7 @@ The discovery engine read 91,150 public SIP posts and kept 720 personal stories 
 
 This log covers the three things the brief asks for: the sources and volume analysed, a hand-labelled golden set with how often the engine agreed and where it failed, and the places where AI output was rejected or corrected. All figures come from the data frozen on 24 Oct 2026, the same data the engine's web app reads.
 
-**Open item:** the engine's public link will be added here once it is deployed.
+**Try the engine:** [sip-drop-off-lens.vercel.app](https://sip-drop-off-lens.vercel.app)
 
 ## Linked files
 
