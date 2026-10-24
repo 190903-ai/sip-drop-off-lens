@@ -1,0 +1,8636 @@
+{
+ "corpus": {
+  "stories": 720,
+  "dropoff": 573,
+  "stayed": 147,
+  "by_source": {
+   "reddit": 319,
+   "playstore/groww": 131,
+   "playstore/etmoney": 83,
+   "playstore/paytmmoney": 39,
+   "youtube": 38,
+   "playstore/coin": 35,
+   "tradingqna": 35,
+   "blog": 24,
+   "playstore/indmoney": 16
+  },
+  "by_group": {
+   "dropoff_story/unknown": 352,
+   "dropoff_story/experienced": 119,
+   "dropoff_story/first_time": 102,
+   "stayed_story/first_time": 35,
+   "stayed_story/unknown": 20,
+   "stayed_story/experienced": 92
+  },
+  "by_source_type": {
+   "dropoff_story/app_review": 300,
+   "dropoff_story/community": 273,
+   "stayed_story/community": 143,
+   "stayed_story/app_review": 4
+  },
+  "question_items": 1075
+ },
+ "dropoff": {
+  "all": {
+   "n": 573,
+   "root_cause": {
+    "platform_trust_erosion": {
+     "n": 167,
+     "share": 0.291
+    },
+    "payment_plumbing": {
+     "n": 121,
+     "share": 0.211
+    },
+    "portfolio_rationalisation": {
+     "n": 82,
+     "share": 0.143
+    },
+    "cashflow_rigidity": {
+     "n": 31,
+     "share": 0.054
+    },
+    "other": {
+     "n": 17,
+     "share": 0.03
+    },
+    "expectation_violation": {
+     "n": 13,
+     "share": 0.023
+    },
+    "timing_mindset": {
+     "n": 11,
+     "share": 0.019
+    },
+    "volatility_mismatch": {
+     "n": 10,
+     "share": 0.017
+    },
+    "return_misreading": {
+     "n": 7,
+     "share": 0.012
+    },
+    "borrowed_conviction": {
+     "n": 3,
+     "share": 0.005
+    },
+    "product_distrust": {
+     "n": 2,
+     "share": 0.003
+    },
+    "safe_asset_benchmark": {
+     "n": 2,
+     "share": 0.003
+    }
+   },
+   "stop_trigger": {
+    "payment_failure": {
+     "n": 113,
+     "share": 0.197
+    },
+    "own_returns_negative_flat": {
+     "n": 65,
+     "share": 0.113
+    },
+    "modify_blocked": {
+     "n": 51,
+     "share": 0.089
+    },
+    "order_redemption_delay": {
+     "n": 48,
+     "share": 0.084
+    },
+    "platform_change": {
+     "n": 43,
+     "share": 0.075
+    },
+    "self_review": {
+     "n": 39,
+     "share": 0.068
+    },
+    "charge_penalty": {
+     "n": 38,
+     "share": 0.066
+    },
+    "other": {
+     "n": 32,
+     "share": 0.056
+    },
+    "cash_need_life_event": {
+     "n": 28,
+     "share": 0.049
+    },
+    "data_discrepancy": {
+     "n": 26,
+     "share": 0.045
+    },
+    "market_news": {
+     "n": 26,
+     "share": 0.045
+    },
+    "support_failure": {
+     "n": 20,
+     "share": 0.035
+    },
+    "missing_notification": {
+     "n": 17,
+     "share": 0.03
+    },
+    "app_malfunction": {
+     "n": 13,
+     "share": 0.023
+    },
+    "tax_rule_change": {
+     "n": 10,
+     "share": 0.017
+    },
+    "advice_received": {
+     "n": 9,
+     "share": 0.016
+    },
+    "debit_after_cancel": {
+     "n": 8,
+     "share": 0.014
+    }
+   },
+   "unmet_need": {
+    "responsive_support": {
+     "n": 151,
+     "share": 0.264
+    },
+    "portfolio_construction_help": {
+     "n": 131,
+     "share": 0.229
+    },
+    "reliable_payment_recovery": {
+     "n": 130,
+     "share": 0.227
+    },
+    "independent_reassurance": {
+     "n": 80,
+     "share": 0.14
+    },
+    "flexible_pause_modify": {
+     "n": 59,
+     "share": 0.103
+    },
+    "basics_education": {
+     "n": 39,
+     "share": 0.068
+    },
+    "accurate_timely_portfolio": {
+     "n": 34,
+     "share": 0.059
+    },
+    "transparent_costs": {
+     "n": 33,
+     "share": 0.058
+    },
+    "consent_control": {
+     "n": 30,
+     "share": 0.052
+    },
+    "understand_my_returns": {
+     "n": 19,
+     "share": 0.033
+    },
+    "other": {
+     "n": 9,
+     "share": 0.016
+    },
+    "goal_linkage": {
+     "n": 7,
+     "share": 0.012
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 390,
+     "share": 0.681
+    },
+    "reliability": {
+     "n": 190,
+     "share": 0.332
+    },
+    "recovery": {
+     "n": 39,
+     "share": 0.068
+    },
+    "activation": {
+     "n": 38,
+     "share": 0.066
+    },
+    "none": {
+     "n": 6,
+     "share": 0.01
+    }
+   },
+   "emotion": {
+    "angry_frustrated": {
+     "n": 246,
+     "share": 0.429
+    },
+    "neutral": {
+     "n": 119,
+     "share": 0.208
+    },
+    "confused": {
+     "n": 85,
+     "share": 0.148
+    },
+    "anxious": {
+     "n": 68,
+     "share": 0.119
+    },
+    "disappointed_regret": {
+     "n": 39,
+     "share": 0.068
+    },
+    "calm_confident": {
+     "n": 8,
+     "share": 0.014
+    },
+    "hopeful_excited": {
+     "n": 8,
+     "share": 0.014
+    }
+   },
+   "action": {
+    "considering_stop": {
+     "n": 110,
+     "share": 0.192
+    },
+    "restructured": {
+     "n": 101,
+     "share": 0.176
+    },
+    "stopped": {
+     "n": 96,
+     "share": 0.168
+    },
+    "attempted_blocked": {
+     "n": 56,
+     "share": 0.098
+    },
+    "switched_platform": {
+     "n": 45,
+     "share": 0.079
+    },
+    "paused": {
+     "n": 20,
+     "share": 0.035
+    },
+    "increased": {
+     "n": 17,
+     "share": 0.03
+    },
+    "continued": {
+     "n": 8,
+     "share": 0.014
+    },
+    "considering_start": {
+     "n": 7,
+     "share": 0.012
+    },
+    "reduced": {
+     "n": 4,
+     "share": 0.007
+    }
+   },
+   "in_app_confusion": {
+    "payment_mandate_status": {
+     "n": 140,
+     "share": 0.244
+    },
+    "modify_sip": {
+     "n": 76,
+     "share": 0.133
+    },
+    "charges_plan_type": {
+     "n": 75,
+     "share": 0.131
+    },
+    "order_timeline": {
+     "n": 57,
+     "share": 0.099
+    },
+    "account_kyc_demat": {
+     "n": 35,
+     "share": 0.061
+    },
+    "value_mismatch": {
+     "n": 29,
+     "share": 0.051
+    },
+    "tax_withdrawal": {
+     "n": 28,
+     "share": 0.049
+    },
+    "navigation_ui": {
+     "n": 24,
+     "share": 0.042
+    },
+    "other": {
+     "n": 6,
+     "share": 0.01
+    },
+    "return_figure_meaning": {
+     "n": 3,
+     "share": 0.005
+    }
+   },
+   "outside_app_workaround": {
+    "other_platform": {
+     "n": 89,
+     "share": 0.155
+    },
+    "reddit_forum": {
+     "n": 84,
+     "share": 0.147
+    },
+    "complaint_escalation": {
+     "n": 73,
+     "share": 0.127
+    },
+    "creator_comment": {
+     "n": 26,
+     "share": 0.045
+    },
+    "manual_payment": {
+     "n": 14,
+     "share": 0.024
+    },
+    "self_research": {
+     "n": 14,
+     "share": 0.024
+    },
+    "advisor_ca": {
+     "n": 10,
+     "share": 0.017
+    },
+    "other_tracker": {
+     "n": 4,
+     "share": 0.007
+    },
+    "family_friend": {
+     "n": 3,
+     "share": 0.005
+    },
+    "other": {
+     "n": 2,
+     "share": 0.003
+    }
+   },
+   "influencer_source": {
+    "advisor_distributor": {
+     "n": 28,
+     "share": 0.049
+    },
+    "self_directed": {
+     "n": 21,
+     "share": 0.037
+    },
+    "family": {
+     "n": 10,
+     "share": 0.017
+    },
+    "friend_colleague": {
+     "n": 7,
+     "share": 0.012
+    },
+    "youtube_creator": {
+     "n": 5,
+     "share": 0.009
+    },
+    "app_platform": {
+     "n": 3,
+     "share": 0.005
+    },
+    "other": {
+     "n": 2,
+     "share": 0.003
+    }
+   },
+   "stay_reason": {
+    "long_horizon_belief": {
+     "n": 4,
+     "share": 0.007
+    }
+   },
+   "stage": {
+    "12m_plus": {
+     "n": 118,
+     "share": 0.206
+    },
+    "3_12m": {
+     "n": 39,
+     "share": 0.068
+    },
+    "early_0_3m": {
+     "n": 29,
+     "share": 0.051
+    },
+    "pre_start": {
+     "n": 4,
+     "share": 0.007
+    }
+   }
+  },
+  "app_review": {
+   "n": 300,
+   "root_cause": {
+    "platform_trust_erosion": {
+     "n": 157,
+     "share": 0.523
+    },
+    "payment_plumbing": {
+     "n": 114,
+     "share": 0.38
+    },
+    "other": {
+     "n": 6,
+     "share": 0.02
+    },
+    "cashflow_rigidity": {
+     "n": 2,
+     "share": 0.007
+    },
+    "product_distrust": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "stop_trigger": {
+    "payment_failure": {
+     "n": 101,
+     "share": 0.337
+    },
+    "order_redemption_delay": {
+     "n": 45,
+     "share": 0.15
+    },
+    "modify_blocked": {
+     "n": 44,
+     "share": 0.147
+    },
+    "platform_change": {
+     "n": 39,
+     "share": 0.13
+    },
+    "charge_penalty": {
+     "n": 31,
+     "share": 0.103
+    },
+    "data_discrepancy": {
+     "n": 24,
+     "share": 0.08
+    },
+    "support_failure": {
+     "n": 17,
+     "share": 0.057
+    },
+    "missing_notification": {
+     "n": 17,
+     "share": 0.057
+    },
+    "app_malfunction": {
+     "n": 13,
+     "share": 0.043
+    },
+    "other": {
+     "n": 11,
+     "share": 0.037
+    },
+    "debit_after_cancel": {
+     "n": 8,
+     "share": 0.027
+    },
+    "cash_need_life_event": {
+     "n": 4,
+     "share": 0.013
+    },
+    "market_news": {
+     "n": 3,
+     "share": 0.01
+    },
+    "own_returns_negative_flat": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "unmet_need": {
+    "responsive_support": {
+     "n": 143,
+     "share": 0.477
+    },
+    "reliable_payment_recovery": {
+     "n": 118,
+     "share": 0.393
+    },
+    "flexible_pause_modify": {
+     "n": 41,
+     "share": 0.137
+    },
+    "accurate_timely_portfolio": {
+     "n": 29,
+     "share": 0.097
+    },
+    "consent_control": {
+     "n": 27,
+     "share": 0.09
+    },
+    "transparent_costs": {
+     "n": 20,
+     "share": 0.067
+    },
+    "other": {
+     "n": 3,
+     "share": 0.01
+    },
+    "basics_education": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "metric_branch": {
+    "reliability": {
+     "n": 168,
+     "share": 0.56
+    },
+    "intent": {
+     "n": 154,
+     "share": 0.513
+    },
+    "activation": {
+     "n": 35,
+     "share": 0.117
+    },
+    "recovery": {
+     "n": 7,
+     "share": 0.023
+    }
+   },
+   "emotion": {
+    "angry_frustrated": {
+     "n": 239,
+     "share": 0.797
+    },
+    "disappointed_regret": {
+     "n": 22,
+     "share": 0.073
+    },
+    "anxious": {
+     "n": 17,
+     "share": 0.057
+    },
+    "confused": {
+     "n": 11,
+     "share": 0.037
+    },
+    "neutral": {
+     "n": 10,
+     "share": 0.033
+    },
+    "calm_confident": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "action": {
+    "stopped": {
+     "n": 75,
+     "share": 0.25
+    },
+    "attempted_blocked": {
+     "n": 48,
+     "share": 0.16
+    },
+    "switched_platform": {
+     "n": 36,
+     "share": 0.12
+    },
+    "considering_stop": {
+     "n": 34,
+     "share": 0.113
+    },
+    "paused": {
+     "n": 3,
+     "share": 0.01
+    },
+    "restructured": {
+     "n": 3,
+     "share": 0.01
+    },
+    "continued": {
+     "n": 3,
+     "share": 0.01
+    },
+    "considering_start": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "in_app_confusion": {
+    "payment_mandate_status": {
+     "n": 123,
+     "share": 0.41
+    },
+    "modify_sip": {
+     "n": 55,
+     "share": 0.183
+    },
+    "order_timeline": {
+     "n": 52,
+     "share": 0.173
+    },
+    "charges_plan_type": {
+     "n": 43,
+     "share": 0.143
+    },
+    "value_mismatch": {
+     "n": 27,
+     "share": 0.09
+    },
+    "account_kyc_demat": {
+     "n": 23,
+     "share": 0.077
+    },
+    "navigation_ui": {
+     "n": 22,
+     "share": 0.073
+    },
+    "tax_withdrawal": {
+     "n": 10,
+     "share": 0.033
+    },
+    "other": {
+     "n": 3,
+     "share": 0.01
+    },
+    "return_figure_meaning": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "outside_app_workaround": {
+    "other_platform": {
+     "n": 76,
+     "share": 0.253
+    },
+    "complaint_escalation": {
+     "n": 66,
+     "share": 0.22
+    },
+    "manual_payment": {
+     "n": 8,
+     "share": 0.027
+    },
+    "other_tracker": {
+     "n": 2,
+     "share": 0.007
+    },
+    "other": {
+     "n": 1,
+     "share": 0.003
+    },
+    "self_research": {
+     "n": 1,
+     "share": 0.003
+    }
+   },
+   "influencer_source": {
+    "app_platform": {
+     "n": 2,
+     "share": 0.007
+    }
+   },
+   "stay_reason": {},
+   "stage": {
+    "12m_plus": {
+     "n": 25,
+     "share": 0.083
+    },
+    "early_0_3m": {
+     "n": 12,
+     "share": 0.04
+    },
+    "3_12m": {
+     "n": 7,
+     "share": 0.023
+    },
+    "pre_start": {
+     "n": 2,
+     "share": 0.007
+    }
+   }
+  },
+  "community": {
+   "n": 273,
+   "root_cause": {
+    "portfolio_rationalisation": {
+     "n": 82,
+     "share": 0.3
+    },
+    "cashflow_rigidity": {
+     "n": 29,
+     "share": 0.106
+    },
+    "expectation_violation": {
+     "n": 13,
+     "share": 0.048
+    },
+    "timing_mindset": {
+     "n": 11,
+     "share": 0.04
+    },
+    "other": {
+     "n": 11,
+     "share": 0.04
+    },
+    "platform_trust_erosion": {
+     "n": 10,
+     "share": 0.037
+    },
+    "volatility_mismatch": {
+     "n": 10,
+     "share": 0.037
+    },
+    "return_misreading": {
+     "n": 7,
+     "share": 0.026
+    },
+    "payment_plumbing": {
+     "n": 7,
+     "share": 0.026
+    },
+    "borrowed_conviction": {
+     "n": 3,
+     "share": 0.011
+    },
+    "safe_asset_benchmark": {
+     "n": 2,
+     "share": 0.007
+    },
+    "product_distrust": {
+     "n": 1,
+     "share": 0.004
+    }
+   },
+   "stop_trigger": {
+    "own_returns_negative_flat": {
+     "n": 64,
+     "share": 0.234
+    },
+    "self_review": {
+     "n": 39,
+     "share": 0.143
+    },
+    "cash_need_life_event": {
+     "n": 24,
+     "share": 0.088
+    },
+    "market_news": {
+     "n": 23,
+     "share": 0.084
+    },
+    "other": {
+     "n": 21,
+     "share": 0.077
+    },
+    "payment_failure": {
+     "n": 12,
+     "share": 0.044
+    },
+    "tax_rule_change": {
+     "n": 10,
+     "share": 0.037
+    },
+    "advice_received": {
+     "n": 9,
+     "share": 0.033
+    },
+    "charge_penalty": {
+     "n": 7,
+     "share": 0.026
+    },
+    "modify_blocked": {
+     "n": 7,
+     "share": 0.026
+    },
+    "platform_change": {
+     "n": 4,
+     "share": 0.015
+    },
+    "order_redemption_delay": {
+     "n": 3,
+     "share": 0.011
+    },
+    "support_failure": {
+     "n": 3,
+     "share": 0.011
+    },
+    "data_discrepancy": {
+     "n": 2,
+     "share": 0.007
+    }
+   },
+   "unmet_need": {
+    "portfolio_construction_help": {
+     "n": 131,
+     "share": 0.48
+    },
+    "independent_reassurance": {
+     "n": 80,
+     "share": 0.293
+    },
+    "basics_education": {
+     "n": 38,
+     "share": 0.139
+    },
+    "understand_my_returns": {
+     "n": 19,
+     "share": 0.07
+    },
+    "flexible_pause_modify": {
+     "n": 18,
+     "share": 0.066
+    },
+    "transparent_costs": {
+     "n": 13,
+     "share": 0.048
+    },
+    "reliable_payment_recovery": {
+     "n": 12,
+     "share": 0.044
+    },
+    "responsive_support": {
+     "n": 8,
+     "share": 0.029
+    },
+    "goal_linkage": {
+     "n": 7,
+     "share": 0.026
+    },
+    "other": {
+     "n": 6,
+     "share": 0.022
+    },
+    "accurate_timely_portfolio": {
+     "n": 5,
+     "share": 0.018
+    },
+    "consent_control": {
+     "n": 3,
+     "share": 0.011
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 236,
+     "share": 0.864
+    },
+    "recovery": {
+     "n": 32,
+     "share": 0.117
+    },
+    "reliability": {
+     "n": 22,
+     "share": 0.081
+    },
+    "none": {
+     "n": 6,
+     "share": 0.022
+    },
+    "activation": {
+     "n": 3,
+     "share": 0.011
+    }
+   },
+   "emotion": {
+    "neutral": {
+     "n": 109,
+     "share": 0.399
+    },
+    "confused": {
+     "n": 74,
+     "share": 0.271
+    },
+    "anxious": {
+     "n": 51,
+     "share": 0.187
+    },
+    "disappointed_regret": {
+     "n": 17,
+     "share": 0.062
+    },
+    "hopeful_excited": {
+     "n": 8,
+     "share": 0.029
+    },
+    "angry_frustrated": {
+     "n": 7,
+     "share": 0.026
+    },
+    "calm_confident": {
+     "n": 7,
+     "share": 0.026
+    }
+   },
+   "action": {
+    "restructured": {
+     "n": 98,
+     "share": 0.359
+    },
+    "considering_stop": {
+     "n": 76,
+     "share": 0.278
+    },
+    "stopped": {
+     "n": 21,
+     "share": 0.077
+    },
+    "increased": {
+     "n": 17,
+     "share": 0.062
+    },
+    "paused": {
+     "n": 17,
+     "share": 0.062
+    },
+    "switched_platform": {
+     "n": 9,
+     "share": 0.033
+    },
+    "attempted_blocked": {
+     "n": 8,
+     "share": 0.029
+    },
+    "considering_start": {
+     "n": 6,
+     "share": 0.022
+    },
+    "continued": {
+     "n": 5,
+     "share": 0.018
+    },
+    "reduced": {
+     "n": 4,
+     "share": 0.015
+    }
+   },
+   "in_app_confusion": {
+    "charges_plan_type": {
+     "n": 32,
+     "share": 0.117
+    },
+    "modify_sip": {
+     "n": 21,
+     "share": 0.077
+    },
+    "tax_withdrawal": {
+     "n": 18,
+     "share": 0.066
+    },
+    "payment_mandate_status": {
+     "n": 17,
+     "share": 0.062
+    },
+    "account_kyc_demat": {
+     "n": 12,
+     "share": 0.044
+    },
+    "order_timeline": {
+     "n": 5,
+     "share": 0.018
+    },
+    "other": {
+     "n": 3,
+     "share": 0.011
+    },
+    "navigation_ui": {
+     "n": 2,
+     "share": 0.007
+    },
+    "value_mismatch": {
+     "n": 2,
+     "share": 0.007
+    },
+    "return_figure_meaning": {
+     "n": 2,
+     "share": 0.007
+    }
+   },
+   "outside_app_workaround": {
+    "reddit_forum": {
+     "n": 84,
+     "share": 0.308
+    },
+    "creator_comment": {
+     "n": 26,
+     "share": 0.095
+    },
+    "self_research": {
+     "n": 13,
+     "share": 0.048
+    },
+    "other_platform": {
+     "n": 13,
+     "share": 0.048
+    },
+    "advisor_ca": {
+     "n": 10,
+     "share": 0.037
+    },
+    "complaint_escalation": {
+     "n": 7,
+     "share": 0.026
+    },
+    "manual_payment": {
+     "n": 6,
+     "share": 0.022
+    },
+    "family_friend": {
+     "n": 3,
+     "share": 0.011
+    },
+    "other_tracker": {
+     "n": 2,
+     "share": 0.007
+    },
+    "other": {
+     "n": 1,
+     "share": 0.004
+    }
+   },
+   "influencer_source": {
+    "advisor_distributor": {
+     "n": 28,
+     "share": 0.103
+    },
+    "self_directed": {
+     "n": 21,
+     "share": 0.077
+    },
+    "family": {
+     "n": 10,
+     "share": 0.037
+    },
+    "friend_colleague": {
+     "n": 7,
+     "share": 0.026
+    },
+    "youtube_creator": {
+     "n": 5,
+     "share": 0.018
+    },
+    "other": {
+     "n": 2,
+     "share": 0.007
+    },
+    "app_platform": {
+     "n": 1,
+     "share": 0.004
+    }
+   },
+   "stay_reason": {
+    "long_horizon_belief": {
+     "n": 4,
+     "share": 0.015
+    }
+   },
+   "stage": {
+    "12m_plus": {
+     "n": 93,
+     "share": 0.341
+    },
+    "3_12m": {
+     "n": 32,
+     "share": 0.117
+    },
+    "early_0_3m": {
+     "n": 17,
+     "share": 0.062
+    },
+    "pre_start": {
+     "n": 2,
+     "share": 0.007
+    }
+   }
+  },
+  "first_time": {
+   "n": 102,
+   "root_cause": {
+    "portfolio_rationalisation": {
+     "n": 26,
+     "share": 0.255
+    },
+    "platform_trust_erosion": {
+     "n": 15,
+     "share": 0.147
+    },
+    "payment_plumbing": {
+     "n": 11,
+     "share": 0.108
+    },
+    "cashflow_rigidity": {
+     "n": 6,
+     "share": 0.059
+    },
+    "return_misreading": {
+     "n": 6,
+     "share": 0.059
+    },
+    "expectation_violation": {
+     "n": 5,
+     "share": 0.049
+    },
+    "volatility_mismatch": {
+     "n": 4,
+     "share": 0.039
+    },
+    "timing_mindset": {
+     "n": 4,
+     "share": 0.039
+    },
+    "borrowed_conviction": {
+     "n": 2,
+     "share": 0.02
+    },
+    "product_distrust": {
+     "n": 1,
+     "share": 0.01
+    },
+    "other": {
+     "n": 1,
+     "share": 0.01
+    },
+    "safe_asset_benchmark": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "stop_trigger": {
+    "own_returns_negative_flat": {
+     "n": 18,
+     "share": 0.176
+    },
+    "payment_failure": {
+     "n": 13,
+     "share": 0.127
+    },
+    "self_review": {
+     "n": 10,
+     "share": 0.098
+    },
+    "market_news": {
+     "n": 9,
+     "share": 0.088
+    },
+    "other": {
+     "n": 8,
+     "share": 0.078
+    },
+    "advice_received": {
+     "n": 5,
+     "share": 0.049
+    },
+    "order_redemption_delay": {
+     "n": 4,
+     "share": 0.039
+    },
+    "cash_need_life_event": {
+     "n": 4,
+     "share": 0.039
+    },
+    "charge_penalty": {
+     "n": 3,
+     "share": 0.029
+    },
+    "support_failure": {
+     "n": 3,
+     "share": 0.029
+    },
+    "platform_change": {
+     "n": 2,
+     "share": 0.02
+    },
+    "modify_blocked": {
+     "n": 2,
+     "share": 0.02
+    },
+    "missing_notification": {
+     "n": 2,
+     "share": 0.02
+    },
+    "data_discrepancy": {
+     "n": 1,
+     "share": 0.01
+    },
+    "tax_rule_change": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "unmet_need": {
+    "portfolio_construction_help": {
+     "n": 41,
+     "share": 0.402
+    },
+    "independent_reassurance": {
+     "n": 28,
+     "share": 0.275
+    },
+    "basics_education": {
+     "n": 20,
+     "share": 0.196
+    },
+    "responsive_support": {
+     "n": 14,
+     "share": 0.137
+    },
+    "reliable_payment_recovery": {
+     "n": 13,
+     "share": 0.127
+    },
+    "understand_my_returns": {
+     "n": 7,
+     "share": 0.069
+    },
+    "flexible_pause_modify": {
+     "n": 7,
+     "share": 0.069
+    },
+    "transparent_costs": {
+     "n": 6,
+     "share": 0.059
+    },
+    "accurate_timely_portfolio": {
+     "n": 3,
+     "share": 0.029
+    },
+    "consent_control": {
+     "n": 2,
+     "share": 0.02
+    },
+    "other": {
+     "n": 1,
+     "share": 0.01
+    },
+    "goal_linkage": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 79,
+     "share": 0.775
+    },
+    "reliability": {
+     "n": 15,
+     "share": 0.147
+    },
+    "activation": {
+     "n": 10,
+     "share": 0.098
+    },
+    "recovery": {
+     "n": 8,
+     "share": 0.078
+    },
+    "none": {
+     "n": 2,
+     "share": 0.02
+    }
+   },
+   "emotion": {
+    "neutral": {
+     "n": 31,
+     "share": 0.304
+    },
+    "confused": {
+     "n": 27,
+     "share": 0.265
+    },
+    "anxious": {
+     "n": 18,
+     "share": 0.176
+    },
+    "angry_frustrated": {
+     "n": 16,
+     "share": 0.157
+    },
+    "disappointed_regret": {
+     "n": 6,
+     "share": 0.059
+    },
+    "hopeful_excited": {
+     "n": 4,
+     "share": 0.039
+    }
+   },
+   "action": {
+    "restructured": {
+     "n": 31,
+     "share": 0.304
+    },
+    "considering_stop": {
+     "n": 27,
+     "share": 0.265
+    },
+    "stopped": {
+     "n": 9,
+     "share": 0.088
+    },
+    "increased": {
+     "n": 6,
+     "share": 0.059
+    },
+    "attempted_blocked": {
+     "n": 4,
+     "share": 0.039
+    },
+    "switched_platform": {
+     "n": 4,
+     "share": 0.039
+    },
+    "paused": {
+     "n": 4,
+     "share": 0.039
+    },
+    "considering_start": {
+     "n": 3,
+     "share": 0.029
+    },
+    "reduced": {
+     "n": 2,
+     "share": 0.02
+    },
+    "continued": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "in_app_confusion": {
+    "payment_mandate_status": {
+     "n": 18,
+     "share": 0.176
+    },
+    "charges_plan_type": {
+     "n": 15,
+     "share": 0.147
+    },
+    "modify_sip": {
+     "n": 8,
+     "share": 0.078
+    },
+    "tax_withdrawal": {
+     "n": 8,
+     "share": 0.078
+    },
+    "order_timeline": {
+     "n": 8,
+     "share": 0.078
+    },
+    "account_kyc_demat": {
+     "n": 5,
+     "share": 0.049
+    },
+    "return_figure_meaning": {
+     "n": 2,
+     "share": 0.02
+    },
+    "navigation_ui": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "outside_app_workaround": {
+    "reddit_forum": {
+     "n": 31,
+     "share": 0.304
+    },
+    "complaint_escalation": {
+     "n": 7,
+     "share": 0.069
+    },
+    "other_platform": {
+     "n": 7,
+     "share": 0.069
+    },
+    "self_research": {
+     "n": 5,
+     "share": 0.049
+    },
+    "advisor_ca": {
+     "n": 4,
+     "share": 0.039
+    },
+    "manual_payment": {
+     "n": 3,
+     "share": 0.029
+    },
+    "creator_comment": {
+     "n": 2,
+     "share": 0.02
+    }
+   },
+   "influencer_source": {
+    "family": {
+     "n": 7,
+     "share": 0.069
+    },
+    "advisor_distributor": {
+     "n": 6,
+     "share": 0.059
+    },
+    "self_directed": {
+     "n": 6,
+     "share": 0.059
+    },
+    "friend_colleague": {
+     "n": 2,
+     "share": 0.02
+    },
+    "youtube_creator": {
+     "n": 2,
+     "share": 0.02
+    },
+    "other": {
+     "n": 1,
+     "share": 0.01
+    }
+   },
+   "stay_reason": {},
+   "stage": {
+    "3_12m": {
+     "n": 39,
+     "share": 0.382
+    },
+    "early_0_3m": {
+     "n": 29,
+     "share": 0.284
+    },
+    "12m_plus": {
+     "n": 9,
+     "share": 0.088
+    },
+    "pre_start": {
+     "n": 2,
+     "share": 0.02
+    }
+   }
+  },
+  "experienced": {
+   "n": 119,
+   "root_cause": {
+    "portfolio_rationalisation": {
+     "n": 32,
+     "share": 0.269
+    },
+    "platform_trust_erosion": {
+     "n": 19,
+     "share": 0.16
+    },
+    "payment_plumbing": {
+     "n": 11,
+     "share": 0.092
+    },
+    "other": {
+     "n": 9,
+     "share": 0.076
+    },
+    "cashflow_rigidity": {
+     "n": 9,
+     "share": 0.076
+    },
+    "expectation_violation": {
+     "n": 6,
+     "share": 0.05
+    },
+    "volatility_mismatch": {
+     "n": 4,
+     "share": 0.034
+    },
+    "timing_mindset": {
+     "n": 4,
+     "share": 0.034
+    },
+    "borrowed_conviction": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "stop_trigger": {
+    "own_returns_negative_flat": {
+     "n": 32,
+     "share": 0.269
+    },
+    "self_review": {
+     "n": 21,
+     "share": 0.176
+    },
+    "cash_need_life_event": {
+     "n": 10,
+     "share": 0.084
+    },
+    "platform_change": {
+     "n": 8,
+     "share": 0.067
+    },
+    "payment_failure": {
+     "n": 8,
+     "share": 0.067
+    },
+    "other": {
+     "n": 8,
+     "share": 0.067
+    },
+    "charge_penalty": {
+     "n": 6,
+     "share": 0.05
+    },
+    "market_news": {
+     "n": 6,
+     "share": 0.05
+    },
+    "tax_rule_change": {
+     "n": 5,
+     "share": 0.042
+    },
+    "data_discrepancy": {
+     "n": 3,
+     "share": 0.025
+    },
+    "support_failure": {
+     "n": 3,
+     "share": 0.025
+    },
+    "order_redemption_delay": {
+     "n": 2,
+     "share": 0.017
+    },
+    "advice_received": {
+     "n": 2,
+     "share": 0.017
+    },
+    "missing_notification": {
+     "n": 2,
+     "share": 0.017
+    },
+    "app_malfunction": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "unmet_need": {
+    "portfolio_construction_help": {
+     "n": 57,
+     "share": 0.479
+    },
+    "independent_reassurance": {
+     "n": 28,
+     "share": 0.235
+    },
+    "responsive_support": {
+     "n": 16,
+     "share": 0.134
+    },
+    "reliable_payment_recovery": {
+     "n": 10,
+     "share": 0.084
+    },
+    "understand_my_returns": {
+     "n": 10,
+     "share": 0.084
+    },
+    "basics_education": {
+     "n": 8,
+     "share": 0.067
+    },
+    "transparent_costs": {
+     "n": 7,
+     "share": 0.059
+    },
+    "goal_linkage": {
+     "n": 4,
+     "share": 0.034
+    },
+    "consent_control": {
+     "n": 3,
+     "share": 0.025
+    },
+    "accurate_timely_portfolio": {
+     "n": 3,
+     "share": 0.025
+    },
+    "other": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 104,
+     "share": 0.874
+    },
+    "reliability": {
+     "n": 12,
+     "share": 0.101
+    },
+    "recovery": {
+     "n": 9,
+     "share": 0.076
+    },
+    "none": {
+     "n": 3,
+     "share": 0.025
+    },
+    "activation": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "emotion": {
+    "neutral": {
+     "n": 42,
+     "share": 0.353
+    },
+    "angry_frustrated": {
+     "n": 21,
+     "share": 0.176
+    },
+    "anxious": {
+     "n": 18,
+     "share": 0.151
+    },
+    "confused": {
+     "n": 15,
+     "share": 0.126
+    },
+    "disappointed_regret": {
+     "n": 13,
+     "share": 0.109
+    },
+    "calm_confident": {
+     "n": 7,
+     "share": 0.059
+    },
+    "hopeful_excited": {
+     "n": 3,
+     "share": 0.025
+    }
+   },
+   "action": {
+    "restructured": {
+     "n": 45,
+     "share": 0.378
+    },
+    "considering_stop": {
+     "n": 32,
+     "share": 0.269
+    },
+    "stopped": {
+     "n": 12,
+     "share": 0.101
+    },
+    "increased": {
+     "n": 9,
+     "share": 0.076
+    },
+    "switched_platform": {
+     "n": 5,
+     "share": 0.042
+    },
+    "continued": {
+     "n": 4,
+     "share": 0.034
+    },
+    "paused": {
+     "n": 3,
+     "share": 0.025
+    },
+    "considering_start": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "in_app_confusion": {
+    "charges_plan_type": {
+     "n": 15,
+     "share": 0.126
+    },
+    "payment_mandate_status": {
+     "n": 10,
+     "share": 0.084
+    },
+    "tax_withdrawal": {
+     "n": 7,
+     "share": 0.059
+    },
+    "value_mismatch": {
+     "n": 5,
+     "share": 0.042
+    },
+    "account_kyc_demat": {
+     "n": 5,
+     "share": 0.042
+    },
+    "order_timeline": {
+     "n": 2,
+     "share": 0.017
+    },
+    "navigation_ui": {
+     "n": 2,
+     "share": 0.017
+    },
+    "modify_sip": {
+     "n": 1,
+     "share": 0.008
+    },
+    "other": {
+     "n": 1,
+     "share": 0.008
+    },
+    "return_figure_meaning": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "outside_app_workaround": {
+    "reddit_forum": {
+     "n": 31,
+     "share": 0.261
+    },
+    "other_platform": {
+     "n": 13,
+     "share": 0.109
+    },
+    "complaint_escalation": {
+     "n": 9,
+     "share": 0.076
+    },
+    "creator_comment": {
+     "n": 7,
+     "share": 0.059
+    },
+    "advisor_ca": {
+     "n": 5,
+     "share": 0.042
+    },
+    "self_research": {
+     "n": 4,
+     "share": 0.034
+    },
+    "manual_payment": {
+     "n": 1,
+     "share": 0.008
+    },
+    "other": {
+     "n": 1,
+     "share": 0.008
+    },
+    "family_friend": {
+     "n": 1,
+     "share": 0.008
+    },
+    "other_tracker": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "influencer_source": {
+    "advisor_distributor": {
+     "n": 18,
+     "share": 0.151
+    },
+    "self_directed": {
+     "n": 13,
+     "share": 0.109
+    },
+    "friend_colleague": {
+     "n": 4,
+     "share": 0.034
+    },
+    "app_platform": {
+     "n": 2,
+     "share": 0.017
+    },
+    "youtube_creator": {
+     "n": 2,
+     "share": 0.017
+    },
+    "family": {
+     "n": 2,
+     "share": 0.017
+    },
+    "other": {
+     "n": 1,
+     "share": 0.008
+    }
+   },
+   "stay_reason": {
+    "long_horizon_belief": {
+     "n": 4,
+     "share": 0.034
+    }
+   },
+   "stage": {
+    "12m_plus": {
+     "n": 107,
+     "share": 0.899
+    }
+   }
+  },
+  "groww": {
+   "n": 171,
+   "root_cause": {
+    "platform_trust_erosion": {
+     "n": 66,
+     "share": 0.386
+    },
+    "payment_plumbing": {
+     "n": 57,
+     "share": 0.333
+    },
+    "portfolio_rationalisation": {
+     "n": 15,
+     "share": 0.088
+    },
+    "cashflow_rigidity": {
+     "n": 5,
+     "share": 0.029
+    },
+    "other": {
+     "n": 2,
+     "share": 0.012
+    },
+    "product_distrust": {
+     "n": 1,
+     "share": 0.006
+    },
+    "return_misreading": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "stop_trigger": {
+    "payment_failure": {
+     "n": 54,
+     "share": 0.316
+    },
+    "modify_blocked": {
+     "n": 23,
+     "share": 0.135
+    },
+    "charge_penalty": {
+     "n": 21,
+     "share": 0.123
+    },
+    "order_redemption_delay": {
+     "n": 15,
+     "share": 0.088
+    },
+    "data_discrepancy": {
+     "n": 12,
+     "share": 0.07
+    },
+    "support_failure": {
+     "n": 11,
+     "share": 0.064
+    },
+    "self_review": {
+     "n": 8,
+     "share": 0.047
+    },
+    "missing_notification": {
+     "n": 8,
+     "share": 0.047
+    },
+    "other": {
+     "n": 7,
+     "share": 0.041
+    },
+    "platform_change": {
+     "n": 6,
+     "share": 0.035
+    },
+    "app_malfunction": {
+     "n": 6,
+     "share": 0.035
+    },
+    "own_returns_negative_flat": {
+     "n": 6,
+     "share": 0.035
+    },
+    "debit_after_cancel": {
+     "n": 5,
+     "share": 0.029
+    },
+    "cash_need_life_event": {
+     "n": 4,
+     "share": 0.023
+    },
+    "market_news": {
+     "n": 2,
+     "share": 0.012
+    },
+    "tax_rule_change": {
+     "n": 2,
+     "share": 0.012
+    },
+    "advice_received": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "unmet_need": {
+    "responsive_support": {
+     "n": 73,
+     "share": 0.427
+    },
+    "reliable_payment_recovery": {
+     "n": 62,
+     "share": 0.363
+    },
+    "consent_control": {
+     "n": 20,
+     "share": 0.117
+    },
+    "portfolio_construction_help": {
+     "n": 20,
+     "share": 0.117
+    },
+    "flexible_pause_modify": {
+     "n": 17,
+     "share": 0.099
+    },
+    "accurate_timely_portfolio": {
+     "n": 12,
+     "share": 0.07
+    },
+    "transparent_costs": {
+     "n": 6,
+     "share": 0.035
+    },
+    "basics_education": {
+     "n": 4,
+     "share": 0.023
+    },
+    "independent_reassurance": {
+     "n": 2,
+     "share": 0.012
+    },
+    "other": {
+     "n": 2,
+     "share": 0.012
+    },
+    "understand_my_returns": {
+     "n": 2,
+     "share": 0.012
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 95,
+     "share": 0.556
+    },
+    "reliability": {
+     "n": 86,
+     "share": 0.503
+    },
+    "activation": {
+     "n": 17,
+     "share": 0.099
+    },
+    "recovery": {
+     "n": 11,
+     "share": 0.064
+    }
+   },
+   "emotion": {
+    "angry_frustrated": {
+     "n": 95,
+     "share": 0.556
+    },
+    "neutral": {
+     "n": 22,
+     "share": 0.129
+    },
+    "confused": {
+     "n": 21,
+     "share": 0.123
+    },
+    "anxious": {
+     "n": 18,
+     "share": 0.105
+    },
+    "disappointed_regret": {
+     "n": 12,
+     "share": 0.07
+    },
+    "calm_confident": {
+     "n": 2,
+     "share": 0.012
+    },
+    "hopeful_excited": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "action": {
+    "stopped": {
+     "n": 42,
+     "share": 0.246
+    },
+    "attempted_blocked": {
+     "n": 23,
+     "share": 0.135
+    },
+    "considering_stop": {
+     "n": 21,
+     "share": 0.123
+    },
+    "switched_platform": {
+     "n": 16,
+     "share": 0.094
+    },
+    "restructured": {
+     "n": 15,
+     "share": 0.088
+    },
+    "increased": {
+     "n": 5,
+     "share": 0.029
+    },
+    "continued": {
+     "n": 2,
+     "share": 0.012
+    },
+    "paused": {
+     "n": 2,
+     "share": 0.012
+    },
+    "reduced": {
+     "n": 1,
+     "share": 0.006
+    },
+    "considering_start": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "in_app_confusion": {
+    "payment_mandate_status": {
+     "n": 67,
+     "share": 0.392
+    },
+    "modify_sip": {
+     "n": 30,
+     "share": 0.175
+    },
+    "order_timeline": {
+     "n": 25,
+     "share": 0.146
+    },
+    "charges_plan_type": {
+     "n": 16,
+     "share": 0.094
+    },
+    "account_kyc_demat": {
+     "n": 15,
+     "share": 0.088
+    },
+    "value_mismatch": {
+     "n": 13,
+     "share": 0.076
+    },
+    "tax_withdrawal": {
+     "n": 7,
+     "share": 0.041
+    },
+    "navigation_ui": {
+     "n": 4,
+     "share": 0.023
+    },
+    "return_figure_meaning": {
+     "n": 1,
+     "share": 0.006
+    },
+    "other": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "outside_app_workaround": {
+    "other_platform": {
+     "n": 28,
+     "share": 0.164
+    },
+    "complaint_escalation": {
+     "n": 19,
+     "share": 0.111
+    },
+    "reddit_forum": {
+     "n": 15,
+     "share": 0.088
+    },
+    "self_research": {
+     "n": 6,
+     "share": 0.035
+    },
+    "manual_payment": {
+     "n": 4,
+     "share": 0.023
+    },
+    "creator_comment": {
+     "n": 4,
+     "share": 0.023
+    },
+    "other_tracker": {
+     "n": 2,
+     "share": 0.012
+    },
+    "other": {
+     "n": 1,
+     "share": 0.006
+    },
+    "family_friend": {
+     "n": 1,
+     "share": 0.006
+    },
+    "advisor_ca": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "influencer_source": {
+    "self_directed": {
+     "n": 4,
+     "share": 0.023
+    },
+    "advisor_distributor": {
+     "n": 3,
+     "share": 0.018
+    },
+    "youtube_creator": {
+     "n": 3,
+     "share": 0.018
+    },
+    "app_platform": {
+     "n": 2,
+     "share": 0.012
+    },
+    "family": {
+     "n": 2,
+     "share": 0.012
+    },
+    "friend_colleague": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "stay_reason": {
+    "long_horizon_belief": {
+     "n": 1,
+     "share": 0.006
+    }
+   },
+   "stage": {
+    "12m_plus": {
+     "n": 21,
+     "share": 0.123
+    },
+    "3_12m": {
+     "n": 10,
+     "share": 0.058
+    },
+    "early_0_3m": {
+     "n": 7,
+     "share": 0.041
+    },
+    "pre_start": {
+     "n": 1,
+     "share": 0.006
+    }
+   }
+  },
+  "without_etmoney": {
+   "n": 490,
+   "root_cause": {
+    "platform_trust_erosion": {
+     "n": 117,
+     "share": 0.239
+    },
+    "payment_plumbing": {
+     "n": 99,
+     "share": 0.202
+    },
+    "portfolio_rationalisation": {
+     "n": 82,
+     "share": 0.167
+    },
+    "cashflow_rigidity": {
+     "n": 31,
+     "share": 0.063
+    },
+    "other": {
+     "n": 13,
+     "share": 0.027
+    },
+    "expectation_violation": {
+     "n": 13,
+     "share": 0.027
+    },
+    "timing_mindset": {
+     "n": 11,
+     "share": 0.022
+    },
+    "volatility_mismatch": {
+     "n": 10,
+     "share": 0.02
+    },
+    "return_misreading": {
+     "n": 7,
+     "share": 0.014
+    },
+    "borrowed_conviction": {
+     "n": 3,
+     "share": 0.006
+    },
+    "product_distrust": {
+     "n": 2,
+     "share": 0.004
+    },
+    "safe_asset_benchmark": {
+     "n": 2,
+     "share": 0.004
+    }
+   },
+   "stop_trigger": {
+    "payment_failure": {
+     "n": 100,
+     "share": 0.204
+    },
+    "own_returns_negative_flat": {
+     "n": 65,
+     "share": 0.133
+    },
+    "modify_blocked": {
+     "n": 44,
+     "share": 0.09
+    },
+    "order_redemption_delay": {
+     "n": 40,
+     "share": 0.082
+    },
+    "self_review": {
+     "n": 39,
+     "share": 0.08
+    },
+    "charge_penalty": {
+     "n": 30,
+     "share": 0.061
+    },
+    "other": {
+     "n": 28,
+     "share": 0.057
+    },
+    "cash_need_life_event": {
+     "n": 28,
+     "share": 0.057
+    },
+    "market_news": {
+     "n": 26,
+     "share": 0.053
+    },
+    "data_discrepancy": {
+     "n": 18,
+     "share": 0.037
+    },
+    "support_failure": {
+     "n": 17,
+     "share": 0.035
+    },
+    "platform_change": {
+     "n": 15,
+     "share": 0.031
+    },
+    "missing_notification": {
+     "n": 13,
+     "share": 0.027
+    },
+    "app_malfunction": {
+     "n": 13,
+     "share": 0.027
+    },
+    "tax_rule_change": {
+     "n": 10,
+     "share": 0.02
+    },
+    "advice_received": {
+     "n": 9,
+     "share": 0.018
+    },
+    "debit_after_cancel": {
+     "n": 7,
+     "share": 0.014
+    }
+   },
+   "unmet_need": {
+    "portfolio_construction_help": {
+     "n": 131,
+     "share": 0.267
+    },
+    "responsive_support": {
+     "n": 119,
+     "share": 0.243
+    },
+    "reliable_payment_recovery": {
+     "n": 109,
+     "share": 0.222
+    },
+    "independent_reassurance": {
+     "n": 80,
+     "share": 0.163
+    },
+    "flexible_pause_modify": {
+     "n": 48,
+     "share": 0.098
+    },
+    "basics_education": {
+     "n": 38,
+     "share": 0.078
+    },
+    "accurate_timely_portfolio": {
+     "n": 25,
+     "share": 0.051
+    },
+    "consent_control": {
+     "n": 23,
+     "share": 0.047
+    },
+    "transparent_costs": {
+     "n": 20,
+     "share": 0.041
+    },
+    "understand_my_returns": {
+     "n": 19,
+     "share": 0.039
+    },
+    "other": {
+     "n": 8,
+     "share": 0.016
+    },
+    "goal_linkage": {
+     "n": 7,
+     "share": 0.014
+    }
+   },
+   "metric_branch": {
+    "intent": {
+     "n": 337,
+     "share": 0.688
+    },
+    "reliability": {
+     "n": 152,
+     "share": 0.31
+    },
+    "recovery": {
+     "n": 38,
+     "share": 0.078
+    },
+    "activation": {
+     "n": 33,
+     "share": 0.067
+    },
+    "none": {
+     "n": 6,
+     "share": 0.012
+    }
+   },
+   "emotion": {
+    "angry_frustrated": {
+     "n": 173,
+     "share": 0.353
+    },
+    "neutral": {
+     "n": 118,
+     "share": 0.241
+    },
+    "confused": {
+     "n": 83,
+     "share": 0.169
+    },
+    "anxious": {
+     "n": 66,
+     "share": 0.135
+    },
+    "disappointed_regret": {
+     "n": 34,
+     "share": 0.069
+    },
+    "calm_confident": {
+     "n": 8,
+     "share": 0.016
+    },
+    "hopeful_excited": {
+     "n": 8,
+     "share": 0.016
+    }
+   },
+   "action": {
+    "restructured": {
+     "n": 100,
+     "share": 0.204
+    },
+    "considering_stop": {
+     "n": 97,
+     "share": 0.198
+    },
+    "stopped": {
+     "n": 77,
+     "share": 0.157
+    },
+    "attempted_blocked": {
+     "n": 50,
+     "share": 0.102
+    },
+    "switched_platform": {
+     "n": 28,
+     "share": 0.057
+    },
+    "paused": {
+     "n": 19,
+     "share": 0.039
+    },
+    "increased": {
+     "n": 17,
+     "share": 0.035
+    },
+    "continued": {
+     "n": 8,
+     "share": 0.016
+    },
+    "considering_start": {
+     "n": 7,
+     "share": 0.014
+    },
+    "reduced": {
+     "n": 4,
+     "share": 0.008
+    }
+   },
+   "in_app_confusion": {
+    "payment_mandate_status": {
+     "n": 118,
+     "share": 0.241
+    },
+    "modify_sip": {
+     "n": 59,
+     "share": 0.12
+    },
+    "order_timeline": {
+     "n": 49,
+     "share": 0.1
+    },
+    "charges_plan_type": {
+     "n": 47,
+     "share": 0.096
+    },
+    "account_kyc_demat": {
+     "n": 31,
+     "share": 0.063
+    },
+    "tax_withdrawal": {
+     "n": 24,
+     "share": 0.049
+    },
+    "value_mismatch": {
+     "n": 20,
+     "share": 0.041
+    },
+    "navigation_ui": {
+     "n": 12,
+     "share": 0.024
+    },
+    "other": {
+     "n": 6,
+     "share": 0.012
+    },
+    "return_figure_meaning": {
+     "n": 3,
+     "share": 0.006
+    }
+   },
+   "outside_app_workaround": {
+    "reddit_forum": {
+     "n": 84,
+     "share": 0.171
+    },
+    "other_platform": {
+     "n": 56,
+     "share": 0.114
+    },
+    "complaint_escalation": {
+     "n": 49,
+     "share": 0.1
+    },
+    "creator_comment": {
+     "n": 26,
+     "share": 0.053
+    },
+    "self_research": {
+     "n": 14,
+     "share": 0.029
+    },
+    "manual_payment": {
+     "n": 13,
+     "share": 0.027
+    },
+    "advisor_ca": {
+     "n": 10,
+     "share": 0.02
+    },
+    "family_friend": {
+     "n": 3,
+     "share": 0.006
+    },
+    "other": {
+     "n": 2,
+     "share": 0.004
+    },
+    "other_tracker": {
+     "n": 2,
+     "share": 0.004
+    }
+   },
+   "influencer_source": {
+    "advisor_distributor": {
+     "n": 28,
+     "share": 0.057
+    },
+    "self_directed": {
+     "n": 21,
+     "share": 0.043
+    },
+    "family": {
+     "n": 10,
+     "share": 0.02
+    },
+    "friend_colleague": {
+     "n": 7,
+     "share": 0.014
+    },
+    "youtube_creator": {
+     "n": 5,
+     "share": 0.01
+    },
+    "app_platform": {
+     "n": 3,
+     "share": 0.006
+    },
+    "other": {
+     "n": 2,
+     "share": 0.004
+    }
+   },
+   "stay_reason": {
+    "long_horizon_belief": {
+     "n": 4,
+     "share": 0.008
+    }
+   },
+   "stage": {
+    "12m_plus": {
+     "n": 107,
+     "share": 0.218
+    },
+    "3_12m": {
+     "n": 38,
+     "share": 0.078
+    },
+    "early_0_3m": {
+     "n": 28,
+     "share": 0.057
+    },
+    "pre_start": {
+     "n": 4,
+     "share": 0.008
+    }
+   }
+  }
+ },
+ "robustness": {
+  "root_cause": [
+   {
+    "code": "platform_trust_erosion",
+    "app_review": 0.523,
+    "community": 0.037,
+    "cross_source": false
+   },
+   {
+    "code": "payment_plumbing",
+    "app_review": 0.38,
+    "community": 0.026,
+    "cross_source": false
+   },
+   {
+    "code": "portfolio_rationalisation",
+    "app_review": 0,
+    "community": 0.3,
+    "cross_source": false
+   },
+   {
+    "code": "cashflow_rigidity",
+    "app_review": 0.007,
+    "community": 0.106,
+    "cross_source": false
+   },
+   {
+    "code": "expectation_violation",
+    "app_review": 0,
+    "community": 0.048,
+    "cross_source": false
+   },
+   {
+    "code": "timing_mindset",
+    "app_review": 0,
+    "community": 0.04,
+    "cross_source": false
+   },
+   {
+    "code": "volatility_mismatch",
+    "app_review": 0,
+    "community": 0.037,
+    "cross_source": false
+   },
+   {
+    "code": "return_misreading",
+    "app_review": 0,
+    "community": 0.026,
+    "cross_source": false
+   },
+   {
+    "code": "borrowed_conviction",
+    "app_review": 0,
+    "community": 0.011,
+    "cross_source": false
+   },
+   {
+    "code": "safe_asset_benchmark",
+    "app_review": 0,
+    "community": 0.007,
+    "cross_source": false
+   },
+   {
+    "code": "product_distrust",
+    "app_review": 0.003,
+    "community": 0.004,
+    "cross_source": false
+   }
+  ],
+  "stop_trigger": [
+   {
+    "code": "payment_failure",
+    "app_review": 0.337,
+    "community": 0.044,
+    "cross_source": false
+   },
+   {
+    "code": "own_returns_negative_flat",
+    "app_review": 0.003,
+    "community": 0.234,
+    "cross_source": false
+   },
+   {
+    "code": "modify_blocked",
+    "app_review": 0.147,
+    "community": 0.026,
+    "cross_source": false
+   },
+   {
+    "code": "order_redemption_delay",
+    "app_review": 0.15,
+    "community": 0.011,
+    "cross_source": false
+   },
+   {
+    "code": "platform_change",
+    "app_review": 0.13,
+    "community": 0.015,
+    "cross_source": false
+   },
+   {
+    "code": "self_review",
+    "app_review": 0,
+    "community": 0.143,
+    "cross_source": false
+   },
+   {
+    "code": "charge_penalty",
+    "app_review": 0.103,
+    "community": 0.026,
+    "cross_source": false
+   },
+   {
+    "code": "cash_need_life_event",
+    "app_review": 0.013,
+    "community": 0.088,
+    "cross_source": false
+   },
+   {
+    "code": "market_news",
+    "app_review": 0.01,
+    "community": 0.084,
+    "cross_source": false
+   },
+   {
+    "code": "data_discrepancy",
+    "app_review": 0.08,
+    "community": 0.007,
+    "cross_source": false
+   },
+   {
+    "code": "support_failure",
+    "app_review": 0.057,
+    "community": 0.011,
+    "cross_source": false
+   },
+   {
+    "code": "missing_notification",
+    "app_review": 0.057,
+    "community": 0,
+    "cross_source": false
+   }
+  ],
+  "unmet_need": [
+   {
+    "code": "responsive_support",
+    "app_review": 0.477,
+    "community": 0.029,
+    "cross_source": false
+   },
+   {
+    "code": "portfolio_construction_help",
+    "app_review": 0,
+    "community": 0.48,
+    "cross_source": false
+   },
+   {
+    "code": "reliable_payment_recovery",
+    "app_review": 0.393,
+    "community": 0.044,
+    "cross_source": false
+   },
+   {
+    "code": "independent_reassurance",
+    "app_review": 0,
+    "community": 0.293,
+    "cross_source": false
+   },
+   {
+    "code": "flexible_pause_modify",
+    "app_review": 0.137,
+    "community": 0.066,
+    "cross_source": false
+   },
+   {
+    "code": "basics_education",
+    "app_review": 0.003,
+    "community": 0.139,
+    "cross_source": false
+   },
+   {
+    "code": "accurate_timely_portfolio",
+    "app_review": 0.097,
+    "community": 0.018,
+    "cross_source": false
+   },
+   {
+    "code": "transparent_costs",
+    "app_review": 0.067,
+    "community": 0.048,
+    "cross_source": false
+   },
+   {
+    "code": "consent_control",
+    "app_review": 0.09,
+    "community": 0.011,
+    "cross_source": false
+   },
+   {
+    "code": "understand_my_returns",
+    "app_review": 0,
+    "community": 0.07,
+    "cross_source": false
+   },
+   {
+    "code": "goal_linkage",
+    "app_review": 0,
+    "community": 0.026,
+    "cross_source": false
+   }
+  ]
+ },
+ "stayed": {
+  "n": 147,
+  "root_cause": {
+   "portfolio_rationalisation": {
+    "n": 15,
+    "share": 0.102
+   },
+   "volatility_mismatch": {
+    "n": 8,
+    "share": 0.054
+   },
+   "borrowed_conviction": {
+    "n": 4,
+    "share": 0.027
+   },
+   "cashflow_rigidity": {
+    "n": 4,
+    "share": 0.027
+   },
+   "expectation_violation": {
+    "n": 4,
+    "share": 0.027
+   },
+   "platform_trust_erosion": {
+    "n": 2,
+    "share": 0.014
+   },
+   "other": {
+    "n": 2,
+    "share": 0.014
+   },
+   "timing_mindset": {
+    "n": 1,
+    "share": 0.007
+   },
+   "safe_asset_benchmark": {
+    "n": 1,
+    "share": 0.007
+   },
+   "return_misreading": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "stop_trigger": {
+   "own_returns_negative_flat": {
+    "n": 30,
+    "share": 0.204
+   },
+   "self_review": {
+    "n": 6,
+    "share": 0.041
+   },
+   "other": {
+    "n": 5,
+    "share": 0.034
+   },
+   "cash_need_life_event": {
+    "n": 3,
+    "share": 0.02
+   },
+   "tax_rule_change": {
+    "n": 3,
+    "share": 0.02
+   },
+   "platform_change": {
+    "n": 2,
+    "share": 0.014
+   },
+   "market_news": {
+    "n": 2,
+    "share": 0.014
+   },
+   "advice_received": {
+    "n": 2,
+    "share": 0.014
+   },
+   "modify_blocked": {
+    "n": 1,
+    "share": 0.007
+   },
+   "order_redemption_delay": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "unmet_need": {
+   "portfolio_construction_help": {
+    "n": 71,
+    "share": 0.483
+   },
+   "understand_my_returns": {
+    "n": 24,
+    "share": 0.163
+   },
+   "independent_reassurance": {
+    "n": 22,
+    "share": 0.15
+   },
+   "basics_education": {
+    "n": 5,
+    "share": 0.034
+   },
+   "goal_linkage": {
+    "n": 4,
+    "share": 0.027
+   },
+   "flexible_pause_modify": {
+    "n": 3,
+    "share": 0.02
+   },
+   "other": {
+    "n": 2,
+    "share": 0.014
+   },
+   "consent_control": {
+    "n": 1,
+    "share": 0.007
+   },
+   "responsive_support": {
+    "n": 1,
+    "share": 0.007
+   },
+   "accurate_timely_portfolio": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "metric_branch": {
+   "intent": {
+    "n": 141,
+    "share": 0.959
+   },
+   "recovery": {
+    "n": 11,
+    "share": 0.075
+   },
+   "reliability": {
+    "n": 3,
+    "share": 0.02
+   },
+   "none": {
+    "n": 2,
+    "share": 0.014
+   }
+  },
+  "emotion": {
+   "calm_confident": {
+    "n": 50,
+    "share": 0.34
+   },
+   "neutral": {
+    "n": 44,
+    "share": 0.299
+   },
+   "anxious": {
+    "n": 25,
+    "share": 0.17
+   },
+   "confused": {
+    "n": 13,
+    "share": 0.088
+   },
+   "disappointed_regret": {
+    "n": 6,
+    "share": 0.041
+   },
+   "angry_frustrated": {
+    "n": 5,
+    "share": 0.034
+   },
+   "hopeful_excited": {
+    "n": 4,
+    "share": 0.027
+   }
+  },
+  "action": {
+   "increased": {
+    "n": 63,
+    "share": 0.429
+   },
+   "continued": {
+    "n": 48,
+    "share": 0.327
+   },
+   "considering_stop": {
+    "n": 20,
+    "share": 0.136
+   },
+   "restructured": {
+    "n": 5,
+    "share": 0.034
+   },
+   "paused": {
+    "n": 3,
+    "share": 0.02
+   },
+   "nearly_stopped": {
+    "n": 2,
+    "share": 0.014
+   },
+   "considering_start": {
+    "n": 1,
+    "share": 0.007
+   },
+   "stopped": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "in_app_confusion": {
+   "modify_sip": {
+    "n": 4,
+    "share": 0.027
+   },
+   "account_kyc_demat": {
+    "n": 2,
+    "share": 0.014
+   },
+   "navigation_ui": {
+    "n": 1,
+    "share": 0.007
+   },
+   "other": {
+    "n": 1,
+    "share": 0.007
+   },
+   "return_figure_meaning": {
+    "n": 1,
+    "share": 0.007
+   },
+   "order_timeline": {
+    "n": 1,
+    "share": 0.007
+   },
+   "tax_withdrawal": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "outside_app_workaround": {
+   "reddit_forum": {
+    "n": 48,
+    "share": 0.327
+   },
+   "self_research": {
+    "n": 6,
+    "share": 0.041
+   },
+   "other_tracker": {
+    "n": 3,
+    "share": 0.02
+   },
+   "creator_comment": {
+    "n": 1,
+    "share": 0.007
+   },
+   "other": {
+    "n": 1,
+    "share": 0.007
+   },
+   "family_friend": {
+    "n": 1,
+    "share": 0.007
+   },
+   "other_platform": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "influencer_source": {
+   "self_directed": {
+    "n": 15,
+    "share": 0.102
+   },
+   "friend_colleague": {
+    "n": 5,
+    "share": 0.034
+   },
+   "family": {
+    "n": 3,
+    "share": 0.02
+   },
+   "other": {
+    "n": 3,
+    "share": 0.02
+   },
+   "advisor_distributor": {
+    "n": 2,
+    "share": 0.014
+   },
+   "youtube_creator": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "stay_reason": {
+   "long_horizon_belief": {
+    "n": 32,
+    "share": 0.218
+   },
+   "goal_linked": {
+    "n": 10,
+    "share": 0.068
+   },
+   "averaging_understanding": {
+    "n": 9,
+    "share": 0.061
+   },
+   "other": {
+    "n": 9,
+    "share": 0.061
+   },
+   "past_recovery_seen": {
+    "n": 5,
+    "share": 0.034
+   },
+   "automation_inertia": {
+    "n": 1,
+    "share": 0.007
+   }
+  },
+  "stage": {
+   "12m_plus": {
+    "n": 91,
+    "share": 0.619
+   },
+   "3_12m": {
+    "n": 19,
+    "share": 0.129
+   },
+   "early_0_3m": {
+    "n": 3,
+    "share": 0.02
+   },
+   "pre_start": {
+    "n": 1,
+    "share": 0.007
+   }
+  }
+ },
+ "stayed_vs_dropoff": {
+  "emotion": [
+   {
+    "code": "angry_frustrated",
+    "dropoff": 0.429,
+    "stayed": 0.034,
+    "diff": -0.395
+   },
+   {
+    "code": "calm_confident",
+    "dropoff": 0.014,
+    "stayed": 0.34,
+    "diff": 0.326
+   },
+   {
+    "code": "neutral",
+    "dropoff": 0.208,
+    "stayed": 0.299,
+    "diff": 0.091
+   },
+   {
+    "code": "confused",
+    "dropoff": 0.148,
+    "stayed": 0.088,
+    "diff": -0.06
+   },
+   {
+    "code": "anxious",
+    "dropoff": 0.119,
+    "stayed": 0.17,
+    "diff": 0.051
+   },
+   {
+    "code": "disappointed_regret",
+    "dropoff": 0.068,
+    "stayed": 0.041,
+    "diff": -0.027
+   }
+  ],
+  "influencer_source": [
+   {
+    "code": "self_directed",
+    "dropoff": 0.037,
+    "stayed": 0.102,
+    "diff": 0.065
+   },
+   {
+    "code": "advisor_distributor",
+    "dropoff": 0.049,
+    "stayed": 0.014,
+    "diff": -0.035
+   },
+   {
+    "code": "friend_colleague",
+    "dropoff": 0.012,
+    "stayed": 0.034,
+    "diff": 0.022
+   },
+   {
+    "code": "other",
+    "dropoff": 0.003,
+    "stayed": 0.02,
+    "diff": 0.017
+   },
+   {
+    "code": "app_platform",
+    "dropoff": 0.005,
+    "stayed": 0,
+    "diff": -0.005
+   },
+   {
+    "code": "family",
+    "dropoff": 0.017,
+    "stayed": 0.02,
+    "diff": 0.003
+   }
+  ],
+  "stage": [
+   {
+    "code": "12m_plus",
+    "dropoff": 0.206,
+    "stayed": 0.619,
+    "diff": 0.413
+   },
+   {
+    "code": "3_12m",
+    "dropoff": 0.068,
+    "stayed": 0.129,
+    "diff": 0.061
+   },
+   {
+    "code": "early_0_3m",
+    "dropoff": 0.051,
+    "stayed": 0.02,
+    "diff": -0.031
+   },
+   {
+    "code": "pre_start",
+    "dropoff": 0.007,
+    "stayed": 0.007,
+    "diff": 0.0
+   }
+  ],
+  "metric_branch": [
+   {
+    "code": "reliability",
+    "dropoff": 0.332,
+    "stayed": 0.02,
+    "diff": -0.312
+   },
+   {
+    "code": "intent",
+    "dropoff": 0.681,
+    "stayed": 0.959,
+    "diff": 0.278
+   },
+   {
+    "code": "activation",
+    "dropoff": 0.066,
+    "stayed": 0,
+    "diff": -0.066
+   },
+   {
+    "code": "recovery",
+    "dropoff": 0.068,
+    "stayed": 0.075,
+    "diff": 0.007
+   },
+   {
+    "code": "none",
+    "dropoff": 0.01,
+    "stayed": 0.014,
+    "diff": 0.004
+   }
+  ],
+  "checking_behaviour": [
+   {
+    "code": "xirr",
+    "dropoff": 0.03,
+    "stayed": 0.224,
+    "diff": 0.194
+   },
+   {
+    "code": "transaction_status",
+    "dropoff": 0.143,
+    "stayed": 0,
+    "diff": -0.143
+   },
+   {
+    "code": "current_value_amount",
+    "dropoff": 0.051,
+    "stayed": 0.116,
+    "diff": 0.065
+   },
+   {
+    "code": "returns_pct",
+    "dropoff": 0.037,
+    "stayed": 0.054,
+    "diff": 0.017
+   },
+   {
+    "code": "fund_level_returns",
+    "dropoff": 0.005,
+    "stayed": 0.02,
+    "diff": 0.015
+   },
+   {
+    "code": "avoids_checking",
+    "dropoff": 0,
+    "stayed": 0.014,
+    "diff": 0.014
+   }
+  ],
+  "expectation": [
+   {
+    "code": "long_term_volatility_accepted",
+    "dropoff": 0.009,
+    "stayed": 0.156,
+    "diff": 0.147
+   },
+   {
+    "code": "specific_return_target",
+    "dropoff": 0.007,
+    "stayed": 0.034,
+    "diff": 0.027
+   },
+   {
+    "code": "steady_growth",
+    "dropoff": 0.003,
+    "stayed": 0.02,
+    "diff": 0.017
+   },
+   {
+    "code": "beat_safe_asset",
+    "dropoff": 0,
+    "stayed": 0.007,
+    "diff": 0.007
+   }
+  ]
+ },
+ "unmet_needs": [
+  {
+   "need": "responsive_support",
+   "stories": 151,
+   "share": 0.264,
+   "exit_rate": 0.4,
+   "first_time": 14,
+   "community": 8,
+   "quotes": [
+    {
+     "id": "rd_1ij58oo",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "how our system work"
+    },
+    {
+     "id": "tq_129443",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "by mistake I have started an SIP offline (not via coin but kept the same folio number F1 which is a demat folio)"
+    },
+    {
+     "id": "tq_42210",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "Due to this, i have stopped doing investment through Coin as i don’t want money redeem through cheque."
+    }
+   ]
+  },
+  {
+   "need": "portfolio_construction_help",
+   "stories": 131,
+   "share": 0.229,
+   "exit_rate": 0.02,
+   "first_time": 41,
+   "community": 131,
+   "quotes": [
+    {
+     "id": "rd_1nw9aiw",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Not sure what's wrong, think I'll be underperforming."
+    },
+    {
+     "id": "rd_1nzai2d",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "carelessly invested in some randoms"
+    },
+    {
+     "id": "tq_35124",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I don’t want to incur any short term capital gains tax/exit load but want to shift to the direct plan"
+    }
+   ]
+  },
+  {
+   "need": "reliable_payment_recovery",
+   "stories": 130,
+   "share": 0.227,
+   "exit_rate": 0.15,
+   "first_time": 13,
+   "community": 12,
+   "quotes": [
+    {
+     "id": "rd_1wywyl7",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "More than enough funds in the bank account"
+    },
+    {
+     "id": "rd_1nx6cxd",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "for each bounce of tnx , they charge 500 + gst"
+    },
+    {
+     "id": "tq_104289",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "then how come my SIP from coins got cancelled today"
+    }
+   ]
+  },
+  {
+   "need": "independent_reassurance",
+   "stories": 80,
+   "share": 0.14,
+   "exit_rate": 0.04,
+   "first_time": 28,
+   "community": 80,
+   "quotes": [
+    {
+     "id": "rd_1o4yt15",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+    },
+    {
+     "id": "rd_1r1p6dz",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+    },
+    {
+     "id": "rd_1gbwaij",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I stopped 3k sip in Quant small cap this month, since market is falling, I'm thinking of stopping sip in hdfc mid cap and increasing the amount in icici bluechip"
+    }
+   ]
+  },
+  {
+   "need": "flexible_pause_modify",
+   "stories": 59,
+   "share": 0.103,
+   "exit_rate": 0.14,
+   "first_time": 7,
+   "community": 18,
+   "quotes": [
+    {
+     "id": "yt_Ugz2dzr-CDboA5dpQ-R4AaABAg.9QkRPXCpeO-9TKLmCeFBOy",
+     "source": "youtube",
+     "app": null,
+     "group": "first_time",
+     "quote": "so lots of spend to buy gift and cloths so the month will be tight"
+    },
+    {
+     "id": "tq_141049",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "against my SIP fund it shows only delete button, Pause & Edit button are not available."
+    },
+    {
+     "id": "tq_136239",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "should I pause or exit the investment"
+    }
+   ]
+  },
+  {
+   "need": "basics_education",
+   "stories": 39,
+   "share": 0.068,
+   "exit_rate": 0.21,
+   "first_time": 20,
+   "community": 38,
+   "quotes": [
+    {
+     "id": "tq_91562",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "i just mentioned the minimum amount of 1300 to buy some units, but as i saw now it has debited the 5000 amount"
+    },
+    {
+     "id": "tq_35785",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "So stopped SIP for Regular fund and Created new SIP on Direct fund."
+    },
+    {
+     "id": "tq_309573",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+    }
+   ]
+  },
+  {
+   "need": "accurate_timely_portfolio",
+   "stories": 34,
+   "share": 0.059,
+   "exit_rate": 0.41,
+   "first_time": 3,
+   "community": 5,
+   "quotes": [
+    {
+     "id": "tq_91562",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "i just mentioned the minimum amount of 1300 to buy some units, but as i saw now it has debited the 5000 amount"
+    },
+    {
+     "id": "tq_309573",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+    },
+    {
+     "id": "tq_129443",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "by mistake I have started an SIP offline (not via coin but kept the same folio number F1 which is a demat folio)"
+    }
+   ]
+  },
+  {
+   "need": "transparent_costs",
+   "stories": 33,
+   "share": 0.058,
+   "exit_rate": 0.3,
+   "first_time": 6,
+   "community": 13,
+   "quotes": [
+    {
+     "id": "tq_45536",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I now wish to stop investing in the regular plan and start investing in direct plan via Coin, but in the same fund"
+    },
+    {
+     "id": "rd_1t0deqa",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "1 yr investing via advisor (regular plans). Returns lagging market."
+    },
+    {
+     "id": "rd_1opqstb",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "when I started my SIPs, I didn't know the difference between regular and direct plans, so I'll soon be moving to a broker that has direct funds"
+    }
+   ]
+  },
+  {
+   "need": "consent_control",
+   "stories": 30,
+   "share": 0.052,
+   "exit_rate": 0.47,
+   "first_time": 2,
+   "community": 3,
+   "quotes": [
+    {
+     "id": "yt_UgxJ8DD0QssQhCfdaSh4AaABAg",
+     "source": "youtube",
+     "app": null,
+     "group": "unknown",
+     "quote": "maine SIP last month cancel kar dii thi but fir bhi 2 baar charge cut gya"
+    },
+    {
+     "id": "ps_2a135903-f6a7-4a6c-baaa-ec02de16dad6",
+     "source": "playstore",
+     "app": "groww",
+     "group": "first_time",
+     "quote": "mere bina permission ke mutual funds mai paisa chala jata hai"
+    },
+    {
+     "id": "ps_8c053f95-64ae-46f8-b06f-ac3ac3426f25",
+     "source": "playstore",
+     "app": "etmoney",
+     "group": "unknown",
+     "quote": "they fool their customers by complex policies which ultimately cancels out there ongoing MF"
+    }
+   ]
+  },
+  {
+   "need": "understand_my_returns",
+   "stories": 19,
+   "share": 0.033,
+   "exit_rate": 0.0,
+   "first_time": 7,
+   "community": 19,
+   "quotes": [
+    {
+     "id": "rd_1nw9aiw",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Not sure what's wrong, think I'll be underperforming."
+    },
+    {
+     "id": "rd_1ikllgp",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "But these are getting down and down"
+    },
+    {
+     "id": "rd_1j1iyb5",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "these past few months, I have been constantly losing money"
+    }
+   ]
+  },
+  {
+   "need": "goal_linkage",
+   "stories": 7,
+   "share": 0.012,
+   "exit_rate": 0.0,
+   "first_time": 1,
+   "community": 7,
+   "quotes": [
+    {
+     "id": "rd_1ur408l",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I cancelled SIPs in them them and have boiled downto these options"
+    },
+    {
+     "id": "rd_1wlfexw",
+     "source": "reddit",
+     "app": null,
+     "group": "experienced",
+     "quote": "I've since stopped the debt-fund SIPs and am now separating my long-term investments from my short-term goals."
+    },
+    {
+     "id": "rd_1iwb83s",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "I have no options but to opt new tax regime, I was wondering if I shall continue my ELSS in Axis and ICICI(yes I have two) or cancel it soon"
+    }
+   ]
+  }
+ ],
+ "examples": {
+  "root_cause": {
+   "platform_trust_erosion": [
+    {
+     "id": "rd_1ij58oo",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "how our system work"
+    },
+    {
+     "id": "rd_1nx6cxd",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "for each bounce of tnx , they charge 500 + gst"
+    },
+    {
+     "id": "tq_42210",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "Due to this, i have stopped doing investment through Coin as i don’t want money redeem through cheque."
+    }
+   ],
+   "payment_plumbing": [
+    {
+     "id": "rd_1wywyl7",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "More than enough funds in the bank account"
+    },
+    {
+     "id": "tq_104289",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "then how come my SIP from coins got cancelled today"
+    },
+    {
+     "id": "yt_Ugx-MEeQwhMfcGC1jr54AaABAg",
+     "source": "youtube",
+     "app": null,
+     "group": "unknown",
+     "quote": "one sip missed from bank account deducted 474 rupees"
+    }
+   ],
+   "portfolio_rationalisation": [
+    {
+     "id": "rd_1nzai2d",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "carelessly invested in some randoms"
+    },
+    {
+     "id": "tq_35124",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I don’t want to incur any short term capital gains tax/exit load but want to shift to the direct plan"
+    },
+    {
+     "id": "tq_45536",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I now wish to stop investing in the regular plan and start investing in direct plan via Coin, but in the same fund"
+    }
+   ],
+   "cashflow_rigidity": [
+    {
+     "id": "rd_1o4yt15",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+    },
+    {
+     "id": "yt_Ugz2dzr-CDboA5dpQ-R4AaABAg.9QkRPXCpeO-9TKLmCeFBOy",
+     "source": "youtube",
+     "app": null,
+     "group": "first_time",
+     "quote": "so lots of spend to buy gift and cloths so the month will be tight"
+    },
+    {
+     "id": "rd_1po99to",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "having money issues I'm likely thinking of exit after 3yrs"
+    }
+   ],
+   "expectation_violation": [
+    {
+     "id": "rd_1vayde3",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Decided to cancel the SIP installment for August and September because of the negative returns."
+    },
+    {
+     "id": "rd_1keaipi",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I also haven't been seeing good returns on them for the past 6 months"
+    },
+    {
+     "id": "rd_1ly2fy2",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "investing since 1 year but there is no expected return"
+    }
+   ],
+   "timing_mindset": [
+    {
+     "id": "bl_jagoinvestor_34227",
+     "source": "blog",
+     "app": null,
+     "group": "first_time",
+     "quote": "I do not know what will be market on 7th of every month, and so I observe the market and purchase when the market is down"
+    },
+    {
+     "id": "rd_1t9cqg6",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "should pause the investments and start again maybe once things get better geopolitics wise"
+    },
+    {
+     "id": "rd_1gbq6rb",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "many people on this sub suggested that market is at peak and dip is waiting to happen"
+    }
+   ],
+   "volatility_mismatch": [
+    {
+     "id": "rd_1gbwaij",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I stopped 3k sip in Quant small cap this month, since market is falling, I'm thinking of stopping sip in hdfc mid cap and increasing the amount in icici bluechip"
+    },
+    {
+     "id": "rd_1hrscaa",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I have stopped all SIPs since last three months(oct 24) as the market is so volatile"
+    },
+    {
+     "id": "rd_1hvjijg",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "have fallen poorly and I have redeemed most of them"
+    }
+   ],
+   "return_misreading": [
+    {
+     "id": "rd_1gx0g0o",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Initially, I was seeing returns of around ₹20k, but now the returns have dropped to ₹9k"
+    },
+    {
+     "id": "rd_1qmz7fi",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "all red as a beginner i haven't seen this fall for a continuous 5 days now"
+    },
+    {
+     "id": "rd_1sor4lx",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Total returns so far are only around ₹452, which feels quite low considering the time invested"
+    }
+   ]
+  },
+  "stop_trigger": {
+   "payment_failure": [
+    {
+     "id": "rd_1wywyl7",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "More than enough funds in the bank account"
+    },
+    {
+     "id": "yt_Ugw9Ew1MTKZhiXV9-8h4AaABAg",
+     "source": "youtube",
+     "app": null,
+     "group": "unknown",
+     "quote": "I missed it due to insufficient balance"
+    },
+    {
+     "id": "tq_104289",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "then how come my SIP from coins got cancelled today"
+    }
+   ],
+   "own_returns_negative_flat": [
+    {
+     "id": "rd_1nw9aiw",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Not sure what's wrong, think I'll be underperforming."
+    },
+    {
+     "id": "rd_1ikllgp",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "But these are getting down and down"
+    },
+    {
+     "id": "rd_1j1iyb5",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "these past few months, I have been constantly losing money"
+    }
+   ],
+   "modify_blocked": [
+    {
+     "id": "tq_141049",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "against my SIP fund it shows only delete button, Pause & Edit button are not available."
+    },
+    {
+     "id": "tq_39941",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "I cannot delete one of the ongoing SIP in regular plan so as an alternate i have paused the same"
+    },
+    {
+     "id": "tq_42167",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "I want to delete them and then put the money in some other MF SIPs. For now I have paused them. But when I am trying to delete them, it gives a message - Failed to Delete"
+    }
+   ],
+   "order_redemption_delay": [
+    {
+     "id": "tq_42210",
+     "source": "tradingqna",
+     "app": null,
+     "group": "unknown",
+     "quote": "Due to this, i have stopped doing investment through Coin as i don’t want money redeem through cheque."
+    },
+    {
+     "id": "yt_Ugw1f0HAlteq04me_Od4AaABAg",
+     "source": "youtube",
+     "app": null,
+     "group": "unknown",
+     "quote": "withdrawal kr liya 2 months ho gye but mera pesa nhi aaya hai"
+    },
+    {
+     "id": "rd_1icnq7r",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "Received SMS confirmation before 2:30 PM, yet was allotted units as per the next day NAV"
+    }
+   ],
+   "platform_change": [
+    {
+     "id": "tq_35785",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "So stopped SIP for Regular fund and Created new SIP on Direct fund."
+    },
+    {
+     "id": "rd_1uy4gex",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "They asked me to stop my SIPs."
+    },
+    {
+     "id": "rd_1m0lwt6",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "I had opted out of the switching of the folios from SoA to Demat"
+    }
+   ],
+   "self_review": [
+    {
+     "id": "rd_1r1p6dz",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+    },
+    {
+     "id": "tq_309573",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+    },
+    {
+     "id": "tq_309126",
+     "source": "tradingqna",
+     "app": null,
+     "group": "first_time",
+     "quote": "invested rather randomly without any thoughts"
+    }
+   ],
+   "charge_penalty": [
+    {
+     "id": "rd_1lcmdj9",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "Only recently I found out it’s Regular plan not Direct."
+    },
+    {
+     "id": "rd_1v7rfa5",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "want to pay the higher expense ratio to them if I could do it myself"
+    },
+    {
+     "id": "rd_1nx6cxd",
+     "source": "reddit",
+     "app": null,
+     "group": "unknown",
+     "quote": "for each bounce of tnx , they charge 500 + gst"
+    }
+   ],
+   "cash_need_life_event": [
+    {
+     "id": "rd_1po99to",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "having money issues I'm likely thinking of exit after 3yrs"
+    },
+    {
+     "id": "rd_1re6v3o",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "paused after 2 months because of too much expenses"
+    },
+    {
+     "id": "rd_1ux79ul",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I did have to skip my SIP in June because of family and upcoming wedding-related expenses"
+    }
+   ]
+  },
+  "stay_reason": {
+   "long_horizon_belief": [
+    {
+     "id": "rd_1q693d2",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "actually got mislead by an agent"
+    },
+    {
+     "id": "rd_1q8k1hg",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I thought that with nearly 2 years i would have something to show atleast"
+    },
+    {
+     "id": "rd_1q8k6pu",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I thought that with nearly 2 years i would have something to show atleast"
+    }
+   ],
+   "goal_linked": [
+    {
+     "id": "rd_1kmge7e",
+     "source": "reddit",
+     "app": null,
+     "group": "experienced",
+     "quote": "Unknowingly at the beginning I invested through PhonePe almost 30k into regular funds"
+    }
+   ],
+   "averaging_understanding": [
+    {
+     "id": "rd_1q8k1hg",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I thought that with nearly 2 years i would have something to show atleast"
+    },
+    {
+     "id": "rd_1q8k6pu",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "I thought that with nearly 2 years i would have something to show atleast"
+    },
+    {
+     "id": "rd_1raweh6",
+     "source": "reddit",
+     "app": null,
+     "group": "first_time",
+     "quote": "So give your suggestion, what will you if you are at my condition."
+    }
+   ],
+   "past_recovery_seen": [],
+   "automation_inertia": []
+  }
+ },
+ "questions": {
+  "q1_start_expect": {
+   "question": "Why do people start a SIP, and what do they expect to happen?",
+   "fields": {
+    "start_motivation": {
+     "n": 420,
+     "strength": "strong",
+     "all": {
+      "specific_goal": {
+       "n": 190,
+       "share": 0.452
+      },
+      "wealth_returns": {
+       "n": 132,
+       "share": 0.314
+      },
+      "family_friend_push": {
+       "n": 65,
+       "share": 0.155
+      },
+      "saving_discipline": {
+       "n": 38,
+       "share": 0.09
+      },
+      "learning_experiment": {
+       "n": 27,
+       "share": 0.064
+      },
+      "tax_saving": {
+       "n": 23,
+       "share": 0.055
+      },
+      "creator_push": {
+       "n": 8,
+       "share": 0.019
+      },
+      "app_ease": {
+       "n": 6,
+       "share": 0.014
+      }
+     },
+     "stayed": {
+      "specific_goal": {
+       "n": 43,
+       "share": 0.462
+      },
+      "wealth_returns": {
+       "n": 32,
+       "share": 0.344
+      },
+      "saving_discipline": {
+       "n": 15,
+       "share": 0.161
+      },
+      "family_friend_push": {
+       "n": 12,
+       "share": 0.129
+      },
+      "tax_saving": {
+       "n": 5,
+       "share": 0.054
+      },
+      "learning_experiment": {
+       "n": 3,
+       "share": 0.032
+      },
+      "creator_push": {
+       "n": 1,
+       "share": 0.011
+      }
+     },
+     "left_or_wobbling": {
+      "specific_goal": {
+       "n": 26,
+       "share": 0.426
+      },
+      "wealth_returns": {
+       "n": 15,
+       "share": 0.246
+      },
+      "family_friend_push": {
+       "n": 15,
+       "share": 0.246
+      },
+      "learning_experiment": {
+       "n": 4,
+       "share": 0.066
+      },
+      "saving_discipline": {
+       "n": 3,
+       "share": 0.049
+      },
+      "app_ease": {
+       "n": 3,
+       "share": 0.049
+      },
+      "creator_push": {
+       "n": 3,
+       "share": 0.049
+      },
+      "tax_saving": {
+       "n": 3,
+       "share": 0.049
+      }
+     },
+     "first_time": {
+      "wealth_returns": {
+       "n": 62,
+       "share": 0.385
+      },
+      "specific_goal": {
+       "n": 60,
+       "share": 0.373
+      },
+      "family_friend_push": {
+       "n": 32,
+       "share": 0.199
+      },
+      "learning_experiment": {
+       "n": 15,
+       "share": 0.093
+      },
+      "saving_discipline": {
+       "n": 14,
+       "share": 0.087
+      },
+      "app_ease": {
+       "n": 4,
+       "share": 0.025
+      },
+      "creator_push": {
+       "n": 3,
+       "share": 0.019
+      },
+      "tax_saving": {
+       "n": 3,
+       "share": 0.019
+      }
+     },
+     "quotes": {
+      "specific_goal": [
+       {
+        "id": "rd_1nzai2d",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "carelessly invested in some randoms"
+       },
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       }
+      ],
+      "wealth_returns": [
+       {
+        "id": "rd_1nzai2d",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "carelessly invested in some randoms"
+       },
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1i3h8fi",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I used to invest heavily in small cap and it was going good until 6 months ago where I learned the importance of index funds the hard way"
+       }
+      ],
+      "family_friend_push": [
+       {
+        "id": "rd_1lcmdj9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Only recently I found out it’s Regular plan not Direct."
+       },
+       {
+        "id": "rd_1oydcw6",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I’m thinking of stopping the SIPs in the Regular plans and starting new SIPs in Direct plans on my own"
+       },
+       {
+        "id": "rd_1v7rfa5",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "want to pay the higher expense ratio to them if I could do it myself"
+       }
+      ],
+      "saving_discipline": [
+       {
+        "id": "bl_jagoinvestor_369816",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "Sometimes I will end up buying things in credit card sinceI know that if any thing goes wrong I can redeem that extra margin of safety"
+       },
+       {
+        "id": "rd_1re6v3o",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "paused after 2 months because of too much expenses"
+       },
+       {
+        "id": "rd_1ux79ul",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I did have to skip my SIP in June because of family and upcoming wedding-related expenses"
+       }
+      ],
+      "learning_experiment": [
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1kzxprd",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Had no knowledge of what mutual funds was back then. Watched a few videos and went through few articles"
+       },
+       {
+        "id": "rd_1p5hsfa",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I just want to start small with SIPs in the ₹1k–₹5k range and learn properly while investing."
+       }
+      ],
+      "tax_saving": [
+       {
+        "id": "rd_1jbmwse",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I wanted to start investing due to tax relief and expected salary hikes"
+       },
+       {
+        "id": "rd_1jacfx3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "With the changes in the tax regime I am now considering the change"
+       },
+       {
+        "id": "rd_1panj02",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I started investing around last year December to save some taxes"
+       }
+      ]
+     }
+    },
+    "expectation": {
+     "n": 151,
+     "strength": "strong",
+     "all": {
+      "long_term_volatility_accepted": {
+       "n": 70,
+       "share": 0.464
+      },
+      "specific_return_target": {
+       "n": 58,
+       "share": 0.384
+      },
+      "beat_safe_asset": {
+       "n": 10,
+       "share": 0.066
+      },
+      "steady_growth": {
+       "n": 10,
+       "share": 0.066
+      },
+      "savings_not_returns": {
+       "n": 3,
+       "share": 0.02
+      }
+     },
+     "stayed": {
+      "long_term_volatility_accepted": {
+       "n": 26,
+       "share": 0.605
+      },
+      "specific_return_target": {
+       "n": 9,
+       "share": 0.209
+      },
+      "steady_growth": {
+       "n": 4,
+       "share": 0.093
+      },
+      "beat_safe_asset": {
+       "n": 3,
+       "share": 0.07
+      },
+      "savings_not_returns": {
+       "n": 1,
+       "share": 0.023
+      }
+     },
+     "left_or_wobbling": {
+      "long_term_volatility_accepted": {
+       "n": 14,
+       "share": 0.583
+      },
+      "specific_return_target": {
+       "n": 7,
+       "share": 0.292
+      },
+      "steady_growth": {
+       "n": 2,
+       "share": 0.083
+      },
+      "beat_safe_asset": {
+       "n": 1,
+       "share": 0.042
+      }
+     },
+     "first_time": {
+      "specific_return_target": {
+       "n": 19,
+       "share": 0.404
+      },
+      "long_term_volatility_accepted": {
+       "n": 17,
+       "share": 0.362
+      },
+      "steady_growth": {
+       "n": 7,
+       "share": 0.149
+      },
+      "beat_safe_asset": {
+       "n": 2,
+       "share": 0.043
+      },
+      "savings_not_returns": {
+       "n": 2,
+       "share": 0.043
+      }
+     },
+     "quotes": {
+      "long_term_volatility_accepted": [
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       },
+       {
+        "id": "rd_1uqko2c",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "the Defence fund was bought before I knew better"
+       },
+       {
+        "id": "rd_1r5l4zt",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Long-term horizon (10+ years) and comfortable with volatility."
+       }
+      ],
+      "specific_return_target": [
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       },
+       {
+        "id": "rd_1q8k1hg",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1q8k6pu",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       }
+      ],
+      "beat_safe_asset": [
+       {
+        "id": "rd_1jnv4qk",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I had seen in this sub before in some posts that how LIC gives less returns than FDs"
+       },
+       {
+        "id": "rd_1h2nimz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought I should take some risks for higher returns in comparison to my RDs."
+       },
+       {
+        "id": "rd_1iszutl",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "he presumed I know what I am doing since I work in this field, he asked me to start his SIPs"
+       }
+      ],
+      "steady_growth": [
+       {
+        "id": "rd_1qmz7fi",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "all red as a beginner i haven't seen this fall for a continuous 5 days now"
+       },
+       {
+        "id": "rd_1vayde3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Decided to cancel the SIP installment for August and September because of the negative returns."
+       },
+       {
+        "id": "rd_1hx16t1",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "shouldn't I be in a little bit of profit?"
+       }
+      ],
+      "savings_not_returns": [
+       {
+        "id": "rd_1qrw3fb",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "building discipline, and learning how investing works, not chasing high returns"
+       },
+       {
+        "id": "rd_1oj2pv1",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "i just want to save cause i m a big wasteful"
+       },
+       {
+        "id": "rd_o8sh6o2",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "Honestly I never bothered to check."
+       }
+      ]
+     }
+    }
+   },
+   "n": 503,
+   "strength": "strong",
+   "by_source_type": {
+    "community": 493,
+    "app_review": 10
+   },
+   "by_outcome": {
+    "restructured": 65,
+    "stayed": 119,
+    "wobbling": 57,
+    "left": 19,
+    "unknown": 243
+   }
+  },
+  "q2_change_over_time": {
+   "question": "What changes in their behaviour in the months after starting?",
+   "fields": {
+    "behaviour_change": {
+     "n": 385,
+     "strength": "strong",
+     "all": {
+      "amount_increased": {
+       "n": 166,
+       "share": 0.431
+      },
+      "learned_more": {
+       "n": 92,
+       "share": 0.239
+      },
+      "funds_added": {
+       "n": 69,
+       "share": 0.179
+      },
+      "funds_consolidated": {
+       "n": 57,
+       "share": 0.148
+      },
+      "mode_switched": {
+       "n": 50,
+       "share": 0.13
+      },
+      "paused_resumed": {
+       "n": 20,
+       "share": 0.052
+      },
+      "confidence_fell": {
+       "n": 12,
+       "share": 0.031
+      },
+      "confidence_rose": {
+       "n": 12,
+       "share": 0.031
+      },
+      "amount_reduced": {
+       "n": 8,
+       "share": 0.021
+      },
+      "checking_faded": {
+       "n": 6,
+       "share": 0.016
+      },
+      "autopilot_forgot": {
+       "n": 5,
+       "share": 0.013
+      },
+      "checking_rose": {
+       "n": 3,
+       "share": 0.008
+      }
+     },
+     "stayed": {
+      "amount_increased": {
+       "n": 122,
+       "share": 0.83
+      },
+      "funds_added": {
+       "n": 22,
+       "share": 0.15
+      },
+      "learned_more": {
+       "n": 21,
+       "share": 0.143
+      },
+      "funds_consolidated": {
+       "n": 9,
+       "share": 0.061
+      },
+      "mode_switched": {
+       "n": 8,
+       "share": 0.054
+      },
+      "confidence_rose": {
+       "n": 7,
+       "share": 0.048
+      },
+      "paused_resumed": {
+       "n": 6,
+       "share": 0.041
+      },
+      "checking_faded": {
+       "n": 3,
+       "share": 0.02
+      },
+      "autopilot_forgot": {
+       "n": 2,
+       "share": 0.014
+      },
+      "amount_reduced": {
+       "n": 1,
+       "share": 0.007
+      },
+      "checking_rose": {
+       "n": 1,
+       "share": 0.007
+      }
+     },
+     "left_or_wobbling": {
+      "learned_more": {
+       "n": 19,
+       "share": 0.292
+      },
+      "amount_increased": {
+       "n": 17,
+       "share": 0.262
+      },
+      "funds_added": {
+       "n": 12,
+       "share": 0.185
+      },
+      "paused_resumed": {
+       "n": 8,
+       "share": 0.123
+      },
+      "confidence_fell": {
+       "n": 6,
+       "share": 0.092
+      },
+      "mode_switched": {
+       "n": 5,
+       "share": 0.077
+      },
+      "amount_reduced": {
+       "n": 4,
+       "share": 0.062
+      },
+      "autopilot_forgot": {
+       "n": 3,
+       "share": 0.046
+      },
+      "funds_consolidated": {
+       "n": 1,
+       "share": 0.015
+      },
+      "confidence_rose": {
+       "n": 1,
+       "share": 0.015
+      }
+     },
+     "first_time": {
+      "amount_increased": {
+       "n": 29,
+       "share": 0.377
+      },
+      "learned_more": {
+       "n": 18,
+       "share": 0.234
+      },
+      "funds_consolidated": {
+       "n": 12,
+       "share": 0.156
+      },
+      "funds_added": {
+       "n": 12,
+       "share": 0.156
+      },
+      "paused_resumed": {
+       "n": 7,
+       "share": 0.091
+      },
+      "mode_switched": {
+       "n": 6,
+       "share": 0.078
+      },
+      "confidence_rose": {
+       "n": 4,
+       "share": 0.052
+      },
+      "amount_reduced": {
+       "n": 2,
+       "share": 0.026
+      },
+      "confidence_fell": {
+       "n": 2,
+       "share": 0.026
+      },
+      "autopilot_forgot": {
+       "n": 1,
+       "share": 0.013
+      }
+     },
+     "quotes": {
+      "amount_increased": [
+       {
+        "id": "rd_1i3h8fi",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I used to invest heavily in small cap and it was going good until 6 months ago where I learned the importance of index funds the hard way"
+       },
+       {
+        "id": "rd_1q5ssl2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       },
+       {
+        "id": "rd_1q693d2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       }
+      ],
+      "learned_more": [
+       {
+        "id": "rd_1i3h8fi",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I used to invest heavily in small cap and it was going good until 6 months ago where I learned the importance of index funds the hard way"
+       },
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       },
+       {
+        "id": "rd_1moz1ur",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "So I am moving planning to move all my active midcaps and smallcaps to midcap 150 index fund."
+       }
+      ],
+      "funds_added": [
+       {
+        "id": "rd_1q5ssl2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       },
+       {
+        "id": "rd_1q693d2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       },
+       {
+        "id": "rd_1ih9iw0",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "earlier I only invested in one MF which my dad was investing in"
+       }
+      ],
+      "funds_consolidated": [
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       },
+       {
+        "id": "rd_1ve3ihc",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Since Flexi Caps already have significant large-cap exposure"
+       }
+      ],
+      "mode_switched": [
+       {
+        "id": "rd_1fy9c91",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Recently, I switched to direct funds."
+       },
+       {
+        "id": "rd_1gbq6rb",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "many people on this sub suggested that market is at peak and dip is waiting to happen"
+       },
+       {
+        "id": "rd_o8tqk3a",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I used to invest lumpsum, whenever market was down. But, I was not able to built discipline."
+       }
+      ],
+      "paused_resumed": [
+       {
+        "id": "rd_1q5cuis",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I had to stop my SIP for some time due to my financial condition."
+       },
+       {
+        "id": "rd_1q5d7fh",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Due to financial constraints, I paused my SIPs for a while but have recently restarted them."
+       },
+       {
+        "id": "rd_1re6v3o",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "paused after 2 months because of too much expenses"
+       }
+      ]
+     }
+    }
+   },
+   "n": 385,
+   "strength": "strong",
+   "by_source_type": {
+    "community": 376,
+    "app_review": 9
+   },
+   "by_outcome": {
+    "stayed": 147,
+    "restructured": 104,
+    "left": 20,
+    "wobbling": 45,
+    "unknown": 69
+   },
+   "action_by_stage": {
+    "early_0_3m": {
+     "considering_stop": {
+      "n": 9,
+      "share": 0.141
+     },
+     "stopped": {
+      "n": 7,
+      "share": 0.109
+     },
+     "restructured": {
+      "n": 6,
+      "share": 0.094
+     },
+     "attempted_blocked": {
+      "n": 3,
+      "share": 0.047
+     },
+     "switched_platform": {
+      "n": 2,
+      "share": 0.031
+     },
+     "continued": {
+      "n": 2,
+      "share": 0.031
+     },
+     "paused": {
+      "n": 2,
+      "share": 0.031
+     },
+     "increased": {
+      "n": 2,
+      "share": 0.031
+     }
+    },
+    "3_12m": {
+     "considering_stop": {
+      "n": 32,
+      "share": 0.246
+     },
+     "increased": {
+      "n": 26,
+      "share": 0.2
+     },
+     "restructured": {
+      "n": 18,
+      "share": 0.138
+     },
+     "continued": {
+      "n": 14,
+      "share": 0.108
+     },
+     "stopped": {
+      "n": 5,
+      "share": 0.038
+     },
+     "paused": {
+      "n": 3,
+      "share": 0.023
+     },
+     "reduced": {
+      "n": 2,
+      "share": 0.015
+     },
+     "considering_start": {
+      "n": 1,
+      "share": 0.008
+     }
+    },
+    "12m_plus": {
+     "increased": {
+      "n": 100,
+      "share": 0.221
+     },
+     "restructured": {
+      "n": 92,
+      "share": 0.203
+     },
+     "considering_stop": {
+      "n": 81,
+      "share": 0.179
+     },
+     "continued": {
+      "n": 64,
+      "share": 0.141
+     },
+     "stopped": {
+      "n": 19,
+      "share": 0.042
+     },
+     "paused": {
+      "n": 9,
+      "share": 0.02
+     },
+     "switched_platform": {
+      "n": 8,
+      "share": 0.018
+     },
+     "reduced": {
+      "n": 4,
+      "share": 0.009
+     },
+     "nearly_stopped": {
+      "n": 3,
+      "share": 0.007
+     },
+     "attempted_blocked": {
+      "n": 3,
+      "share": 0.007
+     },
+     "considering_start": {
+      "n": 2,
+      "share": 0.004
+     }
+    }
+   }
+  },
+  "q3_stop_drivers": {
+   "question": "What leads investors to pause, reduce or stop a SIP?",
+   "fields": {
+    "stop_trigger": {
+     "n": 678,
+     "strength": "strong",
+     "all": {
+      "own_returns_negative_flat": {
+       "n": 154,
+       "share": 0.227
+      },
+      "payment_failure": {
+       "n": 122,
+       "share": 0.18
+      },
+      "platform_change": {
+       "n": 74,
+       "share": 0.109
+      },
+      "self_review": {
+       "n": 68,
+       "share": 0.1
+      },
+      "cash_need_life_event": {
+       "n": 59,
+       "share": 0.087
+      },
+      "modify_blocked": {
+       "n": 57,
+       "share": 0.084
+      },
+      "order_redemption_delay": {
+       "n": 54,
+       "share": 0.08
+      },
+      "market_news": {
+       "n": 45,
+       "share": 0.066
+      },
+      "charge_penalty": {
+       "n": 40,
+       "share": 0.059
+      },
+      "support_failure": {
+       "n": 33,
+       "share": 0.049
+      },
+      "data_discrepancy": {
+       "n": 32,
+       "share": 0.047
+      },
+      "missing_notification": {
+       "n": 23,
+       "share": 0.034
+      },
+      "advice_received": {
+       "n": 22,
+       "share": 0.032
+      },
+      "tax_rule_change": {
+       "n": 22,
+       "share": 0.032
+      },
+      "app_malfunction": {
+       "n": 21,
+       "share": 0.031
+      },
+      "debit_after_cancel": {
+       "n": 8,
+       "share": 0.012
+      }
+     },
+     "stayed": {
+      "own_returns_negative_flat": {
+       "n": 15,
+       "share": 0.536
+      },
+      "cash_need_life_event": {
+       "n": 8,
+       "share": 0.286
+      },
+      "payment_failure": {
+       "n": 3,
+       "share": 0.107
+      },
+      "missing_notification": {
+       "n": 1,
+       "share": 0.036
+      },
+      "tax_rule_change": {
+       "n": 1,
+       "share": 0.036
+      },
+      "self_review": {
+       "n": 1,
+       "share": 0.036
+      },
+      "market_news": {
+       "n": 1,
+       "share": 0.036
+      }
+     },
+     "left_or_wobbling": {
+      "own_returns_negative_flat": {
+       "n": 105,
+       "share": 0.251
+      },
+      "platform_change": {
+       "n": 54,
+       "share": 0.129
+      },
+      "modify_blocked": {
+       "n": 54,
+       "share": 0.129
+      },
+      "cash_need_life_event": {
+       "n": 45,
+       "share": 0.107
+      },
+      "order_redemption_delay": {
+       "n": 38,
+       "share": 0.091
+      },
+      "payment_failure": {
+       "n": 38,
+       "share": 0.091
+      },
+      "market_news": {
+       "n": 37,
+       "share": 0.088
+      },
+      "support_failure": {
+       "n": 25,
+       "share": 0.06
+      },
+      "charge_penalty": {
+       "n": 25,
+       "share": 0.06
+      },
+      "data_discrepancy": {
+       "n": 24,
+       "share": 0.057
+      },
+      "self_review": {
+       "n": 20,
+       "share": 0.048
+      },
+      "app_malfunction": {
+       "n": 18,
+       "share": 0.043
+      },
+      "advice_received": {
+       "n": 14,
+       "share": 0.033
+      },
+      "debit_after_cancel": {
+       "n": 8,
+       "share": 0.019
+      },
+      "missing_notification": {
+       "n": 6,
+       "share": 0.014
+      },
+      "tax_rule_change": {
+       "n": 6,
+       "share": 0.014
+      }
+     },
+     "first_time": {
+      "own_returns_negative_flat": {
+       "n": 39,
+       "share": 0.361
+      },
+      "payment_failure": {
+       "n": 16,
+       "share": 0.148
+      },
+      "self_review": {
+       "n": 15,
+       "share": 0.139
+      },
+      "market_news": {
+       "n": 13,
+       "share": 0.12
+      },
+      "cash_need_life_event": {
+       "n": 10,
+       "share": 0.093
+      },
+      "advice_received": {
+       "n": 8,
+       "share": 0.074
+      },
+      "order_redemption_delay": {
+       "n": 5,
+       "share": 0.046
+      },
+      "modify_blocked": {
+       "n": 4,
+       "share": 0.037
+      },
+      "support_failure": {
+       "n": 4,
+       "share": 0.037
+      },
+      "platform_change": {
+       "n": 3,
+       "share": 0.028
+      },
+      "charge_penalty": {
+       "n": 3,
+       "share": 0.028
+      },
+      "missing_notification": {
+       "n": 2,
+       "share": 0.019
+      },
+      "tax_rule_change": {
+       "n": 2,
+       "share": 0.019
+      },
+      "data_discrepancy": {
+       "n": 1,
+       "share": 0.009
+      }
+     },
+     "quotes": {
+      "own_returns_negative_flat": [
+       {
+        "id": "rd_1nw9aiw",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Not sure what's wrong, think I'll be underperforming."
+       },
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       },
+       {
+        "id": "rd_1ikllgp",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "But these are getting down and down"
+       }
+      ],
+      "payment_failure": [
+       {
+        "id": "rd_1wywyl7",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "More than enough funds in the bank account"
+       },
+       {
+        "id": "rd_1i1pa7p",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After change the tax status, my SIPs have been stopped"
+       },
+       {
+        "id": "rd_1o1xn2h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "every month, the Parag Parikh Flexi Cap SIP fails to go through, and my money gets stuck temporarily"
+       }
+      ],
+      "platform_change": [
+       {
+        "id": "tq_35785",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "So stopped SIP for Regular fund and Created new SIP on Direct fund."
+       },
+       {
+        "id": "rd_1uy4gex",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "They asked me to stop my SIPs."
+       },
+       {
+        "id": "rd_1m0lwt6",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "I had opted out of the switching of the folios from SoA to Demat"
+       }
+      ],
+      "self_review": [
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "tq_309573",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+       },
+       {
+        "id": "tq_309126",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "invested rather randomly without any thoughts"
+       }
+      ],
+      "cash_need_life_event": [
+       {
+        "id": "rd_1po99to",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "having money issues I'm likely thinking of exit after 3yrs"
+       },
+       {
+        "id": "rd_1q5cuis",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I had to stop my SIP for some time due to my financial condition."
+       },
+       {
+        "id": "rd_1q5d7fh",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Due to financial constraints, I paused my SIPs for a while but have recently restarted them."
+       }
+      ],
+      "modify_blocked": [
+       {
+        "id": "tq_141049",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "against my SIP fund it shows only delete button, Pause & Edit button are not available."
+       },
+       {
+        "id": "tq_39941",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "I cannot delete one of the ongoing SIP in regular plan so as an alternate i have paused the same"
+       },
+       {
+        "id": "tq_42167",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "I want to delete them and then put the money in some other MF SIPs. For now I have paused them. But when I am trying to delete them, it gives a message - Failed to Delete"
+       }
+      ]
+     }
+    },
+    "root_cause": {
+     "n": 714,
+     "strength": "strong",
+     "all": {
+      "platform_trust_erosion": {
+       "n": 212,
+       "share": 0.297
+      },
+      "portfolio_rationalisation": {
+       "n": 206,
+       "share": 0.289
+      },
+      "payment_plumbing": {
+       "n": 135,
+       "share": 0.189
+      },
+      "cashflow_rigidity": {
+       "n": 75,
+       "share": 0.105
+      },
+      "expectation_violation": {
+       "n": 44,
+       "share": 0.062
+      },
+      "volatility_mismatch": {
+       "n": 29,
+       "share": 0.041
+      },
+      "timing_mindset": {
+       "n": 26,
+       "share": 0.036
+      },
+      "return_misreading": {
+       "n": 20,
+       "share": 0.028
+      },
+      "borrowed_conviction": {
+       "n": 17,
+       "share": 0.024
+      },
+      "safe_asset_benchmark": {
+       "n": 7,
+       "share": 0.01
+      },
+      "product_distrust": {
+       "n": 4,
+       "share": 0.006
+      }
+     },
+     "stayed": {
+      "portfolio_rationalisation": {
+       "n": 17,
+       "share": 0.354
+      },
+      "cashflow_rigidity": {
+       "n": 9,
+       "share": 0.188
+      },
+      "expectation_violation": {
+       "n": 7,
+       "share": 0.146
+      },
+      "borrowed_conviction": {
+       "n": 6,
+       "share": 0.125
+      },
+      "payment_plumbing": {
+       "n": 2,
+       "share": 0.042
+      },
+      "volatility_mismatch": {
+       "n": 2,
+       "share": 0.042
+      },
+      "safe_asset_benchmark": {
+       "n": 2,
+       "share": 0.042
+      },
+      "return_misreading": {
+       "n": 2,
+       "share": 0.042
+      },
+      "timing_mindset": {
+       "n": 1,
+       "share": 0.021
+      }
+     },
+     "left_or_wobbling": {
+      "platform_trust_erosion": {
+       "n": 144,
+       "share": 0.414
+      },
+      "portfolio_rationalisation": {
+       "n": 61,
+       "share": 0.175
+      },
+      "cashflow_rigidity": {
+       "n": 47,
+       "share": 0.135
+      },
+      "payment_plumbing": {
+       "n": 44,
+       "share": 0.126
+      },
+      "volatility_mismatch": {
+       "n": 22,
+       "share": 0.063
+      },
+      "expectation_violation": {
+       "n": 21,
+       "share": 0.06
+      },
+      "return_misreading": {
+       "n": 13,
+       "share": 0.037
+      },
+      "timing_mindset": {
+       "n": 12,
+       "share": 0.034
+      },
+      "borrowed_conviction": {
+       "n": 7,
+       "share": 0.02
+      },
+      "safe_asset_benchmark": {
+       "n": 4,
+       "share": 0.011
+      },
+      "product_distrust": {
+       "n": 3,
+       "share": 0.009
+      }
+     },
+     "first_time": {
+      "portfolio_rationalisation": {
+       "n": 52,
+       "share": 0.371
+      },
+      "platform_trust_erosion": {
+       "n": 18,
+       "share": 0.129
+      },
+      "cashflow_rigidity": {
+       "n": 16,
+       "share": 0.114
+      },
+      "expectation_violation": {
+       "n": 16,
+       "share": 0.114
+      },
+      "payment_plumbing": {
+       "n": 14,
+       "share": 0.1
+      },
+      "volatility_mismatch": {
+       "n": 10,
+       "share": 0.071
+      },
+      "return_misreading": {
+       "n": 9,
+       "share": 0.064
+      },
+      "timing_mindset": {
+       "n": 8,
+       "share": 0.057
+      },
+      "borrowed_conviction": {
+       "n": 6,
+       "share": 0.043
+      },
+      "product_distrust": {
+       "n": 1,
+       "share": 0.007
+      },
+      "safe_asset_benchmark": {
+       "n": 1,
+       "share": 0.007
+      }
+     },
+     "quotes": {
+      "platform_trust_erosion": [
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       },
+       {
+        "id": "bl_basunivesh_177893",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "I bought HDFC CLICK TO INVEST plan now I’m feeling like I’m betrayed where it has got much criticism of less value"
+       },
+       {
+        "id": "rd_1nx6cxd",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "for each bounce of tnx , they charge 500 + gst"
+       }
+      ],
+      "portfolio_rationalisation": [
+       {
+        "id": "rd_1nzai2d",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "carelessly invested in some randoms"
+       },
+       {
+        "id": "tq_35124",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I don’t want to incur any short term capital gains tax/exit load but want to shift to the direct plan"
+       },
+       {
+        "id": "tq_45536",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I now wish to stop investing in the regular plan and start investing in direct plan via Coin, but in the same fund"
+       }
+      ],
+      "payment_plumbing": [
+       {
+        "id": "rd_1wywyl7",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "More than enough funds in the bank account"
+       },
+       {
+        "id": "rd_1i1pa7p",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After change the tax status, my SIPs have been stopped"
+       },
+       {
+        "id": "rd_1o1xn2h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "every month, the Parag Parikh Flexi Cap SIP fails to go through, and my money gets stuck temporarily"
+       }
+      ],
+      "cashflow_rigidity": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "yt_Ugz2dzr-CDboA5dpQ-R4AaABAg.9QkRPXCpeO-9TKLmCeFBOy",
+        "source": "youtube",
+        "app": null,
+        "group": "first_time",
+        "quote": "so lots of spend to buy gift and cloths so the month will be tight"
+       },
+       {
+        "id": "bl_jagoinvestor_369816",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "Sometimes I will end up buying things in credit card sinceI know that if any thing goes wrong I can redeem that extra margin of safety"
+       }
+      ],
+      "expectation_violation": [
+       {
+        "id": "rd_1q8k1hg",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1q8k6pu",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1vayde3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Decided to cancel the SIP installment for August and September because of the negative returns."
+       }
+      ],
+      "volatility_mismatch": [
+       {
+        "id": "rd_1gbwaij",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I stopped 3k sip in Quant small cap this month, since market is falling, I'm thinking of stopping sip in hdfc mid cap and increasing the amount in icici bluechip"
+       },
+       {
+        "id": "rd_1hrscaa",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I have stopped all SIPs since last three months(oct 24) as the market is so volatile"
+       },
+       {
+        "id": "rd_1hvjijg",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "have fallen poorly and I have redeemed most of them"
+       }
+      ]
+     }
+    }
+   },
+   "n": 862,
+   "strength": "strong",
+   "by_source_type": {
+    "app_review": 333,
+    "community": 529
+   },
+   "by_outcome": {
+    "left": 168,
+    "wobbling": 290,
+    "unknown": 194,
+    "restructured": 153,
+    "stayed": 57
+   }
+  },
+  "q4_checking": {
+   "question": "What do investors check, and how often, once they have started?",
+   "fields": {
+    "checking_behaviour": {
+     "n": 413,
+     "strength": "strong",
+     "all": {
+      "xirr": {
+       "n": 139,
+       "share": 0.337
+      },
+      "transaction_status": {
+       "n": 107,
+       "share": 0.259
+      },
+      "current_value_amount": {
+       "n": 95,
+       "share": 0.23
+      },
+      "returns_pct": {
+       "n": 68,
+       "share": 0.165
+      },
+      "nav": {
+       "n": 30,
+       "share": 0.073
+      },
+      "avoids_checking": {
+       "n": 22,
+       "share": 0.053
+      },
+      "fund_level_returns": {
+       "n": 16,
+       "share": 0.039
+      },
+      "daily_pnl": {
+       "n": 11,
+       "share": 0.027
+      }
+     },
+     "stayed": {
+      "xirr": {
+       "n": 51,
+       "share": 0.567
+      },
+      "current_value_amount": {
+       "n": 25,
+       "share": 0.278
+      },
+      "returns_pct": {
+       "n": 13,
+       "share": 0.144
+      },
+      "avoids_checking": {
+       "n": 10,
+       "share": 0.111
+      },
+      "transaction_status": {
+       "n": 3,
+       "share": 0.033
+      },
+      "nav": {
+       "n": 3,
+       "share": 0.033
+      },
+      "fund_level_returns": {
+       "n": 2,
+       "share": 0.022
+      },
+      "daily_pnl": {
+       "n": 1,
+       "share": 0.011
+      }
+     },
+     "left_or_wobbling": {
+      "xirr": {
+       "n": 40,
+       "share": 0.328
+      },
+      "transaction_status": {
+       "n": 31,
+       "share": 0.254
+      },
+      "current_value_amount": {
+       "n": 30,
+       "share": 0.246
+      },
+      "returns_pct": {
+       "n": 27,
+       "share": 0.221
+      },
+      "nav": {
+       "n": 7,
+       "share": 0.057
+      },
+      "fund_level_returns": {
+       "n": 6,
+       "share": 0.049
+      },
+      "avoids_checking": {
+       "n": 4,
+       "share": 0.033
+      },
+      "daily_pnl": {
+       "n": 3,
+       "share": 0.025
+      }
+     },
+     "first_time": {
+      "xirr": {
+       "n": 22,
+       "share": 0.324
+      },
+      "current_value_amount": {
+       "n": 21,
+       "share": 0.309
+      },
+      "returns_pct": {
+       "n": 16,
+       "share": 0.235
+      },
+      "transaction_status": {
+       "n": 13,
+       "share": 0.191
+      },
+      "nav": {
+       "n": 5,
+       "share": 0.074
+      },
+      "avoids_checking": {
+       "n": 5,
+       "share": 0.074
+      },
+      "daily_pnl": {
+       "n": 1,
+       "share": 0.015
+      }
+     },
+     "quotes": {
+      "xirr": [
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       },
+       {
+        "id": "rd_1q5d7fh",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Due to financial constraints, I paused my SIPs for a while but have recently restarted them."
+       },
+       {
+        "id": "rd_1q5ssl2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       }
+      ],
+      "transaction_status": [
+       {
+        "id": "rd_1wywyl7",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "More than enough funds in the bank account"
+       },
+       {
+        "id": "rd_1o1xn2h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "every month, the Parag Parikh Flexi Cap SIP fails to go through, and my money gets stuck temporarily"
+       },
+       {
+        "id": "rd_1gj9b8v",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "it still shows as processing"
+       }
+      ],
+      "current_value_amount": [
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       },
+       {
+        "id": "rd_1gx0g0o",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Initially, I was seeing returns of around ₹20k, but now the returns have dropped to ₹9k"
+       },
+       {
+        "id": "rd_1q5d7fh",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Due to financial constraints, I paused my SIPs for a while but have recently restarted them."
+       }
+      ],
+      "returns_pct": [
+       {
+        "id": "rd_1t0deqa",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "1 yr investing via advisor (regular plans). Returns lagging market."
+       },
+       {
+        "id": "rd_1q5d7fh",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Due to financial constraints, I paused my SIPs for a while but have recently restarted them."
+       },
+       {
+        "id": "tq_121446",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "Is it like I have bought these bond funds at chaper price (low NAV, eg Reliance gilt- 24.06 )"
+       }
+      ],
+      "nav": [
+       {
+        "id": "tq_309573",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+       },
+       {
+        "id": "rd_1gbq6rb",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "many people on this sub suggested that market is at peak and dip is waiting to happen"
+       },
+       {
+        "id": "tq_121446",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "Is it like I have bought these bond funds at chaper price (low NAV, eg Reliance gilt- 24.06 )"
+       }
+      ],
+      "avoids_checking": [
+       {
+        "id": "rd_1ipuqc4",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I rarely check the app because I'm investing for long term"
+       },
+       {
+        "id": "rd_1ssuw9g",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "kept passively investing without ever checking how they're performing"
+       },
+       {
+        "id": "rd_1n5ljx1",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "i thought investing in 8 mutual funds would be called as diversification but i was wrong."
+       }
+      ]
+     }
+    },
+    "check_frequency": {
+     "n": 60,
+     "strength": "moderate",
+     "all": {
+      "rarely_by_choice": {
+       "n": 31,
+       "share": 0.517
+      },
+      "weekly_monthly": {
+       "n": 16,
+       "share": 0.267
+      },
+      "daily_or_more": {
+       "n": 11,
+       "share": 0.183
+      },
+      "event_driven": {
+       "n": 2,
+       "share": 0.033
+      }
+     },
+     "stayed": {
+      "rarely_by_choice": {
+       "n": 11,
+       "share": 0.786
+      },
+      "weekly_monthly": {
+       "n": 2,
+       "share": 0.143
+      },
+      "daily_or_more": {
+       "n": 1,
+       "share": 0.071
+      }
+     },
+     "left_or_wobbling": {
+      "rarely_by_choice": {
+       "n": 5,
+       "share": 0.714
+      },
+      "weekly_monthly": {
+       "n": 2,
+       "share": 0.286
+      }
+     },
+     "first_time": {
+      "rarely_by_choice": {
+       "n": 5,
+       "share": 0.455
+      },
+      "weekly_monthly": {
+       "n": 4,
+       "share": 0.364
+      },
+      "daily_or_more": {
+       "n": 2,
+       "share": 0.182
+      }
+     },
+     "quotes": {
+      "rarely_by_choice": [
+       {
+        "id": "rd_1ipuqc4",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I rarely check the app because I'm investing for long term"
+       },
+       {
+        "id": "rd_1ssuw9g",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "kept passively investing without ever checking how they're performing"
+       },
+       {
+        "id": "rd_1n5ljx1",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "i thought investing in 8 mutual funds would be called as diversification but i was wrong."
+       }
+      ],
+      "weekly_monthly": [
+       {
+        "id": "rd_nvu8kd8",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Every month it sents report in email."
+       },
+       {
+        "id": "rd_1m1a02h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I'll be doing one-time payments on these every month as I am new, so I'll track every month"
+       },
+       {
+        "id": "rd_1o1xn2h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "every month, the Parag Parikh Flexi Cap SIP fails to go through, and my money gets stuck temporarily"
+       }
+      ],
+      "daily_or_more": [
+       {
+        "id": "rd_msfq3qq",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I check multiple times a day on Coin, groww, ticker tape and monitor nifty indexes daily"
+       },
+       {
+        "id": "rd_1kms3zw",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "The problem is I can't stop checking daily, sometimes even 3-4 times a day"
+       },
+       {
+        "id": "rd_1gh3grc",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "These are the daily returns I have been tracking on my mutual funds in the month of October"
+       }
+      ],
+      "event_driven": [
+       {
+        "id": "rd_1p5klfr",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "I don't want to track it on daily basis."
+       },
+       {
+        "id": "rd_1gvut59",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "So I stopped my SIPs into the ICICI one a while ago since apparently active large funds are not worth over index ones"
+       }
+      ]
+     }
+    }
+   },
+   "n": 428,
+   "strength": "moderate",
+   "by_source_type": {
+    "app_review": 128,
+    "community": 300
+   },
+   "by_outcome": {
+    "left": 35,
+    "unknown": 178,
+    "restructured": 36,
+    "wobbling": 88,
+    "stayed": 91
+   }
+  },
+  "q5_in_app_confusion": {
+   "question": "What confuses or worries them inside the app?",
+   "fields": {
+    "in_app_confusion": {
+     "n": 524,
+     "strength": "strong",
+     "all": {
+      "payment_mandate_status": {
+       "n": 165,
+       "share": 0.315
+      },
+      "charges_plan_type": {
+       "n": 124,
+       "share": 0.237
+      },
+      "modify_sip": {
+       "n": 96,
+       "share": 0.183
+      },
+      "order_timeline": {
+       "n": 73,
+       "share": 0.139
+      },
+      "account_kyc_demat": {
+       "n": 59,
+       "share": 0.113
+      },
+      "value_mismatch": {
+       "n": 47,
+       "share": 0.09
+      },
+      "tax_withdrawal": {
+       "n": 44,
+       "share": 0.084
+      },
+      "navigation_ui": {
+       "n": 36,
+       "share": 0.069
+      },
+      "return_figure_meaning": {
+       "n": 12,
+       "share": 0.023
+      }
+     },
+     "stayed": {
+      "modify_sip": {
+       "n": 8,
+       "share": 0.364
+      },
+      "payment_mandate_status": {
+       "n": 5,
+       "share": 0.227
+      },
+      "charges_plan_type": {
+       "n": 4,
+       "share": 0.182
+      },
+      "return_figure_meaning": {
+       "n": 3,
+       "share": 0.136
+      },
+      "tax_withdrawal": {
+       "n": 2,
+       "share": 0.091
+      },
+      "account_kyc_demat": {
+       "n": 2,
+       "share": 0.091
+      },
+      "value_mismatch": {
+       "n": 1,
+       "share": 0.045
+      }
+     },
+     "left_or_wobbling": {
+      "modify_sip": {
+       "n": 68,
+       "share": 0.263
+      },
+      "charges_plan_type": {
+       "n": 63,
+       "share": 0.243
+      },
+      "payment_mandate_status": {
+       "n": 53,
+       "share": 0.205
+      },
+      "order_timeline": {
+       "n": 44,
+       "share": 0.17
+      },
+      "account_kyc_demat": {
+       "n": 29,
+       "share": 0.112
+      },
+      "tax_withdrawal": {
+       "n": 28,
+       "share": 0.108
+      },
+      "value_mismatch": {
+       "n": 27,
+       "share": 0.104
+      },
+      "navigation_ui": {
+       "n": 15,
+       "share": 0.058
+      },
+      "return_figure_meaning": {
+       "n": 3,
+       "share": 0.012
+      }
+     },
+     "first_time": {
+      "payment_mandate_status": {
+       "n": 23,
+       "share": 0.319
+      },
+      "charges_plan_type": {
+       "n": 22,
+       "share": 0.306
+      },
+      "tax_withdrawal": {
+       "n": 11,
+       "share": 0.153
+      },
+      "order_timeline": {
+       "n": 11,
+       "share": 0.153
+      },
+      "account_kyc_demat": {
+       "n": 10,
+       "share": 0.139
+      },
+      "modify_sip": {
+       "n": 9,
+       "share": 0.125
+      },
+      "return_figure_meaning": {
+       "n": 5,
+       "share": 0.069
+      },
+      "navigation_ui": {
+       "n": 3,
+       "share": 0.042
+      },
+      "value_mismatch": {
+       "n": 1,
+       "share": 0.014
+      }
+     },
+     "quotes": {
+      "payment_mandate_status": [
+       {
+        "id": "tq_91562",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "i just mentioned the minimum amount of 1300 to buy some units, but as i saw now it has debited the 5000 amount"
+       },
+       {
+        "id": "tq_515714",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I am confused about next sip installment on which date my next instalment done so today I cancel my buy order"
+       },
+       {
+        "id": "rd_1wywyl7",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "More than enough funds in the bank account"
+       }
+      ],
+      "charges_plan_type": [
+       {
+        "id": "tq_35124",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I don’t want to incur any short term capital gains tax/exit load but want to shift to the direct plan"
+       },
+       {
+        "id": "tq_45536",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I now wish to stop investing in the regular plan and start investing in direct plan via Coin, but in the same fund"
+       },
+       {
+        "id": "tq_35785",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "So stopped SIP for Regular fund and Created new SIP on Direct fund."
+       }
+      ],
+      "modify_sip": [
+       {
+        "id": "yt_Ugz2dzr-CDboA5dpQ-R4AaABAg.9QkRPXCpeO-9TKLmCeFBOy",
+        "source": "youtube",
+        "app": null,
+        "group": "first_time",
+        "quote": "so lots of spend to buy gift and cloths so the month will be tight"
+       },
+       {
+        "id": "tq_91562",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "i just mentioned the minimum amount of 1300 to buy some units, but as i saw now it has debited the 5000 amount"
+       },
+       {
+        "id": "tq_141049",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "against my SIP fund it shows only delete button, Pause & Edit button are not available."
+       }
+      ],
+      "order_timeline": [
+       {
+        "id": "tq_515714",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I am confused about next sip installment on which date my next instalment done so today I cancel my buy order"
+       },
+       {
+        "id": "rd_1lcmdj9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Only recently I found out it’s Regular plan not Direct."
+       },
+       {
+        "id": "rd_1gj9b8v",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "it still shows as processing"
+       }
+      ],
+      "account_kyc_demat": [
+       {
+        "id": "tq_79798",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I have pause my SIPs for the time being to avoid any further complications"
+       },
+       {
+        "id": "rd_1per924",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Should I switch as INDMoney lets you invest in US markets"
+       },
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       }
+      ],
+      "value_mismatch": [
+       {
+        "id": "rd_1n0d3sr",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Is XIRR for 5% reasonable or absolutely waste of money?"
+       },
+       {
+        "id": "tq_129443",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "by mistake I have started an SIP offline (not via coin but kept the same folio number F1 which is a demat folio)"
+       },
+       {
+        "id": "rd_1kgxdzb",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "In the Groww app, the old SIP folio (which no longer exists) still shows an active SIP."
+       }
+      ]
+     }
+    }
+   },
+   "n": 524,
+   "strength": "strong",
+   "by_source_type": {
+    "app_review": 336,
+    "community": 188
+   },
+   "by_outcome": {
+    "left": 127,
+    "wobbling": 132,
+    "unknown": 205,
+    "restructured": 38,
+    "stayed": 22
+   }
+  },
+  "q6_outside_app": {
+   "question": "What do they do outside the app when they feel unsure?",
+   "fields": {
+    "outside_app_workaround": {
+     "n": 676,
+     "strength": "strong",
+     "all": {
+      "reddit_forum": {
+       "n": 344,
+       "share": 0.509
+      },
+      "other_platform": {
+       "n": 117,
+       "share": 0.173
+      },
+      "complaint_escalation": {
+       "n": 91,
+       "share": 0.135
+      },
+      "self_research": {
+       "n": 79,
+       "share": 0.117
+      },
+      "creator_comment": {
+       "n": 47,
+       "share": 0.07
+      },
+      "other_tracker": {
+       "n": 35,
+       "share": 0.052
+      },
+      "advisor_ca": {
+       "n": 33,
+       "share": 0.049
+      },
+      "manual_payment": {
+       "n": 28,
+       "share": 0.041
+      },
+      "family_friend": {
+       "n": 13,
+       "share": 0.019
+      }
+     },
+     "stayed": {
+      "reddit_forum": {
+       "n": 70,
+       "share": 0.769
+      },
+      "self_research": {
+       "n": 12,
+       "share": 0.132
+      },
+      "advisor_ca": {
+       "n": 7,
+       "share": 0.077
+      },
+      "other_tracker": {
+       "n": 6,
+       "share": 0.066
+      },
+      "family_friend": {
+       "n": 3,
+       "share": 0.033
+      },
+      "complaint_escalation": {
+       "n": 2,
+       "share": 0.022
+      },
+      "manual_payment": {
+       "n": 2,
+       "share": 0.022
+      },
+      "creator_comment": {
+       "n": 2,
+       "share": 0.022
+      }
+     },
+     "left_or_wobbling": {
+      "other_platform": {
+       "n": 100,
+       "share": 0.392
+      },
+      "reddit_forum": {
+       "n": 93,
+       "share": 0.365
+      },
+      "complaint_escalation": {
+       "n": 45,
+       "share": 0.176
+      },
+      "creator_comment": {
+       "n": 29,
+       "share": 0.114
+      },
+      "self_research": {
+       "n": 13,
+       "share": 0.051
+      },
+      "advisor_ca": {
+       "n": 9,
+       "share": 0.035
+      },
+      "other_tracker": {
+       "n": 6,
+       "share": 0.024
+      },
+      "manual_payment": {
+       "n": 5,
+       "share": 0.02
+      },
+      "family_friend": {
+       "n": 1,
+       "share": 0.004
+      }
+     },
+     "first_time": {
+      "reddit_forum": {
+       "n": 134,
+       "share": 0.749
+      },
+      "self_research": {
+       "n": 30,
+       "share": 0.168
+      },
+      "advisor_ca": {
+       "n": 15,
+       "share": 0.084
+      },
+      "other_platform": {
+       "n": 9,
+       "share": 0.05
+      },
+      "complaint_escalation": {
+       "n": 8,
+       "share": 0.045
+      },
+      "creator_comment": {
+       "n": 7,
+       "share": 0.039
+      },
+      "manual_payment": {
+       "n": 6,
+       "share": 0.034
+      },
+      "family_friend": {
+       "n": 3,
+       "share": 0.017
+      },
+      "other_tracker": {
+       "n": 1,
+       "share": 0.006
+      }
+     },
+     "quotes": {
+      "reddit_forum": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       }
+      ],
+      "other_platform": [
+       {
+        "id": "rd_1lcmdj9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Only recently I found out it’s Regular plan not Direct."
+       },
+       {
+        "id": "rd_1per924",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Should I switch as INDMoney lets you invest in US markets"
+       },
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       }
+      ],
+      "complaint_escalation": [
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       },
+       {
+        "id": "rd_1nx6cxd",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "for each bounce of tnx , they charge 500 + gst"
+       },
+       {
+        "id": "tq_129443",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "by mistake I have started an SIP offline (not via coin but kept the same folio number F1 which is a demat folio)"
+       }
+      ],
+      "self_research": [
+       {
+        "id": "rd_1kyzjy1",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I’ve been repeatedly advised to exit this fund and move the money elsewhere"
+       },
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1po99to",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "having money issues I'm likely thinking of exit after 3yrs"
+       }
+      ],
+      "creator_comment": [
+       {
+        "id": "yt_UgwIRz-VhFJ6Htq9Kyp4AaABAg",
+        "source": "youtube",
+        "app": null,
+        "group": "first_time",
+        "quote": "aaj uska return lagbhag -325rs. Me dikha rha hai"
+       },
+       {
+        "id": "bl_basunivesh_162072",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "Started investing in Mutual fund a year back as I am a fresher"
+       },
+       {
+        "id": "bl_basunivesh_190893",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "i am in confusion now with elss and sip, as elss comes under 80c but not sip"
+       }
+      ],
+      "other_tracker": [
+       {
+        "id": "rd_msfq3qq",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I check multiple times a day on Coin, groww, ticker tape and monitor nifty indexes daily"
+       },
+       {
+        "id": "rd_1w7vh60",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "I recently ran into issues with Groww’s KYC process, and honestly, their customer service hasn’t been great"
+       },
+       {
+        "id": "rd_1m0lwt6",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "I had opted out of the switching of the folios from SoA to Demat"
+       }
+      ]
+     }
+    }
+   },
+   "n": 676,
+   "strength": "strong",
+   "by_source_type": {
+    "app_review": 167,
+    "community": 509
+   },
+   "by_outcome": {
+    "left": 93,
+    "restructured": 78,
+    "unknown": 252,
+    "wobbling": 162,
+    "stayed": 91
+   }
+  },
+  "q7_continue_vs_drop": {
+   "question": "What separates investors who continue from those who quietly drop off?",
+   "fields": {
+    "stay_reason": {
+     "n": 109,
+     "strength": "strong",
+     "all": {
+      "long_horizon_belief": {
+       "n": 72,
+       "share": 0.661
+      },
+      "averaging_understanding": {
+       "n": 18,
+       "share": 0.165
+      },
+      "goal_linked": {
+       "n": 18,
+       "share": 0.165
+      },
+      "automation_inertia": {
+       "n": 10,
+       "share": 0.092
+      },
+      "past_recovery_seen": {
+       "n": 6,
+       "share": 0.055
+      },
+      "advice_reassurance": {
+       "n": 5,
+       "share": 0.046
+      },
+      "affordable_amount": {
+       "n": 2,
+       "share": 0.018
+      }
+     },
+     "stayed": {
+      "long_horizon_belief": {
+       "n": 60,
+       "share": 0.659
+      },
+      "averaging_understanding": {
+       "n": 16,
+       "share": 0.176
+      },
+      "goal_linked": {
+       "n": 16,
+       "share": 0.176
+      },
+      "automation_inertia": {
+       "n": 9,
+       "share": 0.099
+      },
+      "past_recovery_seen": {
+       "n": 6,
+       "share": 0.066
+      },
+      "advice_reassurance": {
+       "n": 5,
+       "share": 0.055
+      },
+      "affordable_amount": {
+       "n": 1,
+       "share": 0.011
+      }
+     },
+     "left_or_wobbling": {
+      "long_horizon_belief": {
+       "n": 3,
+       "share": 0.5
+      },
+      "averaging_understanding": {
+       "n": 1,
+       "share": 0.167
+      },
+      "goal_linked": {
+       "n": 1,
+       "share": 0.167
+      },
+      "automation_inertia": {
+       "n": 1,
+       "share": 0.167
+      }
+     },
+     "first_time": {
+      "long_horizon_belief": {
+       "n": 16,
+       "share": 0.727
+      },
+      "averaging_understanding": {
+       "n": 6,
+       "share": 0.273
+      },
+      "goal_linked": {
+       "n": 3,
+       "share": 0.136
+      },
+      "affordable_amount": {
+       "n": 1,
+       "share": 0.045
+      },
+      "automation_inertia": {
+       "n": 1,
+       "share": 0.045
+      }
+     },
+     "quotes": {
+      "long_horizon_belief": [
+       {
+        "id": "rd_1q693d2",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "actually got mislead by an agent"
+       },
+       {
+        "id": "rd_1q8k1hg",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1q8k6pu",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       }
+      ],
+      "averaging_understanding": [
+       {
+        "id": "rd_1q8k1hg",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1q8k6pu",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I thought that with nearly 2 years i would have something to show atleast"
+       },
+       {
+        "id": "rd_1raweh6",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "So give your suggestion, what will you if you are at my condition."
+       }
+      ],
+      "goal_linked": [
+       {
+        "id": "rd_1ink0cb",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Started with 5k, now have increased to 6k"
+       },
+       {
+        "id": "rd_1kmge7e",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "Unknowingly at the beginning I invested through PhonePe almost 30k into regular funds"
+       },
+       {
+        "id": "rd_m9lic31",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "Never skipped SIP. Increased SIP 2X in July 2022, 5X in Dec 2023."
+       }
+      ],
+      "automation_inertia": [
+       {
+        "id": "rd_1ssuw9g",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "kept passively investing without ever checking how they're performing"
+       },
+       {
+        "id": "rd_o8sficl",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "I have stopped looking at it and will not look at it, just invest and forget."
+       },
+       {
+        "id": "rd_1llw8zl",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "my returns were basically 0%. It was extremely demotivating and I wondered if I made the wrong investment choices."
+       }
+      ],
+      "past_recovery_seen": [
+       {
+        "id": "rd_1l4pilo",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "Covid time i cash out my MF holding around 12L and purchased SGBs"
+       }
+      ],
+      "advice_reassurance": [
+       {
+        "id": "rd_1vox2e6",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "I stopped the regular funds I had initially invested in and started studying mutual funds properly"
+       },
+       {
+        "id": "rd_1vn65wp",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "I have zero knowledge of finance and rely completely on financial advisors advise."
+       },
+       {
+        "id": "yt_UgwB1oIoGCjg-IN3fPJ4AaABAg",
+        "source": "youtube",
+        "app": null,
+        "group": "unknown",
+        "quote": "i used to panic when market falls, lose my sleep atop sip all that"
+       }
+      ]
+     }
+    }
+   },
+   "n": 109,
+   "strength": "strong",
+   "by_source_type": {
+    "community": 108,
+    "app_review": 1
+   },
+   "by_outcome": {
+    "stayed": 91,
+    "restructured": 5,
+    "wobbling": 6,
+    "unknown": 7
+   },
+   "n_stayed": 294,
+   "n_left_or_wobbling": 535,
+   "differences": {
+    "emotion": [
+     {
+      "code": "angry_frustrated",
+      "stayed": 0.017,
+      "left_or_wobbling": 0.344
+     },
+     {
+      "code": "calm_confident",
+      "stayed": 0.303,
+      "left_or_wobbling": 0.011
+     },
+     {
+      "code": "neutral",
+      "stayed": 0.408,
+      "left_or_wobbling": 0.206
+     },
+     {
+      "code": "anxious",
+      "stayed": 0.078,
+      "left_or_wobbling": 0.217
+     },
+     {
+      "code": "hopeful_excited",
+      "stayed": 0.082,
+      "left_or_wobbling": 0.009
+     }
+    ],
+    "checking_behaviour": [
+     {
+      "code": "xirr",
+      "stayed": 0.173,
+      "left_or_wobbling": 0.075
+     },
+     {
+      "code": "transaction_status",
+      "stayed": 0.01,
+      "left_or_wobbling": 0.058
+     },
+     {
+      "code": "current_value_amount",
+      "stayed": 0.085,
+      "left_or_wobbling": 0.056
+     },
+     {
+      "code": "avoids_checking",
+      "stayed": 0.034,
+      "left_or_wobbling": 0.007
+     },
+     {
+      "code": "returns_pct",
+      "stayed": 0.044,
+      "left_or_wobbling": 0.05
+     }
+    ],
+    "check_frequency": [
+     {
+      "code": "rarely_by_choice",
+      "stayed": 0.037,
+      "left_or_wobbling": 0.009
+     },
+     {
+      "code": "weekly_monthly",
+      "stayed": 0.007,
+      "left_or_wobbling": 0.004
+     },
+     {
+      "code": "daily_or_more",
+      "stayed": 0.003,
+      "left_or_wobbling": 0
+     }
+    ],
+    "behaviour_change": [
+     {
+      "code": "amount_increased",
+      "stayed": 0.415,
+      "left_or_wobbling": 0.032
+     },
+     {
+      "code": "funds_added",
+      "stayed": 0.075,
+      "left_or_wobbling": 0.022
+     },
+     {
+      "code": "learned_more",
+      "stayed": 0.071,
+      "left_or_wobbling": 0.036
+     },
+     {
+      "code": "funds_consolidated",
+      "stayed": 0.031,
+      "left_or_wobbling": 0.002
+     },
+     {
+      "code": "confidence_rose",
+      "stayed": 0.024,
+      "left_or_wobbling": 0.002
+     }
+    ],
+    "expectation": [
+     {
+      "code": "long_term_volatility_accepted",
+      "stayed": 0.088,
+      "left_or_wobbling": 0.026
+     },
+     {
+      "code": "specific_return_target",
+      "stayed": 0.031,
+      "left_or_wobbling": 0.013
+     },
+     {
+      "code": "steady_growth",
+      "stayed": 0.014,
+      "left_or_wobbling": 0.004
+     },
+     {
+      "code": "beat_safe_asset",
+      "stayed": 0.01,
+      "left_or_wobbling": 0.002
+     },
+     {
+      "code": "savings_not_returns",
+      "stayed": 0.003,
+      "left_or_wobbling": 0
+     }
+    ],
+    "start_motivation": [
+     {
+      "code": "specific_goal",
+      "stayed": 0.146,
+      "left_or_wobbling": 0.049
+     },
+     {
+      "code": "wealth_returns",
+      "stayed": 0.109,
+      "left_or_wobbling": 0.028
+     },
+     {
+      "code": "saving_discipline",
+      "stayed": 0.051,
+      "left_or_wobbling": 0.006
+     },
+     {
+      "code": "family_friend_push",
+      "stayed": 0.041,
+      "left_or_wobbling": 0.028
+     },
+     {
+      "code": "tax_saving",
+      "stayed": 0.017,
+      "left_or_wobbling": 0.006
+     }
+    ],
+    "stage": [
+     {
+      "code": "12m_plus",
+      "stayed": 0.558,
+      "left_or_wobbling": 0.237
+     },
+     {
+      "code": "3_12m",
+      "stayed": 0.136,
+      "left_or_wobbling": 0.079
+     },
+     {
+      "code": "early_0_3m",
+      "stayed": 0.014,
+      "left_or_wobbling": 0.043
+     },
+     {
+      "code": "pre_start",
+      "stayed": 0.003,
+      "left_or_wobbling": 0
+     }
+    ],
+    "influencer_source": [
+     {
+      "code": "self_directed",
+      "stayed": 0.082,
+      "left_or_wobbling": 0.019
+     },
+     {
+      "code": "family",
+      "stayed": 0.051,
+      "left_or_wobbling": 0.021
+     },
+     {
+      "code": "friend_colleague",
+      "stayed": 0.037,
+      "left_or_wobbling": 0.019
+     },
+     {
+      "code": "online_community",
+      "stayed": 0.041,
+      "left_or_wobbling": 0.026
+     },
+     {
+      "code": "app_platform",
+      "stayed": 0,
+      "left_or_wobbling": 0.007
+     }
+    ],
+    "outside_app_workaround": [
+     {
+      "code": "other_platform",
+      "stayed": 0,
+      "left_or_wobbling": 0.187
+     },
+     {
+      "code": "complaint_escalation",
+      "stayed": 0.007,
+      "left_or_wobbling": 0.084
+     },
+     {
+      "code": "reddit_forum",
+      "stayed": 0.238,
+      "left_or_wobbling": 0.174
+     },
+     {
+      "code": "creator_comment",
+      "stayed": 0.007,
+      "left_or_wobbling": 0.054
+     },
+     {
+      "code": "self_research",
+      "stayed": 0.041,
+      "left_or_wobbling": 0.024
+     }
+    ]
+   }
+  },
+  "q8_segments": {
+   "question": "How do these patterns differ across user segments?",
+   "fields": {
+    "income_type": {
+     "n": 415,
+     "strength": "strong",
+     "all": {
+      "salaried": {
+       "n": 328,
+       "share": 0.79
+      },
+      "student_no_income": {
+       "n": 62,
+       "share": 0.149
+      },
+      "self_employed_business": {
+       "n": 18,
+       "share": 0.043
+      },
+      "irregular_gig": {
+       "n": 4,
+       "share": 0.01
+      },
+      "retired": {
+       "n": 3,
+       "share": 0.007
+      }
+     },
+     "stayed": {
+      "salaried": {
+       "n": 73,
+       "share": 0.88
+      },
+      "student_no_income": {
+       "n": 8,
+       "share": 0.096
+      },
+      "self_employed_business": {
+       "n": 2,
+       "share": 0.024
+      }
+     },
+     "left_or_wobbling": {
+      "salaried": {
+       "n": 52,
+       "share": 0.8
+      },
+      "student_no_income": {
+       "n": 10,
+       "share": 0.154
+      },
+      "self_employed_business": {
+       "n": 2,
+       "share": 0.031
+      },
+      "retired": {
+       "n": 1,
+       "share": 0.015
+      }
+     },
+     "first_time": {
+      "salaried": {
+       "n": 85,
+       "share": 0.68
+      },
+      "student_no_income": {
+       "n": 35,
+       "share": 0.28
+      },
+      "self_employed_business": {
+       "n": 4,
+       "share": 0.032
+      },
+      "irregular_gig": {
+       "n": 1,
+       "share": 0.008
+      }
+     },
+     "quotes": {
+      "salaried": [
+       {
+        "id": "yt_Ugz2dzr-CDboA5dpQ-R4AaABAg.9QkRPXCpeO-9TKLmCeFBOy",
+        "source": "youtube",
+        "app": null,
+        "group": "first_time",
+        "quote": "so lots of spend to buy gift and cloths so the month will be tight"
+       },
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1ve3ihc",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Since Flexi Caps already have significant large-cap exposure"
+       }
+      ],
+      "student_no_income": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1ur408l",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I cancelled SIPs in them them and have boiled downto these options"
+       }
+      ],
+      "self_employed_business": [
+       {
+        "id": "rd_1sodzhb",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I'm thinking to re allocate the MF portfolio created by SBI agent since its trash it seems"
+       },
+       {
+        "id": "rd_1q7dp08",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "i am a complete beginner in Mutual funds"
+       },
+       {
+        "id": "rd_1i8znar",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "recently started so its 6k in total in my portfolio"
+       }
+      ],
+      "irregular_gig": [
+       {
+        "id": "rd_1l1skxk",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Some YT friends told me to start SIPs but I’m clueless where/how."
+       },
+       {
+        "id": "rd_1vgki3h",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "i earn money, but its not fixed...more like freelance work"
+       },
+       {
+        "id": "rd_1wm39id",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "I am a free lancer, and payments are erratic"
+       }
+      ],
+      "retired": [
+       {
+        "id": "rd_1shobcn",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "Took early retirement last year after 21 years in the IT industry."
+       },
+       {
+        "id": "rd_1ssgm0u",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "retired few years back."
+       },
+       {
+        "id": "rd_ph1wrov",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "been investing in MF since 2004"
+       }
+      ]
+     }
+    },
+    "life_stage": {
+     "n": 555,
+     "strength": "strong",
+     "all": {
+      "early_career_20s": {
+       "n": 341,
+       "share": 0.614
+      },
+      "mid_career_30s_40s": {
+       "n": 145,
+       "share": 0.261
+      },
+      "student_18_plus": {
+       "n": 66,
+       "share": 0.119
+      },
+      "pre_retirement_50s": {
+       "n": 2,
+       "share": 0.004
+      },
+      "senior_60_plus": {
+       "n": 1,
+       "share": 0.002
+      }
+     },
+     "stayed": {
+      "early_career_20s": {
+       "n": 65,
+       "share": 0.586
+      },
+      "mid_career_30s_40s": {
+       "n": 37,
+       "share": 0.333
+      },
+      "student_18_plus": {
+       "n": 9,
+       "share": 0.081
+      }
+     },
+     "left_or_wobbling": {
+      "early_career_20s": {
+       "n": 52,
+       "share": 0.627
+      },
+      "mid_career_30s_40s": {
+       "n": 21,
+       "share": 0.253
+      },
+      "student_18_plus": {
+       "n": 10,
+       "share": 0.12
+      }
+     },
+     "first_time": {
+      "early_career_20s": {
+       "n": 124,
+       "share": 0.667
+      },
+      "student_18_plus": {
+       "n": 32,
+       "share": 0.172
+      },
+      "mid_career_30s_40s": {
+       "n": 30,
+       "share": 0.161
+      }
+     },
+     "quotes": {
+      "early_career_20s": [
+       {
+        "id": "rd_1nzai2d",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "carelessly invested in some randoms"
+       },
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       }
+      ],
+      "mid_career_30s_40s": [
+       {
+        "id": "rd_1ve3ihc",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Since Flexi Caps already have significant large-cap exposure"
+       },
+       {
+        "id": "rd_1uqko2c",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "the Defence fund was bought before I knew better"
+       },
+       {
+        "id": "rd_1hvk7du",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "have fallen poorly and I have redeemed most of them"
+       }
+      ],
+      "student_18_plus": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "rd_1ur408l",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I cancelled SIPs in them them and have boiled downto these options"
+       },
+       {
+        "id": "rd_1v7rfa5",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "want to pay the higher expense ratio to them if I could do it myself"
+       }
+      ],
+      "pre_retirement_50s": [
+       {
+        "id": "bl_freefincal_51945",
+        "source": "blog",
+        "app": null,
+        "group": "experienced",
+        "quote": "when both fund starting giving negative return and i have stopped SIP"
+       },
+       {
+        "id": "rd_ph1wrov",
+        "source": "reddit",
+        "app": null,
+        "group": "experienced",
+        "quote": "been investing in MF since 2004"
+       }
+      ],
+      "senior_60_plus": [
+       {
+        "id": "rd_1ssgm0u",
+        "source": "reddit",
+        "app": null,
+        "group": "unknown",
+        "quote": "retired few years back."
+       }
+      ]
+     }
+    },
+    "source_of_money": {
+     "n": 260,
+     "strength": "strong",
+     "all": {
+      "own_earnings": {
+       "n": 199,
+       "share": 0.765
+      },
+      "family_money": {
+       "n": 32,
+       "share": 0.123
+      },
+      "savings_lumpsum": {
+       "n": 29,
+       "share": 0.112
+      }
+     },
+     "stayed": {
+      "own_earnings": {
+       "n": 46,
+       "share": 0.885
+      },
+      "family_money": {
+       "n": 4,
+       "share": 0.077
+      },
+      "savings_lumpsum": {
+       "n": 2,
+       "share": 0.038
+      }
+     },
+     "left_or_wobbling": {
+      "own_earnings": {
+       "n": 31,
+       "share": 0.795
+      },
+      "family_money": {
+       "n": 5,
+       "share": 0.128
+      },
+      "savings_lumpsum": {
+       "n": 3,
+       "share": 0.077
+      }
+     },
+     "first_time": {
+      "own_earnings": {
+       "n": 59,
+       "share": 0.67
+      },
+      "savings_lumpsum": {
+       "n": 15,
+       "share": 0.17
+      },
+      "family_money": {
+       "n": 14,
+       "share": 0.159
+      }
+     },
+     "quotes": {
+      "own_earnings": [
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1ur408l",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I cancelled SIPs in them them and have boiled downto these options"
+       },
+       {
+        "id": "rd_1vayde3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Decided to cancel the SIP installment for August and September because of the negative returns."
+       }
+      ],
+      "family_money": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "rd_1qirdtx",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "And he asked me to invest in other fund"
+       },
+       {
+        "id": "rd_1jnv4qk",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I had seen in this sub before in some posts that how LIC gives less returns than FDs"
+       }
+      ],
+      "savings_lumpsum": [
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1v4kx7k",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "my mutual fund investments are currently down by around ₹40,000"
+       },
+       {
+        "id": "rd_1v7rfa5",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "want to pay the higher expense ratio to them if I could do it myself"
+       }
+      ]
+     }
+    },
+    "influencer_source": {
+     "n": 316,
+     "strength": "strong",
+     "all": {
+      "self_directed": {
+       "n": 92,
+       "share": 0.291
+      },
+      "advisor_distributor": {
+       "n": 82,
+       "share": 0.259
+      },
+      "family": {
+       "n": 65,
+       "share": 0.206
+      },
+      "online_community": {
+       "n": 57,
+       "share": 0.18
+      },
+      "friend_colleague": {
+       "n": 53,
+       "share": 0.168
+      },
+      "youtube_creator": {
+       "n": 20,
+       "share": 0.063
+      },
+      "app_platform": {
+       "n": 6,
+       "share": 0.019
+      }
+     },
+     "stayed": {
+      "self_directed": {
+       "n": 24,
+       "share": 0.364
+      },
+      "advisor_distributor": {
+       "n": 16,
+       "share": 0.242
+      },
+      "family": {
+       "n": 15,
+       "share": 0.227
+      },
+      "online_community": {
+       "n": 12,
+       "share": 0.182
+      },
+      "friend_colleague": {
+       "n": 11,
+       "share": 0.167
+      },
+      "youtube_creator": {
+       "n": 2,
+       "share": 0.03
+      }
+     },
+     "left_or_wobbling": {
+      "advisor_distributor": {
+       "n": 27,
+       "share": 0.409
+      },
+      "online_community": {
+       "n": 14,
+       "share": 0.212
+      },
+      "family": {
+       "n": 11,
+       "share": 0.167
+      },
+      "self_directed": {
+       "n": 10,
+       "share": 0.152
+      },
+      "friend_colleague": {
+       "n": 10,
+       "share": 0.152
+      },
+      "app_platform": {
+       "n": 4,
+       "share": 0.061
+      },
+      "youtube_creator": {
+       "n": 4,
+       "share": 0.061
+      }
+     },
+     "first_time": {
+      "self_directed": {
+       "n": 36,
+       "share": 0.327
+      },
+      "friend_colleague": {
+       "n": 29,
+       "share": 0.264
+      },
+      "advisor_distributor": {
+       "n": 21,
+       "share": 0.191
+      },
+      "family": {
+       "n": 21,
+       "share": 0.191
+      },
+      "online_community": {
+       "n": 19,
+       "share": 0.173
+      },
+      "youtube_creator": {
+       "n": 6,
+       "share": 0.055
+      },
+      "app_platform": {
+       "n": 1,
+       "share": 0.009
+      }
+     },
+     "quotes": {
+      "self_directed": [
+       {
+        "id": "rd_1ownx5j",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Planning to merge Tata Nifty 50 and Aditya Birla Nifty 50 into one and increase total SIP to"
+       },
+       {
+        "id": "rd_1py3hj3",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Over-diversified into 24 funds with small SIP amounts"
+       },
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       }
+      ],
+      "advisor_distributor": [
+       {
+        "id": "rd_1rw3k9k",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I feel there is an overlap with Bandhan large and mid cap fund and edelweiss fund."
+       },
+       {
+        "id": "rd_1t0deqa",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "1 yr investing via advisor (regular plans). Returns lagging market."
+       },
+       {
+        "id": "rd_1oydcw6",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I’m thinking of stopping the SIPs in the Regular plans and starting new SIPs in Direct plans on my own"
+       }
+      ],
+      "family": [
+       {
+        "id": "rd_1oydcw6",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I’m thinking of stopping the SIPs in the Regular plans and starting new SIPs in Direct plans on my own"
+       },
+       {
+        "id": "rd_1v7rfa5",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "want to pay the higher expense ratio to them if I could do it myself"
+       },
+       {
+        "id": "rd_1re6v3o",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "paused after 2 months because of too much expenses"
+       }
+      ],
+      "online_community": [
+       {
+        "id": "rd_1jnv4qk",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I had seen in this sub before in some posts that how LIC gives less returns than FDs"
+       },
+       {
+        "id": "rd_1hvu5dc",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "I removed all the SIPs which were not necessary, to clean up the portfolio"
+       },
+       {
+        "id": "bl_basunivesh_227090",
+        "source": "blog",
+        "app": null,
+        "group": "first_time",
+        "quote": "Just started after reading your above post"
+       }
+      ],
+      "friend_colleague": [
+       {
+        "id": "rd_1lcmdj9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Only recently I found out it’s Regular plan not Direct."
+       },
+       {
+        "id": "rd_1fy9c91",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Recently, I switched to direct funds."
+       },
+       {
+        "id": "rd_1ojhhfn",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "A colleague told me to invest in at least 5-6 funds but idk if I trust his advice."
+       }
+      ],
+      "youtube_creator": [
+       {
+        "id": "rd_1po99to",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "having money issues I'm likely thinking of exit after 3yrs"
+       },
+       {
+        "id": "yt_UgwIRz-VhFJ6Htq9Kyp4AaABAg",
+        "source": "youtube",
+        "app": null,
+        "group": "first_time",
+        "quote": "aaj uska return lagbhag -325rs. Me dikha rha hai"
+       },
+       {
+        "id": "rd_1t7uwhd",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Initially, most of my fund selections were based on recommendations from financial influencers"
+       }
+      ]
+     }
+    }
+   },
+   "n": 817,
+   "strength": "strong",
+   "by_source_type": {
+    "community": 807,
+    "app_review": 10
+   },
+   "by_outcome": {
+    "restructured": 116,
+    "left": 42,
+    "unknown": 381,
+    "wobbling": 110,
+    "stayed": 168
+   },
+   "segment_outcomes": {
+    "income_type": {
+     "salaried": {
+      "n_with_outcome": 163,
+      "restructured": 38,
+      "stayed": 73,
+      "wobbling": 36,
+      "left": 16,
+      "stayed_share": 0.45,
+      "evidence": "strong"
+     },
+     "student_no_income": {
+      "n_with_outcome": 28,
+      "left": 4,
+      "restructured": 10,
+      "stayed": 8,
+      "wobbling": 6,
+      "stayed_share": 0.29,
+      "evidence": "thin"
+     },
+     "self_employed_business": {
+      "n_with_outcome": 5,
+      "stayed": 2,
+      "restructured": 1,
+      "left": 1,
+      "wobbling": 1,
+      "stayed_share": 0.4,
+      "evidence": "thin"
+     },
+     "irregular_gig": {
+      "n_with_outcome": 0,
+      "stayed_share": null,
+      "evidence": "thin"
+     },
+     "retired": {
+      "n_with_outcome": 1,
+      "left": 1,
+      "stayed_share": 0.0,
+      "evidence": "thin"
+     }
+    },
+    "life_stage": {
+     "early_career_20s": {
+      "n_with_outcome": 175,
+      "restructured": 58,
+      "wobbling": 34,
+      "left": 18,
+      "stayed": 65,
+      "stayed_share": 0.37,
+      "evidence": "strong"
+     },
+     "mid_career_30s_40s": {
+      "n_with_outcome": 76,
+      "stayed": 37,
+      "restructured": 18,
+      "wobbling": 17,
+      "left": 4,
+      "stayed_share": 0.49,
+      "evidence": "moderate"
+     },
+     "student_18_plus": {
+      "n_with_outcome": 28,
+      "left": 4,
+      "stayed": 9,
+      "restructured": 9,
+      "wobbling": 6,
+      "stayed_share": 0.32,
+      "evidence": "thin"
+     },
+     "pre_retirement_50s": {
+      "n_with_outcome": 1,
+      "restructured": 1,
+      "stayed_share": 0.0,
+      "evidence": "thin"
+     },
+     "senior_60_plus": {
+      "n_with_outcome": 0,
+      "stayed_share": null,
+      "evidence": "thin"
+     }
+    },
+    "source_of_money": {
+     "own_earnings": {
+      "n_with_outcome": 92,
+      "stayed": 46,
+      "restructured": 15,
+      "left": 9,
+      "wobbling": 22,
+      "stayed_share": 0.5,
+      "evidence": "moderate"
+     },
+     "family_money": {
+      "n_with_outcome": 17,
+      "left": 3,
+      "stayed": 4,
+      "restructured": 8,
+      "wobbling": 2,
+      "stayed_share": 0.24,
+      "evidence": "thin"
+     },
+     "savings_lumpsum": {
+      "n_with_outcome": 8,
+      "wobbling": 2,
+      "restructured": 3,
+      "left": 1,
+      "stayed": 2,
+      "stayed_share": 0.25,
+      "evidence": "thin"
+     }
+    },
+    "influencer_source": {
+     "self_directed": {
+      "n_with_outcome": 53,
+      "wobbling": 8,
+      "left": 2,
+      "restructured": 19,
+      "stayed": 24,
+      "stayed_share": 0.45,
+      "evidence": "moderate"
+     },
+     "advisor_distributor": {
+      "n_with_outcome": 63,
+      "restructured": 20,
+      "wobbling": 22,
+      "left": 5,
+      "stayed": 16,
+      "stayed_share": 0.25,
+      "evidence": "moderate"
+     },
+     "family": {
+      "n_with_outcome": 34,
+      "wobbling": 10,
+      "restructured": 8,
+      "stayed": 15,
+      "left": 1,
+      "stayed_share": 0.44,
+      "evidence": "moderate"
+     },
+     "online_community": {
+      "n_with_outcome": 33,
+      "restructured": 7,
+      "stayed": 12,
+      "left": 3,
+      "wobbling": 11,
+      "stayed_share": 0.36,
+      "evidence": "moderate"
+     },
+     "friend_colleague": {
+      "n_with_outcome": 27,
+      "wobbling": 8,
+      "stayed": 11,
+      "left": 2,
+      "restructured": 6,
+      "stayed_share": 0.41,
+      "evidence": "thin"
+     },
+     "youtube_creator": {
+      "n_with_outcome": 8,
+      "stayed": 2,
+      "restructured": 2,
+      "left": 1,
+      "wobbling": 3,
+      "stayed_share": 0.25,
+      "evidence": "thin"
+     },
+     "app_platform": {
+      "n_with_outcome": 4,
+      "left": 2,
+      "wobbling": 2,
+      "stayed_share": 0.0,
+      "evidence": "thin"
+     }
+    }
+   }
+  },
+  "q9_unmet_needs": {
+   "question": "What unmet needs emerge consistently across conversations?",
+   "fields": {
+    "unmet_need": {
+     "n": 1398,
+     "strength": "strong",
+     "all": {
+      "portfolio_construction_help": {
+       "n": 703,
+       "share": 0.503
+      },
+      "independent_reassurance": {
+       "n": 265,
+       "share": 0.19
+      },
+      "responsive_support": {
+       "n": 189,
+       "share": 0.135
+      },
+      "reliable_payment_recovery": {
+       "n": 147,
+       "share": 0.105
+      },
+      "basics_education": {
+       "n": 142,
+       "share": 0.102
+      },
+      "understand_my_returns": {
+       "n": 109,
+       "share": 0.078
+      },
+      "flexible_pause_modify": {
+       "n": 81,
+       "share": 0.058
+      },
+      "transparent_costs": {
+       "n": 66,
+       "share": 0.047
+      },
+      "accurate_timely_portfolio": {
+       "n": 58,
+       "share": 0.041
+      },
+      "goal_linkage": {
+       "n": 57,
+       "share": 0.041
+      },
+      "consent_control": {
+       "n": 39,
+       "share": 0.028
+      }
+     },
+     "stayed": {
+      "portfolio_construction_help": {
+       "n": 155,
+       "share": 0.807
+      },
+      "independent_reassurance": {
+       "n": 23,
+       "share": 0.12
+      },
+      "understand_my_returns": {
+       "n": 23,
+       "share": 0.12
+      },
+      "flexible_pause_modify": {
+       "n": 9,
+       "share": 0.047
+      },
+      "basics_education": {
+       "n": 8,
+       "share": 0.042
+      },
+      "goal_linkage": {
+       "n": 8,
+       "share": 0.042
+      },
+      "transparent_costs": {
+       "n": 5,
+       "share": 0.026
+      },
+      "reliable_payment_recovery": {
+       "n": 4,
+       "share": 0.021
+      },
+      "responsive_support": {
+       "n": 2,
+       "share": 0.01
+      },
+      "consent_control": {
+       "n": 1,
+       "share": 0.005
+      },
+      "accurate_timely_portfolio": {
+       "n": 1,
+       "share": 0.005
+      }
+     },
+     "left_or_wobbling": {
+      "portfolio_construction_help": {
+       "n": 136,
+       "share": 0.299
+      },
+      "independent_reassurance": {
+       "n": 128,
+       "share": 0.281
+      },
+      "responsive_support": {
+       "n": 112,
+       "share": 0.246
+      },
+      "flexible_pause_modify": {
+       "n": 55,
+       "share": 0.121
+      },
+      "understand_my_returns": {
+       "n": 54,
+       "share": 0.119
+      },
+      "reliable_payment_recovery": {
+       "n": 45,
+       "share": 0.099
+      },
+      "accurate_timely_portfolio": {
+       "n": 29,
+       "share": 0.064
+      },
+      "transparent_costs": {
+       "n": 28,
+       "share": 0.062
+      },
+      "consent_control": {
+       "n": 27,
+       "share": 0.059
+      },
+      "basics_education": {
+       "n": 27,
+       "share": 0.059
+      },
+      "goal_linkage": {
+       "n": 5,
+       "share": 0.011
+      }
+     },
+     "first_time": {
+      "portfolio_construction_help": {
+       "n": 238,
+       "share": 0.649
+      },
+      "independent_reassurance": {
+       "n": 80,
+       "share": 0.218
+      },
+      "basics_education": {
+       "n": 80,
+       "share": 0.218
+      },
+      "understand_my_returns": {
+       "n": 32,
+       "share": 0.087
+      },
+      "responsive_support": {
+       "n": 18,
+       "share": 0.049
+      },
+      "reliable_payment_recovery": {
+       "n": 16,
+       "share": 0.044
+      },
+      "transparent_costs": {
+       "n": 15,
+       "share": 0.041
+      },
+      "goal_linkage": {
+       "n": 14,
+       "share": 0.038
+      },
+      "flexible_pause_modify": {
+       "n": 10,
+       "share": 0.027
+      },
+      "accurate_timely_portfolio": {
+       "n": 4,
+       "share": 0.011
+      },
+      "consent_control": {
+       "n": 3,
+       "share": 0.008
+      }
+     },
+     "quotes": {
+      "portfolio_construction_help": [
+       {
+        "id": "rd_1nw9aiw",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Not sure what's wrong, think I'll be underperforming."
+       },
+       {
+        "id": "rd_1nzai2d",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "carelessly invested in some randoms"
+       },
+       {
+        "id": "tq_35124",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I don’t want to incur any short term capital gains tax/exit load but want to shift to the direct plan"
+       }
+      ],
+      "independent_reassurance": [
+       {
+        "id": "rd_1o4yt15",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After investing for a year, i realized that i m enjoying my college life less than others"
+       },
+       {
+        "id": "rd_1r1p6dz",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "now motilal oswal midcap cancelled and started edelweiss midcap because of too concentrated"
+       },
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       }
+      ],
+      "responsive_support": [
+       {
+        "id": "rd_1ij58oo",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "how our system work"
+       },
+       {
+        "id": "tq_129443",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "by mistake I have started an SIP offline (not via coin but kept the same folio number F1 which is a demat folio)"
+       },
+       {
+        "id": "tq_42210",
+        "source": "tradingqna",
+        "app": null,
+        "group": "unknown",
+        "quote": "Due to this, i have stopped doing investment through Coin as i don’t want money redeem through cheque."
+       }
+      ],
+      "reliable_payment_recovery": [
+       {
+        "id": "rd_1wywyl7",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "More than enough funds in the bank account"
+       },
+       {
+        "id": "rd_1i1pa7p",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "After change the tax status, my SIPs have been stopped"
+       },
+       {
+        "id": "rd_1o1xn2h",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "every month, the Parag Parikh Flexi Cap SIP fails to go through, and my money gets stuck temporarily"
+       }
+      ],
+      "basics_education": [
+       {
+        "id": "tq_91562",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "i just mentioned the minimum amount of 1300 to buy some units, but as i saw now it has debited the 5000 amount"
+       },
+       {
+        "id": "tq_35785",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "So stopped SIP for Regular fund and Created new SIP on Direct fund."
+       },
+       {
+        "id": "tq_309573",
+        "source": "tradingqna",
+        "app": null,
+        "group": "first_time",
+        "quote": "I started investments by choosing schemes completely randomly. Then I realised my mistake, and asked questions."
+       }
+      ],
+      "understand_my_returns": [
+       {
+        "id": "rd_1nw9aiw",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "Not sure what's wrong, think I'll be underperforming."
+       },
+       {
+        "id": "rd_1wbbqy9",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "seeing the loss has made me anxious"
+       },
+       {
+        "id": "rd_1ikllgp",
+        "source": "reddit",
+        "app": null,
+        "group": "first_time",
+        "quote": "But these are getting down and down"
+       }
+      ]
+     }
+    }
+   },
+   "n": 1398,
+   "strength": "strong",
+   "by_source_type": {
+    "app_review": 323,
+    "community": 1075
+   },
+   "by_outcome": {
+    "left": 156,
+    "wobbling": 299,
+    "unknown": 585,
+    "restructured": 166,
+    "stayed": 192
+   }
+  }
+ }
+}

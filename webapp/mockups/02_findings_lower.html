@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Findings: stayers and unmet needs</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+h2 { font-size: 28px; letter-spacing: -0.025em; font-weight: 800; line-height: 1.2; margin-top: 8px; }
+.split { display: grid; grid-template-columns: 300px 1fr; gap: 0; }
+.intro { padding: 26px 26px; border-right: 1px solid var(--line); }
+.intro p { font-size: 15px; line-height: 1.6; color: var(--ink-2); margin-top: 14px; }
+.legend { display: grid; gap: 8px; margin: 18px 0 0; font-size: 13px; font-weight: 600; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; }
+.note { margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: var(--amber-soft); font-size: 13px; line-height: 1.55; color: #6b4a08; }
+.chart { padding: 18px 28px 10px; }
+.row { display: grid; grid-template-columns: 1fr 220px 1fr; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.row:last-child { border-bottom: 0; }
+.row .left { display: flex; justify-content: flex-end; align-items: center; gap: 10px; }
+.row .right { display: flex; align-items: center; gap: 10px; }
+.row .label { text-align: center; font-size: 14px; font-weight: 600; padding: 0 12px; }
+.b { height: 20px; border-radius: 6px; max-width: 75%; min-width: 3px; }
+.row .left, .row .right { min-width: 0; }
+.b.leave { background: #ff8a6b; }
+.b.stay { background: var(--green); }
+.v { font-weight: 800; font-size: 14px; min-width: 40px; }
+.left .v { text-align: right; }
+.head { display: grid; grid-template-columns: 1fr 220px 1fr; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 8px 0 10px; border-bottom: 1px solid var(--line); }
+.head span:first-child { text-align: right; }
+.head span:nth-child(2) { text-align: center; }
+.sec { margin: 40px 0 18px; display: flex; justify-content: space-between; align-items: end; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; padding: 14px 20px; border-bottom: 1px solid var(--line); }
+td { padding: 16px 20px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+td.need { font-weight: 700; font-size: 15px; }
+td.need small { display: block; font-weight: 500; color: var(--muted); font-size: 12px; margin-top: 3px; }
+.score { display: flex; align-items: center; gap: 10px; }
+.score .track { flex: 1; height: 8px; border-radius: 99px; background: var(--green-soft); }
+.score .fill { height: 100%; border-radius: 99px; background: var(--green); }
+.rank { width: 28px; height: 28px; border-radius: 50%; background: var(--green-soft); color: var(--green-strong); font-weight: 800; display: grid; place-items: center; font-size: 13px; }
+</style></head>
+<body>
+<div class="shell">
+<nav class="side-nav">
+  <div class="side-brand"><span class="side-logo"><span class="mark"></span></span><span><b>SIP DROP-OFF LENS</b><small>Groww · SIP study</small></span></div>
+  <div class="side-label">Workspace</div>
+  <div class="side-item on"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span><b>Findings</b><small>Overview</small></span></div>
+  <div class="side-item"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h10M7 13h7"/></svg><span><b>Story Explorer</b><small>720 investor stories</small></span></div>
+  <div class="side-item"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span><b>Ask the Data</b><small>Questions with citations</small></span></div>
+  <div class="side-foot"><span>Data frozen<br>24 Oct 2026</span><span class="toggle">&#9788;</span></div>
+</nav>
+<main class="main">
+  <div class="eyebrow">Findings · continued</div>
+  <h2 style="margin-bottom:18px">Stayers vs leavers: what differs in their stories</h2>
+  <div class="panel split">
+    <div class="intro">
+      <b style="font-size:15px">147 kept going · 573 stopped</b>
+      <p>Stayers are calmer, further in, and more often check XIRR than the rupee value. 22% say they invest for the long horizon.</p>
+      <div class="legend"><span><i class="dot" style="background:#ff8a6b"></i>Stopped / wavering (573)</span><span><i class="dot" style="background:var(--green)"></i>Kept going (147)</span></div>
+      <div class="note"><b>Read with care:</b> most stayers don't say <i>why</i> they stayed, and 143 of 147 come from forums. Interviews will fill this gap.</div>
+    </div>
+    <div class="chart">
+      <div class="head"><span>Stopped</span><span>Signal</span><span>Kept going</span></div>
+      <div class="row"><div class="left"><span class="v">43%</span><div class="b leave" style="width:43%"></div></div><div class="label">Angry or frustrated</div><div class="right"><div class="b stay" style="width:3%"></div><span class="v">3%</span></div></div>
+      <div class="row"><div class="left"><span class="v">1%</span><div class="b leave" style="width:1%"></div></div><div class="label">Calm and confident</div><div class="right"><div class="b stay" style="width:34%"></div><span class="v">34%</span></div></div>
+      <div class="row"><div class="left"><span class="v">21%</span><div class="b leave" style="width:21%"></div></div><div class="label">Investing 12+ months</div><div class="right"><div class="b stay" style="width:62%"></div><span class="v">62%</span></div></div>
+      <div class="row"><div class="left"><span class="v">1%</span><div class="b leave" style="width:1%"></div></div><div class="label">Accepts volatility</div><div class="right"><div class="b stay" style="width:16%"></div><span class="v">16%</span></div></div>
+      <div class="row"><div class="left"><span class="v">3%</span><div class="b leave" style="width:3%"></div></div><div class="label">Checks XIRR</div><div class="right"><div class="b stay" style="width:22%"></div><span class="v">22%</span></div></div>
+      <div class="row"><div class="left"><span class="v">33%</span><div class="b leave" style="width:33%"></div></div><div class="label">App reliability problem</div><div class="right"><div class="b stay" style="width:2%"></div><span class="v">2%</span></div></div>
+    </div>
+  </div>
+
+  <div class="sec"><div><div class="eyebrow">What investors said they lacked</div><h2>Unmet needs, by how often they appear</h2></div><span class="link">Show all 10 &rarr;</span></div>
+  <div class="panel">
+    <table>
+      <thead><tr><th>Unmet need (as described by investors)</th><th>Drop-off stories</th><th style="width:200px">Share</th><th>Fully exited</th><th>First-time</th><th>Forums</th><th></th></tr></thead>
+      <tbody>
+        <tr><td class="need">Responsive support<small>Couldn't reach a human when a SIP went wrong</small></td><td>151</td><td><div class="score"><div class="track"><div class="fill" style="width:100%"></div></div><b>26%</b></div></td><td>40%</td><td>14</td><td>8</td><td><span class="link">Stories &rarr;</span></td></tr>
+        <tr><td class="need">Portfolio construction help<small>"Too many funds, which do I drop?"</small></td><td>131</td><td><div class="score"><div class="track"><div class="fill" style="width:87%"></div></div><b>23%</b></div></td><td>2%</td><td>41</td><td>131</td><td><span class="link">Stories &rarr;</span></td></tr>
+        <tr><td class="need">Reliable payment recovery<small>Failed instalment, bounce charges, no retry</small></td><td>130</td><td><div class="score"><div class="track"><div class="fill" style="width:86%"></div></div><b>23%</b></div></td><td>15%</td><td>13</td><td>12</td><td><span class="link">Stories &rarr;</span></td></tr>
+        <tr><td class="need">Independent reassurance<small>Someone neutral to say whether this is normal</small></td><td>80</td><td><div class="score"><div class="track"><div class="fill" style="width:53%"></div></div><b>14%</b></div></td><td>4%</td><td>28</td><td>80</td><td><span class="link">Stories &rarr;</span></td></tr>
+        <tr><td class="need">Flexible pause / modify<small>Wanted to pause or edit, not cancel</small></td><td>59</td><td><div class="score"><div class="track"><div class="fill" style="width:39%"></div></div><b>10%</b></div></td><td>14%</td><td>7</td><td>18</td><td><span class="link">Stories &rarr;</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="meta" style="margin-top:14px">Counts of the 573 drop-off stories mentioning each need; a story can mention several. The engine reports what investors said; it does not rank or recommend solutions.</p>
+</main>
+</div>
+</body></html>

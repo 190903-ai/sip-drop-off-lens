@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ask the data</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+.cols { display: grid; grid-template-columns: 1fr 290px; gap: 22px; align-items: start; }
+.askcard { padding: 22px 24px; }
+.askhead { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+.ico { width: 36px; height: 36px; border-radius: 10px; background: var(--green-soft); display: grid; place-items: center; flex: none; }
+.ico svg { width: 18px; height: 18px; stroke: var(--green-strong); fill: none; stroke-width: 2; }
+.askhead b { display: block; font-size: 16px; }
+.askhead small { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; }
+.askrow { display: flex; gap: 12px; }
+.input { flex: 1; height: 50px; border: 1px solid var(--line); border-radius: 12px; display: flex; align-items: center; padding: 0 16px; font-size: 15px; color: var(--muted); }
+.sec { margin: 34px 0 16px; }
+.sec h2 { font-size: 24px; letter-spacing: -0.02em; font-weight: 800; margin-top: 8px; }
+.sec p { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
+.prompts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.prompt { padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.prompt small { display: block; font-size: 11px; font-weight: 800; letter-spacing: .12em; color: var(--muted); margin-bottom: 6px; }
+.prompt b { font-size: 15px; }
+.prompt .arr { color: var(--green-strong); font-weight: 800; }
+.hist .row { padding: 14px 20px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+.hist .foot { padding: 12px 20px; font-size: 12px; color: var(--muted); }
+.trust { margin-top: 16px; padding: 16px 20px; font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+.trust b { color: var(--ink); display: block; margin-bottom: 4px; font-size: 14px; }
+</style></head>
+<body>
+<div class="shell">
+<nav class="side-nav">
+  <div class="side-brand"><span class="side-logo"><span class="mark"></span></span><span><b>SIP DROP-OFF LENS</b><small>Groww · SIP study</small></span></div>
+  <div class="side-label">Workspace</div>
+  <div class="side-item"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span><b>Findings</b><small>Overview</small></span></div>
+  <div class="side-item"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h10M7 13h7"/></svg><span><b>Story Explorer</b><small>720 investor stories</small></span></div>
+  <div class="side-item on"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span><b>Ask the Data</b><small>Questions with citations</small></span></div>
+  <div class="side-foot"><span>Data frozen<br>24 Oct 2026</span><span class="toggle">&#9788;</span></div>
+</nav>
+<main class="main">
+  <div class="page-head">
+    <div>
+      <div class="eyebrow">Explore investor stories</div>
+      <h1>Ask the Data</h1>
+      <p>Ask a question, see how it was understood, and check every claim against the stories it came from. Answers describe what investors said; they do not recommend funds.</p>
+    </div>
+  </div>
+  <div class="cols">
+    <div>
+      <div class="panel askcard">
+        <div class="askhead"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><span><b>Ask a question</b><small>Answered only from the 720 tagged stories, with numbered citations</small></span></div>
+        <div class="askrow"><div class="input">Why do first-time investors stop their SIP?</div><span class="btn">Ask</span></div>
+      </div>
+      <div class="sec"><div class="eyebrow">Starter questions</div><h2>Start with a broad question</h2><p>These show the kinds of drop-off, friction and staying behaviour the stories can answer.</p></div>
+      <div class="prompts">
+        <div class="card prompt"><span><small>PROMPT 01</small><b>Why do first-time investors stop their SIP?</b></span><span class="arr">&rarr;</span></div>
+        <div class="card prompt"><span><small>PROMPT 02</small><b>What goes wrong with SIP payments and mandates?</b></span><span class="arr">&rarr;</span></div>
+        <div class="card prompt"><span><small>PROMPT 03</small><b>What keeps people investing after a loss?</b></span><span class="arr">&rarr;</span></div>
+        <div class="card prompt"><span><small>PROMPT 04</small><b>Do people pause, or cancel outright?</b></span><span class="arr">&rarr;</span></div>
+        <div class="card prompt"><span><small>PROMPT 05</small><b>What do Groww users complain about most?</b></span><span class="arr">&rarr;</span></div>
+        <div class="card prompt"><span><small>PROMPT 06</small><b>Who do new investors lean on for advice?</b></span><span class="arr">&rarr;</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="panel hist">
+        <div class="panel-head"><span><div class="eyebrow" style="font-size:11px">On this device</div><b style="margin-top:6px">Recent questions</b></span></div>
+        <div class="row">No questions yet. Questions you ask will appear here.</div>
+        <div class="foot">Stored only in this browser.</div>
+      </div>
+      <div class="panel trust"><b>How answers are checked</b>The AI only sees retrieved stories. Every sentence needs a citation, and every quote is matched word for word to its source before it's shown.</div>
+      <div class="panel trust"><b>No advice</b>The engine reports what investors said. It does not tell you what to do with your SIP or which fund to pick, and it does not propose product solutions.</div>
+    </div>
+  </div>
+</main>
+</div>
+</body></html>

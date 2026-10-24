@@ -1,0 +1,1237 @@
+{
+  "version": "v1.7",
+  "notes": [
+    "Derived from 150 items (75 Play Store, 75 YouTube); re-validate against Reddit before scaling.",
+    "Code only what is observable in the text; when in doubt use unknown.",
+    "stop_trigger = the event; root_cause = the mechanism that makes the event lead to doubt/stop. A trigger can exist with root_cause unknown.",
+    "Play Store items only about stocks/IPO/F&O: code platform fields, leave SIP-journey fields unknown."
+  ],
+  "fields": [
+    {
+      "name": "voice",
+      "question": "Is the writer reporting their own MF/SIP experience, asking a question, or giving opinion/advice to others?",
+      "type": "single",
+      "values": [
+        {
+          "code": "own_experience",
+          "definition": "Describes something that happened to their own investment or account.",
+          "include_example": "auto payment fails in mutual fund sip and there is no retry",
+          "exclude_rule": "If only asking a hypothetical/how-to with no personal event, use question."
+        },
+        {
+          "code": "question",
+          "definition": "Asks for advice, how-to or fund choice; may mention own holdings as context.",
+          "include_example": "Sir kounsa mutual fund me sip krna Sahi rahega",
+          "exclude_rule": "If the main content is a complaint/report of an event, use own_experience."
+        },
+        {
+          "code": "opinion_advice",
+          "definition": "Generalises or advises others.",
+          "include_example": "Dekho hi mat how markets perform. Let sips continue.",
+          "exclude_rule": "If they describe a concrete event in their own account, use own_experience."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "investor_experience",
+      "question": "Is the writer a first-time mutual fund / SIP investor or an experienced one, as stated?",
+      "type": "single",
+      "values": [
+        {
+          "code": "first_time",
+          "definition": "Says they are new to mutual funds / SIPs, it is their first SIP, or they started investing within about the last year.",
+          "include_example": "this is my first SIP, started 4 months ago",
+          "exclude_rule": "Only a new SIP added by someone who says they have invested for years -> experienced."
+        },
+        {
+          "code": "experienced",
+          "definition": "Says they have invested in mutual funds for more than about a year, or describes a long-held, multi-fund portfolio.",
+          "include_example": "been doing SIPs since 2018",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "platform",
+      "question": "Which platform is the writer's SIP on, if stated or clear from the source?",
+      "type": "single",
+      "values": [
+        {
+          "code": "groww",
+          "definition": "Groww (all Play Store items are Groww reviews).",
+          "include_example": "Groww makes investing easy",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Another app, AMC, bank or distributor.",
+          "include_example": "I use Zerodha Coin for my SIPs",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "stage",
+      "question": "Where is the writer in their SIP journey, based only on stated duration?",
+      "type": "single",
+      "values": [
+        {
+          "code": "pre_start",
+          "definition": "Has not started a SIP yet (planning, asking how to start).",
+          "include_example": "Muje sip start Krna hai pr kese ye samjh nhi aa rahi",
+          "exclude_rule": "If they mention any running SIP, do not use."
+        },
+        {
+          "code": "early_0_3m",
+          "definition": "First/only SIP started within ~3 months (last month, just started, 2 days ago).",
+          "include_example": "i started my fast sip last month",
+          "exclude_rule": "Requires an explicit recency cue; 'new' or 'recently' without time -> unknown."
+        },
+        {
+          "code": "3_12m",
+          "definition": "Investing between ~3 and 12 months.",
+          "include_example": "10 months ho gye",
+          "exclude_rule": "Exactly '1 year' -> 3_12m; only 'more than a year' or longer -> 12m_plus."
+        },
+        {
+          "code": "12m_plus",
+          "definition": "Investing more than 12 months.",
+          "include_example": "Main 2 saal se SIP kar raha hu",
+          "exclude_rule": "Do not infer from portfolio size or amount."
+        },
+        {
+          "code": "unknown",
+          "definition": "No stated duration or start date. If a start date is stated, compute the stage from it relative to the post date.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "action",
+      "question": "What did the writer do (or intend) with their SIP/MF investment?",
+      "type": "single",
+      "values": [
+        {
+          "code": "continued",
+          "definition": "Kept the SIP running, including through a loss, a doubt or outside pressure to stop.",
+          "include_example": "I am keeping my  SIP continue",
+          "exclude_rule": "Says they nearly stopped and then decided to stay -> nearly_stopped."
+        },
+        {
+          "code": "increased",
+          "definition": "Raised amount, stepped up, added SIPs or lump sums, or plans a specific addition to an already-running SIP.",
+          "include_example": "Negative returns since started recently but have doubled the SIP",
+          "exclude_rule": ""
+        },
+        {
+          "code": "reduced",
+          "definition": "SIP amount lowered (by the user, or by the platform with stated consequence).",
+          "include_example": "meri auto Sip kam ki bina permission",
+          "exclude_rule": "If later fully withdrawn, use stopped."
+        },
+        {
+          "code": "paused",
+          "definition": "Skipped/paused instalments intending to resume, or tried to.",
+          "include_example": "tried a lot to skip my sips for a month",
+          "exclude_rule": "A failed debit with no intent to pause is not paused; record it in stop_trigger."
+        },
+        {
+          "code": "stopped",
+          "definition": "Cancelled SIP, redeemed/withdrew, or stopped investing in MFs.",
+          "include_example": "then i withdrawal all",
+          "exclude_rule": "If they still invest in other funds/SIPs -> restructured. If they left Groww but invest elsewhere -> switched_platform."
+        },
+        {
+          "code": "switched_platform",
+          "definition": "Moved MF/SIP activity to another app/AMC while still investing.",
+          "include_example": "than I uninstall and use DHAN apps",
+          "exclude_rule": "If no evidence they still invest, use stopped."
+        },
+        {
+          "code": "restructured",
+          "definition": "Stopped or switched one fund's SIP but keeps investing overall (consolidating, moving regular->direct, replacing a fund).",
+          "include_example": "stopped my small cap SIP and moved the amount to my index fund",
+          "exclude_rule": "If they stop investing in MFs altogether -> stopped. Moving platform only -> switched_platform."
+        },
+        {
+          "code": "attempted_blocked",
+          "definition": "Tried to cancel, skip, pause, reduce or redeem, but the app did not let them or the request failed.",
+          "include_example": "trying to cancel my sip for weeks but the option is not working",
+          "exclude_rule": "If the action eventually went through, code that action (stopped/paused/...)."
+        },
+        {
+          "code": "nearly_stopped",
+          "definition": "Seriously considered stopping, pausing or redeeming, then decided to keep the SIP running (says what made them stay).",
+          "include_example": "was about to stop my SIP when it went red but my friend explained rupee cost averaging, so I continued",
+          "exclude_rule": "Still undecided -> considering_stop. No stated wobble -> continued."
+        },
+        {
+          "code": "considering_stop",
+          "definition": "Asking/thinking whether to stop, sell or switch out of an existing SIP.",
+          "include_example": "Motilal mid cap os falling like anything should I continue my sip?",
+          "exclude_rule": "Asking only which fund to pick for a new SIP -> considering_start."
+        },
+        {
+          "code": "considering_start",
+          "definition": "Planning to start a first or new SIP.",
+          "include_example": "My Frist time learn SIP So I'm starting SIP Soon",
+          "exclude_rule": "Already has a running SIP and plans to add to it -> increased."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "start_motivation",
+      "question": "Why did they start (stated reason)?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "creator_push",
+          "definition": "A YouTube/social creator's content prompted the start.",
+          "include_example": "Ap ki waji se mera SIP start hogaya",
+          "exclude_rule": ""
+        },
+        {
+          "code": "family_friend_push",
+          "definition": "Family member, friend or colleague told them to.",
+          "include_example": "I installed the app only because I was told by my son",
+          "exclude_rule": ""
+        },
+        {
+          "code": "saving_discipline",
+          "definition": "To force saving / avoid spending.",
+          "include_example": "atleast I'm saving something instead of spending all money",
+          "exclude_rule": "If tied to a named goal, also add specific_goal."
+        },
+        {
+          "code": "specific_goal",
+          "definition": "Named goal (house, child education, retirement, N-year target).",
+          "include_example": "yielded me a down payment for my house",
+          "exclude_rule": ""
+        },
+        {
+          "code": "wealth_returns",
+          "definition": "To earn returns, beat inflation or FD.",
+          "include_example": "you can invest your money very well and earn money",
+          "exclude_rule": ""
+        },
+        {
+          "code": "learning_experiment",
+          "definition": "To learn or test investing.",
+          "include_example": "diversify it in 5 different sips just to checkout which MF is giving better returns",
+          "exclude_rule": ""
+        },
+        {
+          "code": "app_ease",
+          "definition": "The app's ease is cited as the reason they started.",
+          "include_example": "beginner friendly interface, which led me to start investing",
+          "exclude_rule": "Generic praise with no causal link to starting -> do not code."
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "expectation",
+      "question": "What did they expect to happen (dominant stated expectation)?",
+      "type": "single",
+      "values": [
+        {
+          "code": "specific_return_target",
+          "definition": "States a return number and/or timeframe they expected.",
+          "include_example": "I thought in 3-5 yrs i will definitely get minimum 10-12 percent",
+          "exclude_rule": ""
+        },
+        {
+          "code": "beat_safe_asset",
+          "definition": "Expected more than FD/RD/savings, without a number.",
+          "include_example": "isse jyada to bank ki FD se mil jata h",
+          "exclude_rule": "If a number is stated, use specific_return_target."
+        },
+        {
+          "code": "steady_growth",
+          "definition": "Expected value to rise without falling; surprised by fluctuation.",
+          "include_example": "kbhi bad jata h kbhi km aa jata h",
+          "exclude_rule": "If they accept fluctuation as normal, use long_term_volatility_accepted."
+        },
+        {
+          "code": "long_term_volatility_accepted",
+          "definition": "Expects ups and downs; payoff after many years.",
+          "include_example": "MF मे असली प्रॉफिट 7 से 8 साल बाद शुरु होता हैं",
+          "exclude_rule": ""
+        },
+        {
+          "code": "savings_not_returns",
+          "definition": "Expects disciplined saving; returns secondary.",
+          "include_example": "It’s not likely to compound into a massive amount of money",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "stop_trigger",
+      "question": "What immediate EVENT pushed them to stop, pause, reduce or consider stopping? Code only when action is stopped/paused/reduced/switched_platform/considering_stop.",
+      "type": "multi",
+      "values": [
+        {
+          "code": "own_returns_negative_flat",
+          "definition": "Saw their own SIP/fund negative, flat or low.",
+          "include_example": "koi sip 2 sal se minus m return de rhi h",
+          "exclude_rule": "General market talk without own-portfolio reference -> market_news."
+        },
+        {
+          "code": "market_news",
+          "definition": "General market fall/crash/flat-market narrative.",
+          "include_example": "Yeh flat market ka solution",
+          "exclude_rule": ""
+        },
+        {
+          "code": "payment_failure",
+          "definition": "SIP debit/mandate/autopay failed or did not process.",
+          "include_example": "even after activating Autopay sips gets cancelled",
+          "exclude_rule": ""
+        },
+        {
+          "code": "charge_penalty",
+          "definition": "Bounce charge, penalty, fees or hidden charge.",
+          "include_example": "they charged my bank charged NACH bounce charges of 350",
+          "exclude_rule": ""
+        },
+        {
+          "code": "platform_change",
+          "definition": "App changed plan/features/requirements (MF Prime switch, forced demat, removed manual pay).",
+          "include_example": "jbse inkaa MF Prime aaya h",
+          "exclude_rule": ""
+        },
+        {
+          "code": "order_redemption_delay",
+          "definition": "Delay in allotment, redemption or credit of money.",
+          "include_example": "redeeming my mutual units taking longer and longer",
+          "exclude_rule": ""
+        },
+        {
+          "code": "data_discrepancy",
+          "definition": "App shows wrong/stale value or P&L.",
+          "include_example": "it often shows wrong amount invested",
+          "exclude_rule": ""
+        },
+        {
+          "code": "cash_need_life_event",
+          "definition": "Emergency, illness, job/income loss or other need for money.",
+          "include_example": "got operated on my knee and I'm not able to go for work",
+          "exclude_rule": ""
+        },
+        {
+          "code": "advice_received",
+          "definition": "A person/creator advised stopping, switching or selling.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "modify_blocked",
+          "definition": "Tried to skip/edit/increase and the app did not allow it.",
+          "include_example": "skip one installment but the useless feature doesn't work",
+          "exclude_rule": ""
+        },
+        {
+          "code": "self_review",
+          "definition": "Their own periodic review of the portfolio (no external event).",
+          "include_example": "was reviewing my portfolio after a year and realised",
+          "exclude_rule": ""
+        },
+        {
+          "code": "missing_notification",
+          "definition": "Was not told about a failed or missed instalment, a mandate problem, or a change to their SIP, and found out late.",
+          "include_example": "no notification that my sip was not processed",
+          "exclude_rule": "If they were told but the debit still failed -> payment_failure."
+        },
+        {
+          "code": "tax_rule_change",
+          "definition": "A tax rule or the writer's tax regime changed so the SIP no longer serves its purpose (e.g. new tax regime makes an ELSS SIP pointless).",
+          "include_example": "moved to the new tax regime so stopped my ELSS SIP",
+          "exclude_rule": ""
+        },
+        {
+          "code": "app_malfunction",
+          "definition": "The app crashed, would not log in, showed a blank screen, or a feature did not work, and this pushed them towards stopping or leaving.",
+          "include_example": "app shows white screen for days, can't even see my SIPs, moving to another app",
+          "exclude_rule": "Failed debit -> payment_failure. Could not skip/edit -> modify_blocked. Slow redemption -> order_redemption_delay. Wrong value shown -> data_discrepancy."
+        },
+        {
+          "code": "debit_after_cancel",
+          "definition": "Money was still debited after they cancelled or paused the SIP.",
+          "include_example": "cancelled my SIP last month but amount still got deducted",
+          "exclude_rule": "Could not cancel at all -> modify_blocked."
+        },
+        {
+          "code": "support_failure",
+          "definition": "Customer support was unreachable, slow or unhelpful, and that pushed them towards stopping or leaving.",
+          "include_example": "raised 5 tickets, no one replied, so I am moving my SIPs out",
+          "exclude_rule": "Support is mentioned but the push is a failed debit -> payment_failure (both may apply)."
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "root_cause",
+      "question": "What underlying MECHANISM (beyond the trigger) explains the doubt/stop? Code only when the text shows the mechanism, not just the event. Most important field.",
+      "type": "multi",
+      "values": [
+        {
+          "code": "return_misreading",
+          "definition": "Reads own performance through a WRONG or partial frame: point-to-point NAV, absolute rupees, the fund's headline return vs their own SIP return, a single day's P&L, or hindsight lumpsum comparison. The error is in HOW they read the number.",
+          "include_example": "agar lumsum kiya hota toh aaj benefits hota na jabki market tab se girta ja raha hai",
+          "exclude_rule": "Reads correctly but is unhappy because reality fell short of a stated expectation -> expectation_violation (both may apply)."
+        },
+        {
+          "code": "expectation_violation",
+          "definition": "Reads performance CORRECTLY, but a prior expectation they state (return rate, time to profit, no losses) was not met.",
+          "include_example": "I thought in 3-5 yrs i will definitely get minimum 10-12 percent",
+          "exclude_rule": "Expectation not stated -> not this. If the reading itself is flawed, add return_misreading too."
+        },
+        {
+          "code": "safe_asset_benchmark",
+          "definition": "Judges SIP against FD/RD/savings and finds it lacking.",
+          "include_example": "isse jyada to bank ki FD se mil jata h",
+          "exclude_rule": "Comparison to lumpsum or another fund -> return_misreading or timing_mindset."
+        },
+        {
+          "code": "borrowed_conviction",
+          "definition": "A SPECIFIC person steers the hold/stop decision for an EXISTING SIP: the writer started on a family member's, friend's, advisor's or creator's say-so and defers to them, blames them, or explicitly hands the decision to a named person/creator they follow.",
+          "include_example": "mene apke bolne pr 2lamsum or sip kiya hu switch krdu batana",
+          "exclude_rule": "Asking a forum or the public 'should I continue or stop?' -> not this; code the mechanism (volatility_mismatch, expectation_violation, ...). Asking which fund to pick -> not this."
+        },
+        {
+          "code": "cashflow_rigidity",
+          "definition": "A fixed SIP clashes with income shocks, irregular/low income or competing needs, so stopping, skipping, avoiding or planning gaps in the SIP is seen as the only option.",
+          "include_example": "just need one month to get back on track",
+          "exclude_rule": "Debit failed despite money in bank -> payment_plumbing."
+        },
+        {
+          "code": "payment_plumbing",
+          "definition": "Continuity broken by mandate/autopay/debit mechanics or penalties, independent of the user's intent or funds.",
+          "include_example": "auto payment fails in mutual fund sip and there is no retry done by the app",
+          "exclude_rule": "User lacked money -> cashflow_rigidity."
+        },
+        {
+          "code": "platform_trust_erosion",
+          "definition": "Feels misled or cheated by the app (charges, regular plans, Prime, forced accounts, wrong data, unaccountable support).",
+          "include_example": "You guys started selling Regular MFs in the name of prime",
+          "exclude_rule": "Distrust of MFs/markets in general -> product_distrust."
+        },
+        {
+          "code": "product_distrust",
+          "definition": "Believes MFs/markets are rigged, a scam or dishonest in general.",
+          "include_example": "MF is completely scams all controlled by big players",
+          "exclude_rule": ""
+        },
+        {
+          "code": "volatility_mismatch",
+          "definition": "Holds high-volatility funds (small/mid/thematic) and is distressed by their swings.",
+          "include_example": "Motilal mid cap os falling like anything should I continue my sip?",
+          "exclude_rule": "Holding such funds calmly -> not this."
+        },
+        {
+          "code": "timing_mindset",
+          "definition": "Treats investing as market timing; prefers lumpsum/dip-buying so SIP feels inferior or optional.",
+          "include_example": "I dont do SIP, I do a manual lumpsum everymonth",
+          "exclude_rule": "Buying extra on dips while continuing SIP calmly -> do not code as a root cause."
+        },
+        {
+          "code": "portfolio_rationalisation",
+          "definition": "Cancels or changes a SIP to fix the portfolio itself: fund overlap, too many funds, regular->direct, cleaning up hastily chosen first funds.",
+          "include_example": "too many funds with overlapping holdings so stopping two SIPs",
+          "exclude_rule": "Stops because of returns disappointment -> expectation_violation / return_misreading."
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "stay_reason",
+      "question": "If the writer kept, nearly stopped then kept, increased or restarted their SIP: what kept them going (stated)? Use only for stayed stories; otherwise unknown.",
+      "type": "multi",
+      "values": [
+        {
+          "code": "long_horizon_belief",
+          "definition": "Believes in investing for the long term / that time in the market wins.",
+          "include_example": "it's for 15 years, a few red months don't matter",
+          "exclude_rule": ""
+        },
+        {
+          "code": "averaging_understanding",
+          "definition": "Understands that falls buy more units (rupee-cost averaging) or sees a fall as a discount.",
+          "include_example": "market down means I get more units for the same SIP",
+          "exclude_rule": ""
+        },
+        {
+          "code": "past_recovery_seen",
+          "definition": "Has seen or read about markets recovering after earlier falls.",
+          "include_example": "stayed through covid crash and it came back",
+          "exclude_rule": ""
+        },
+        {
+          "code": "advice_reassurance",
+          "definition": "Someone (friend, creator, forum, advisor) reassured them to continue.",
+          "include_example": "everyone here said don't stop, so I continued",
+          "exclude_rule": "The decision itself handed over -> also code borrowed_conviction in root_cause."
+        },
+        {
+          "code": "goal_linked",
+          "definition": "The SIP is tied to a named goal (house, retirement, child) that keeps it going.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "automation_inertia",
+          "definition": "Kept going because it is automatic / they don't look at it.",
+          "include_example": "I don't check the app, it just gets deducted",
+          "exclude_rule": ""
+        },
+        {
+          "code": "affordable_amount",
+          "definition": "The amount is small enough that stopping isn't worth it.",
+          "include_example": "it's just 1000 a month, not stopping",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "metric_branch",
+      "question": "Which branch of the 12-month continuation metric tree does this item speak to?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "activation",
+          "definition": "Problems or experiences with setting up a SIP or the first instalment (mandate registration, first debit, choosing the SIP date).",
+          "include_example": "",
+          "exclude_rule": "Problems with later, recurring instalments -> reliability."
+        },
+        {
+          "code": "reliability",
+          "definition": "A recurring instalment failed or was blocked without the user choosing it (bounce, mandate expiry, no retry, skip/edit not working).",
+          "include_example": "",
+          "exclude_rule": "User chose to skip/stop -> intent."
+        },
+        {
+          "code": "intent",
+          "definition": "The user chose, or is weighing, to skip, pause, reduce, stop, restructure, continue or step up, and why (returns, cash flow, trust, advice, goals).",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "recovery",
+          "definition": "Restarting after a pause, lapse or failure (or barriers to restarting).",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "none",
+          "definition": "Relevant context (e.g. motivation, education need) but no continuation branch.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "checking_behaviour",
+      "question": "What do they look at once invested?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "daily_pnl",
+          "definition": "Day's gain/loss.",
+          "include_example": "App takes more Time in Showing Daily Gain/Loss",
+          "exclude_rule": ""
+        },
+        {
+          "code": "current_value_amount",
+          "definition": "Current value, invested amount or balance in rupees.",
+          "include_example": "Sir mera sip me amount kam ho raha hai",
+          "exclude_rule": ""
+        },
+        {
+          "code": "returns_pct",
+          "definition": "Absolute return % on own holdings.",
+          "include_example": "Now i have gain of 6 percent",
+          "exclude_rule": ""
+        },
+        {
+          "code": "xirr",
+          "definition": "XIRR / annualised return.",
+          "include_example": "13.37 xirr hai abhi",
+          "exclude_rule": ""
+        },
+        {
+          "code": "nav",
+          "definition": "NAV level.",
+          "include_example": "NAV. 540 thi ab wohi NAV 715",
+          "exclude_rule": ""
+        },
+        {
+          "code": "fund_level_returns",
+          "definition": "Fund's published period returns or ratios.",
+          "include_example": "dikhate h 30 % return",
+          "exclude_rule": ""
+        },
+        {
+          "code": "transaction_status",
+          "definition": "Whether an instalment/order/redemption went through.",
+          "include_example": "this month my SIP is not deducted",
+          "exclude_rule": ""
+        },
+        {
+          "code": "avoids_checking",
+          "definition": "Deliberately does not look.",
+          "include_example": "15 sal bad hi check karunga",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "check_frequency",
+      "question": "How often do they say they check?",
+      "type": "single",
+      "values": [
+        {
+          "code": "daily_or_more",
+          "definition": "Daily or several times a day.",
+          "include_example": "even though I refresh my portfolio daily",
+          "exclude_rule": ""
+        },
+        {
+          "code": "weekly_monthly",
+          "definition": "Weekly or monthly.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "rarely_by_choice",
+          "definition": "Rarely/never, as a deliberate strategy.",
+          "include_example": "app delete kar do.  Dekho hi mat",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "in_app_confusion",
+      "question": "What inside the app confuses or worries them?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "value_mismatch",
+          "definition": "Portfolio/invested/redemption value wrong or inconsistent.",
+          "include_example": "it often shows wrong amount invested",
+          "exclude_rule": ""
+        },
+        {
+          "code": "return_figure_meaning",
+          "definition": "Unclear what a return number means (fund vs own, XIRR, honesty of daily P&L).",
+          "include_example": "sip 2 sal se minus m return de rhi h or dikhate h 30 % return",
+          "exclude_rule": ""
+        },
+        {
+          "code": "payment_mandate_status",
+          "definition": "Unclear whether an instalment/mandate went through or why it failed.",
+          "include_example": "I'm unable to pay/approve UPI mandate",
+          "exclude_rule": ""
+        },
+        {
+          "code": "modify_sip",
+          "definition": "How/whether to skip, pause, edit, increase, top-up or cancel.",
+          "include_example": "sip ka amount edit nahi kar pa rahe",
+          "exclude_rule": ""
+        },
+        {
+          "code": "charges_plan_type",
+          "definition": "Fees, expense ratio, regular vs direct, MF Prime.",
+          "include_example": "They should show the total expense ratio for each mutual fund",
+          "exclude_rule": ""
+        },
+        {
+          "code": "navigation_ui",
+          "definition": "Cannot find cart, funds, sections or SIP amounts.",
+          "include_example": "I don't see the cart option under mutual funds",
+          "exclude_rule": ""
+        },
+        {
+          "code": "order_timeline",
+          "definition": "How long allotment/redemption takes; status stuck.",
+          "include_example": "placed a lumpsum order in MF. still in progress only",
+          "exclude_rule": ""
+        },
+        {
+          "code": "account_kyc_demat",
+          "definition": "KYC, demat requirement, OTP, nominee.",
+          "include_example": "Is it mandatory to register for a demat account???",
+          "exclude_rule": ""
+        },
+        {
+          "code": "tax_withdrawal",
+          "definition": "Tax on redemption, how/when to withdraw.",
+          "include_example": "Tell also how much tax and dp charge u get when u sell ur sip",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "outside_app_workaround",
+      "question": "What do they do outside the app when unsure?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "creator_comment",
+          "definition": "Ask a YouTube/social creator in comments.",
+          "include_example": "Sir kindly rate my portfolio out of 10",
+          "exclude_rule": ""
+        },
+        {
+          "code": "family_friend",
+          "definition": "Ask or follow family/friends.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "reddit_forum",
+          "definition": "Post/read on Reddit or forums.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "advisor_ca",
+          "definition": "Consult CA/advisor/distributor/bank RM.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other_tracker",
+          "definition": "Use another app/site to track (Kuvera, Tickertape, RTA/AMC app).",
+          "include_example": "i have to double check on kuvera or tickertape",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other_platform",
+          "definition": "Move to or compare with another broker/AMC.",
+          "include_example": "I uninstall and use DHAN apps",
+          "exclude_rule": ""
+        },
+        {
+          "code": "complaint_escalation",
+          "definition": "Support ticket, regulator (SEBI), public review.",
+          "include_example": "SEBI nu report kiti par koi hall nahi",
+          "exclude_rule": ""
+        },
+        {
+          "code": "manual_payment",
+          "definition": "Pays SIP manually / lumpsum each month instead of autopay.",
+          "include_example": "I dont do SIP, I do a manual lumpsum everymonth",
+          "exclude_rule": ""
+        },
+        {
+          "code": "self_research",
+          "definition": "Reads/watches content to learn on own.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "income_type",
+      "question": "Stated income type.",
+      "type": "single",
+      "values": [
+        {
+          "code": "salaried",
+          "definition": "Mentions salary/job.",
+          "include_example": "I may not receive my salary",
+          "exclude_rule": ""
+        },
+        {
+          "code": "self_employed_business",
+          "definition": "Own business, shop or freelance.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "irregular_gig",
+          "definition": "Irregular, seasonal, gig or daily-wage income.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "student_no_income",
+          "definition": "Student or minor without regular income.",
+          "include_example": "as a student what could be potential sources of income",
+          "exclude_rule": ""
+        },
+        {
+          "code": "homemaker",
+          "definition": "Homemaker / dependent spouse.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "retired",
+          "definition": "Retired / pension.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "source_of_money",
+      "question": "Where does the SIP money come from, if stated?",
+      "type": "single",
+      "values": [
+        {
+          "code": "own_earnings",
+          "definition": "Own salary/business income.",
+          "include_example": "putting aside the 40k-odd every month",
+          "exclude_rule": ""
+        },
+        {
+          "code": "family_money",
+          "definition": "Pocket money, parents, spouse.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "savings_lumpsum",
+          "definition": "Accumulated savings or windfall.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "life_stage",
+      "question": "Stated age or life stage.",
+      "type": "single",
+      "values": [
+        {
+          "code": "minor_under_18",
+          "definition": "Under 18.",
+          "include_example": "im 15 and im also starting sip",
+          "exclude_rule": ""
+        },
+        {
+          "code": "student_18_plus",
+          "definition": "Adult student.",
+          "include_example": "I'm new on this and I started SIP plus it is worth it and I'm a student",
+          "exclude_rule": "If age under 18 stated -> minor_under_18."
+        },
+        {
+          "code": "early_career_20s",
+          "definition": "20s / first job / under 30.",
+          "include_example": "As a 22 years old begglinner investor",
+          "exclude_rule": ""
+        },
+        {
+          "code": "mid_career_30s_40s",
+          "definition": "30s-40s.",
+          "include_example": "as a 38-year-old",
+          "exclude_rule": ""
+        },
+        {
+          "code": "pre_retirement_50s",
+          "definition": "50s.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "senior_60_plus",
+          "definition": "60+ or retired.",
+          "include_example": "I thrilled to start up sip at the age of 65",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "influencer_source",
+      "question": "Who influenced their SIP decisions (start or hold/stop)?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "youtube_creator",
+          "definition": "A creator/finfluencer.",
+          "include_example": "Tum logon k chaker main meri ek aur SIP start ho gai",
+          "exclude_rule": ""
+        },
+        {
+          "code": "family",
+          "definition": "Parent, child, spouse, relative.",
+          "include_example": "I was told by my son",
+          "exclude_rule": ""
+        },
+        {
+          "code": "friend_colleague",
+          "definition": "Friend or coworker.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "app_platform",
+          "definition": "App suggestions, notifications, ads, Prime recommendations.",
+          "include_example": "mere chune Sip ko poor bta kr auto swipe kr diya",
+          "exclude_rule": ""
+        },
+        {
+          "code": "advisor_distributor",
+          "definition": "CA, RM, distributor, agent.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "self_directed",
+          "definition": "States they researched/decided themselves.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "unmet_need",
+      "question": "What need is expressed or directly requested?",
+      "type": "multi",
+      "values": [
+        {
+          "code": "understand_my_returns",
+          "definition": "Wants to know if own performance is normal/on track.",
+          "include_example": "3 saal se 1000 ki sip hai continue karna hai ya nahi",
+          "exclude_rule": ""
+        },
+        {
+          "code": "reliable_payment_recovery",
+          "definition": "Wants debits to work, retries, reminders, no punitive charges.",
+          "include_example": "there is no retry done by the app",
+          "exclude_rule": ""
+        },
+        {
+          "code": "flexible_pause_modify",
+          "definition": "Wants to skip/pause/reduce/increase easily.",
+          "include_example": "just need one month to get back on track",
+          "exclude_rule": ""
+        },
+        {
+          "code": "independent_reassurance",
+          "definition": "Wants a trusted, non-salesy answer when unsure.",
+          "include_example": "please give some suggestions k age continue kru ya nhi",
+          "exclude_rule": "If the question is specifically about interpreting own returns, prefer understand_my_returns (both allowed)."
+        },
+        {
+          "code": "transparent_costs",
+          "definition": "Wants clear fees, expense ratio, direct plans.",
+          "include_example": "They should show the total expense ratio",
+          "exclude_rule": ""
+        },
+        {
+          "code": "accurate_timely_portfolio",
+          "definition": "Wants correct, up-to-date values.",
+          "include_example": "not showing correct MF balances",
+          "exclude_rule": ""
+        },
+        {
+          "code": "responsive_support",
+          "definition": "Wants support that answers and owns the issue.",
+          "include_example": "customer support is waste",
+          "exclude_rule": ""
+        },
+        {
+          "code": "basics_education",
+          "definition": "Wants to understand how SIP/MF works.",
+          "include_example": "from where can I understand that how should I use this app",
+          "exclude_rule": ""
+        },
+        {
+          "code": "consent_control",
+          "definition": "Wants no changes to their SIP/account without consent.",
+          "include_example": "meri auto Sip kam ki bina permission",
+          "exclude_rule": ""
+        },
+        {
+          "code": "goal_linkage",
+          "definition": "Wants to map SIPs to goals.",
+          "include_example": "Alag alag goals k lye alag alag sip krna kese possible hai",
+          "exclude_rule": ""
+        },
+        {
+          "code": "portfolio_construction_help",
+          "definition": "Wants help deciding how many/which kinds of funds, allocation, or whether their mix makes sense (NOTE: the product may not recommend specific funds).",
+          "include_example": "is this portfolio okay or too many funds",
+          "exclude_rule": "Wants to know if their own returns are normal -> understand_my_returns."
+        },
+        {
+          "code": "other",
+          "definition": "Signal present but fits no listed value; describe it in a rationale.",
+          "include_example": "",
+          "exclude_rule": "Do not use if any listed value fits."
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "emotion",
+      "question": "Dominant emotion expressed.",
+      "type": "single",
+      "values": [
+        {
+          "code": "anxious",
+          "definition": "Worry, fear, sadness about money.",
+          "include_example": "should I continue my sip? 😢",
+          "exclude_rule": ""
+        },
+        {
+          "code": "angry_frustrated",
+          "definition": "Anger; calls app fraud/thieves.",
+          "include_example": "you guys are thieves",
+          "exclude_rule": ""
+        },
+        {
+          "code": "disappointed_regret",
+          "definition": "Let down, regret.",
+          "include_example": "vo meri sabse badi galti thi",
+          "exclude_rule": ""
+        },
+        {
+          "code": "confused",
+          "definition": "Doesn't understand.",
+          "include_example": "ye samjh nhi aa rahi",
+          "exclude_rule": ""
+        },
+        {
+          "code": "calm_confident",
+          "definition": "Settled, unworried.",
+          "include_example": "Aya to aya gaya to gaya.",
+          "exclude_rule": ""
+        },
+        {
+          "code": "hopeful_excited",
+          "definition": "Enthusiastic about starting/future.",
+          "include_example": "I thrilled to start up sip",
+          "exclude_rule": ""
+        },
+        {
+          "code": "neutral",
+          "definition": "Factual, no emotion.",
+          "include_example": "",
+          "exclude_rule": ""
+        },
+        {
+          "code": "unknown",
+          "definition": "Text gives no observable signal for this field.",
+          "include_example": "",
+          "exclude_rule": "Use only when no other value is supported by the text."
+        }
+      ],
+      "unknown_allowed": true
+    },
+    {
+      "name": "evidence_quote",
+      "question": "Exact verbatim span (original language/script) from the item that supports root_cause or stop_trigger; empty string if both are unknown.",
+      "type": "text",
+      "unknown_allowed": true
+    },
+    {
+      "name": "rationale",
+      "question": "One short sentence explaining the root_cause / stop_trigger choice; REQUIRED if any field uses 'other' (say what the 'other' is).",
+      "type": "text",
+      "unknown_allowed": true
+    }
+  ],
+  "changes_from_draft": [
+    "Sharpened return_misreading (wrong frame) vs expectation_violation (right frame, unmet prior); both may co-occur.",
+    "Added metric_branch to map every item onto the metric tree (analysis/metric_tree_v1.md).",
+    "Added platform (groww / other / unknown) because the business metric is measured on Groww.",
+    "Added rationale (required when any field uses 'other').",
+    "v1.1 action: added restructured (16/60 Reddit): stopping one fund's SIP while still investing.",
+    "v1.1 root_cause: added portfolio_rationalisation (6/60).",
+    "v1.1 stop_trigger: added self_review (5/60).",
+    "v1.1 unmet_need: added portfolio_construction_help (~46/60, previously forced into independent_reassurance).",
+    "v1.1 boundaries: planned addition to a running SIP = increased; step-ups = intent branch; stage computed from stated start vs post date; borrowed_conviction only when the hold/stop decision is handed to others; cashflow_rigidity includes avoiding or planning gaps in a SIP because of cash flow.",
+    "v1.2 stop_trigger: added tax_rule_change (new tax regime / 80C / tax rules make the SIP pointless).",
+    "v1.3 action: added attempted_blocked (~8 items: tried to cancel/skip/pause/redeem, app did not allow it).",
+    "v1.3 stop_trigger: added missing_notification (not told about a failed/missed instalment or SIP change).",
+    "v1.4 added investor_experience (first_time / experienced / unknown): the brief is about first-time investors and r/FIREIndia / TradingQ&A lean experienced. Replaces the loose first_time flag.",
+    "v1.4 action: added nearly_stopped (seriously considered stopping, then decided to continue) and widened continued to 'kept the SIP running through a loss, doubt or pressure to stop' so stayed stories can be compared with drop-offs.",
+    "v1.5 stop_trigger: added app_malfunction (app crash, login failure, blank screen, a feature not working) when it is not a payment, modify or redemption problem.",
+    "v1.6 stop_trigger: added debit_after_cancel (5+ items: money still debited after cancelling) and support_failure (5+ items: support unreachable or unhelpful was the push).",
+    "v1.6 added stay_reason (multi): what kept a stayer going. Stayed stories are the control group, and root_cause only explains doubt/stopping, so their reasons had nowhere to go.",
+    "v1.7 root_cause: borrowed_conviction narrowed to a SPECIFIC person steering the hold/stop decision (started on their advice, or hands the decision to a named person/creator they follow). Asking a forum whether to continue is not enough: code the mechanism instead. 52 tags re-checked by hand (data/recode/out/recode_04.jsonl): 8 kept, 44 re-coded."
+  ]
+}
